@@ -1,0 +1,95 @@
+@font-face {
+    font-family: "Nexa-Bold";
+    src: url(../fonts/Nexa-Bold.otf) format('truetype')
+  }
+  @font-face {
+    font-family: "Nexa-Light";
+    src: url(../fonts/Nexa-Light.otf) format('truetype')
+  }
+  :root{
+    --sky-blue:#1da1f2;
+    --lt-skyblue:#87CEEB;
+    --dark-blue:#152238;
+    --light-blue:#94bedd;
+    --grey:grey;
+  }
+  body{
+        max-width: 400px;
+  }
+html{
+height: 100%;
+margin: auto;
+display: table;
+}
+  
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Nexa-Bold";
+  letter-spacing: 0.05rem;  
+}
+h1{
+  font-size: 1.7rem;
+}
+h2{  
+  font-size: 1.5rem;;
+}
+h3{
+  font-size: 1.3rem;
+}
+h4{
+  font-size: 1.1rem;
+}
+h5{
+  font-size: .9rem;
+}
+h6{
+  font-size: .7rem;
+}
+
+p{
+  font-family: "Nexa-Light";  
+  font-size: 1rem;
+  word-spacing: 0.1rem;  
+  letter-spacing: 0.05rem;    
+  line-height: 1.4;
+}
+
+input{
+  font-family: "Nexa-Light";
+  font-size: 0.8rem;
+  letter-spacing: 0.05rem;
+}
+
+button{
+  font-family: "Nexa-Light";
+  border: none;
+}
+
+i{
+  position: absolute;
+}
+form{
+  width: 100%;
+}
+img{
+  width: 100%;
+}
+::placeholder{
+  font-family: "Nexa-Light";
+  color: gray;
+  letter-spacing: 0.04rem;
+}
+li{
+  font-family: "Nexa-Light";
+  font-size: .8rem;
+  line-height: 1.6;
+  word-spacing: 0.1rem;  
+  letter-spacing: .05rem;
+}
+ul{
+  font-family: "Nexa-Light";
+  font-size: .8rem;
+  letter-spacing: 0.05rem;
+}
+nav{  
+  font-size: 14px;
+}
