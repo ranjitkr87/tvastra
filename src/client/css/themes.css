@@ -14,7 +14,7 @@
     --grey:grey;
   }
   body{
-        max-width: 400px;
+        
   }
 html{
 height: 100%;
@@ -80,10 +80,6 @@ img{
 }
 li{
   font-family: "Nexa-Light";
-  font-size: .8rem;
-  line-height: 1.6;
-  word-spacing: 0.1rem;  
-  letter-spacing: .05rem;
 }
 ul{
   font-family: "Nexa-Light";
