@@ -4,9 +4,7 @@
   width: 30%;
 }
 .first-nav{
-  position: relative;   
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  position: relative; 
 }
 .first-nav .fa-bars{
   position: absolute; 
@@ -30,19 +28,16 @@
     grid-area: heading1;
     text-align: center;
     color: var(--dark-blue);
-    padding: 2rem 2rem 1rem 2rem;
   }
 
   .description1 {
     grid-area: description1;
     text-align: center;
     color:var(--dark-blue);
-    padding: .5rem 2rem 1rem 2rem;
   }
   .search1 { 
     position: relative; 
     grid-area: search1;
-    padding: .5rem 1rem .5rem 1rem;    
   }
   .search1 input { 
     text-indent: 20px; 
@@ -67,8 +62,7 @@
   
   .search-button1 {    
     grid-area: search-button1; 
-    text-align: center;  
-    padding: .5rem 1rem 1rem 1rem;   
+    text-align: center;   
   }
   .search-button1 button
   {
@@ -99,27 +93,22 @@
     grid-area: heading2;
     color:var(--dark-blue);
     text-align: center;
-    padding: 1.5rem 2rem .5rem 2rem;
   }
 
   .description2 {    
     grid-area: description2;
     text-align: center;
     color: var(--dark-blue);
-    padding: .5rem 1rem 1rem 1rem;
   }
 
   .FixConsultation{
     position: relative; 
     grid-area: FixConsultation;
-    font-family: "Nexa-Bold";  
-    padding: 1rem 1rem 1rem 1rem;
+    font-family: "Nexa-Bold";
   }
   .FixConsultation input{      
     width: 100%;
-    height: 40px; 
-    padding-top: .5rem;
-    padding-bottom: .5rem; 
+    height: 40px;
     font-size: 40px;
     border: 1px solid;
     border-color:var(--dark-blue);
@@ -143,26 +132,22 @@
     grid-area: img2;
     margin: auto;
     display: block;
-    width: 80%;    
-    padding: 1rem 1rem 1rem 1rem;  
+    width: 80%;
   }
   .heading2_1{
     grid-area: heading2_1;
     color:var(--dark-blue);
     width: 100%;
-    padding: .5rem 1rem .5rem 1rem;
   }
   
   .description2_1{
     grid-area: description2_1;
     text-align: center;
     color:var(--dark-blue);
-    padding: .5rem 1rem .5rem 1rem;
   }
   .stages
   {
     grid-area: stages;
-    padding: .5rem 1rem .5rem 1rem;
   }
 
   .stages input {      
@@ -196,12 +181,11 @@
     grid-area: heading3;
     text-align: center;
     color: white;
-    padding: 2rem 2rem .5rem 2rem;
   }
   .description3 {
     grid-area: description3;
     text-align: center;
-    color:white;padding: 1rem 1rem 1rem 1rem;
+    color:white;
   }
   .doc-profiles{
     grid-area: doc-profiles;
@@ -211,7 +195,6 @@
     background-color: white;
     color: black;
     border-bottom: 5px solid var(--lt-skyblue);
-    margin: .5rem 1rem 1rem 1rem;
   }
   .doc-image {
     width: 100%;
@@ -219,25 +202,18 @@
     object-fit: cover;
   }
   .new-add{
-    padding: .5rem .5rem ;
   }
   .doc-details{
-    padding-top: .5rem;
-    padding-bottom: .25rem;;
   }
   .details-doc{
-    padding: .25rem  2rem;
   }
   .details-doc ul{
-    padding-bottom: .55rem;
   }
   .add {
     display: flex;
-    padding: 0rem;
   }
   .color-blue {
     color:var(--sky-blue);
-    padding: 0rem;
   }
   .color-blue::before {
     display: block;
@@ -261,23 +237,20 @@
   grid-area: heading4;
   color: var(--dark-blue);
   text-align: center;
-  padding: 2rem 1rem .5rem 1rem;
 }
 .description4{
   grid-area: description4;
   text-align: center;
-  color:var(--dark-blue);
-  padding: .5rem 1rem .5rem 1rem;  
+  color:var(--dark-blue); 
 }
 .treatments{
   position: relative;
-  grid-area: treatments;
-  padding: .5rem 1rem .5rem 1rem;  
+  grid-area: treatments; 
 }
 .treatments-det{
   margin: .5rem;
 }
-.treatments-det .treatment-img{
+.treatment-img{
   object-fit: cover;
   height: 350px;
 }
@@ -292,11 +265,9 @@
   font-size: .9rem;  
 }
 .treatment-name{
-  padding-bottom: .5rem;
 }
 .treatments-det{
   position: relative;
-  margin-bottom: 0.5rem;
   color: white;
 }
 .treatments-det::before {
@@ -324,13 +295,11 @@
   grid-area: heading5;
   text-align: center;
     color:var(--dark-blue);
-    padding:2rem 1rem .5rem 1rem;
 }
 .description5{
   grid-area: description5;
   text-align: center;
-  color:var(--dark-blue);
-  padding:.5rem .5rem 1rem .5rem;  
+  color:var(--dark-blue); 
 }
 .Services{
   display: grid;
@@ -362,7 +331,6 @@
 .on-icon { 
   font-size: .8rem; 
   display: inline-block; 
-  padding: 90px 10px 0 0;
 }
 .container6{
   display: grid;
@@ -379,17 +347,14 @@
   grid-area: heading6;
   position: relative;
   color: white;
-  padding:1.5rem .5rem 1rem .5rem;  
 }
 .description6{
   grid-area: description6;
   position: relative;
-  padding:.5rem;  
 }
 .enquiry-button{
   grid-area: enquiry-button;
-  position: relative;
-  padding:.5rem .5rem 1rem .5rem;  
+  position: relative; 
   border-radius: 12px;
 }
 .Button-enquiry{  
@@ -399,7 +364,6 @@
   font-size: 16px;
   text-align: center;
   border-radius: 10px;
-  padding:.5rem
 }
 .container7{
   display: grid;
@@ -418,8 +382,6 @@
   margin: auto;
   display: block;
   width: 40%;
-  padding-top: 1rem;
-  padding-bottom: .5rem;
 }
 .services-quick{
   grid-area: services-quick;
@@ -429,14 +391,10 @@
   font-size: .8rem;
   font-weight: 100;
   letter-spacing: .09rem;
-  padding-top: .5rem;
-  padding-bottom: 1rem;
 }
 .social-media { 
   grid-area: social-media;
-  position: relative; 
-  padding-top: .5rem;
-  padding-bottom: .5rem;  
+  position: relative;
 }
 .fa-facebook-f { 
   left: 30%;
@@ -462,6 +420,4 @@
   grid-area: copy-right;  
   text-align: center;
   font-size: .7rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
 }

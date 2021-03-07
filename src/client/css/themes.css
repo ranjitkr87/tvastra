@@ -13,36 +13,54 @@
     --light-blue:#94bedd;
     --grey:grey;
   }
+  * {
+    box-sizing: border-box;
+  }
+  
   body{
-        
+       
   }
 html{
 height: 100%;
 margin: auto;
 display: table;
 }
-  
+nav{  
+  font-size: 14px;
+  padding: 1rem;
+}
+section{
+  padding: 1rem;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: "Nexa-Bold";
   letter-spacing: 0.05rem;  
+  padding: 1rem;
 }
 h1{
   font-size: 1.7rem;
+  color: var(--dark-blue);
 }
 h2{  
-  font-size: 1.5rem;;
+  font-size: 1.5rem;
+  color: var(--dark-blue);
 }
 h3{
   font-size: 1.3rem;
+  color: var(--dark-blue);
 }
 h4{
   font-size: 1.1rem;
+  color: var(--sky-blue);
 }
 h5{
-  font-size: .9rem;
+  font-size: 1.3rem;
+  color: white;
 }
 h6{
-  font-size: .7rem;
+  font-size: .9rem;
+  color: var(--dark-blue);
 }
 
 p{
@@ -51,21 +69,25 @@ p{
   word-spacing: 0.1rem;  
   letter-spacing: 0.05rem;    
   line-height: 1.4;
+  padding: 1rem;
 }
 
 input{
   font-family: "Nexa-Light";
   font-size: 0.8rem;
   letter-spacing: 0.05rem;
+  padding: 1rem;
 }
 
 button{
   font-family: "Nexa-Light";
   border: none;
+  padding: 1rem;
 }
 
 i{
   position: absolute;
+  padding: 1rem;
 }
 form{
   width: 100%;
@@ -80,12 +102,11 @@ img{
 }
 li{
   font-family: "Nexa-Light";
+  padding: 1rem;
 }
 ul{
   font-family: "Nexa-Light";
   font-size: .8rem;
   letter-spacing: 0.05rem;
-}
-nav{  
-  font-size: 14px;
+  padding: .5rem;
 }
