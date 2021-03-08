@@ -36,36 +36,32 @@ section{
 h1, h2, h3, h4, h5, h6 {
   font-family: "Nexa-Bold";
   letter-spacing: 0.05rem;  
+  color: var(--dark-blue);
   padding: 1rem;
 }
 h1{
   font-size: 1.7rem;
-  color: var(--dark-blue);
 }
 h2{  
   font-size: 1.5rem;
-  color: var(--dark-blue);
 }
 h3{
   font-size: 1.3rem;
-  color: var(--dark-blue);
 }
 h4{
   font-size: 1.1rem;
-  color: var(--sky-blue);
 }
 h5{
   font-size: 1.3rem;
-  color: white;
 }
 h6{
   font-size: .9rem;
-  color: var(--dark-blue);
 }
 
 p{
   font-family: "Nexa-Light";  
   font-size: 1rem;
+  color: var(--dark-blue);
   word-spacing: 0.1rem;  
   letter-spacing: 0.05rem;    
   line-height: 1.4;
@@ -75,6 +71,7 @@ p{
 input{
   font-family: "Nexa-Light";
   font-size: 0.8rem;
+  color: var(--dark-blue);
   letter-spacing: 0.05rem;
   padding: 1rem;
 }
@@ -85,6 +82,17 @@ button{
   padding: 1rem;
 }
 
+button .primary{
+  color: white;
+  background-color: var(--dark-blue);
+}
+
+button .secondary{
+  color: white;
+  background-color: var(--sky-blue);
+  border-radius: 12px;
+}
+
 i{
   position: absolute;
   padding: 1rem;
@@ -93,7 +101,8 @@ form{
   width: 100%;
 }
 img{
-  width: 100%;
+  padding: 1rem;
+  height: 100%;
 }
 ::placeholder{
   font-family: "Nexa-Light";
@@ -102,11 +111,13 @@ img{
 }
 li{
   font-family: "Nexa-Light";
+  color: var(--dark-blue);
   padding: 1rem;
 }
 ul{
   font-family: "Nexa-Light";
   font-size: .8rem;
+  color: var(--dark-blue);
   letter-spacing: 0.05rem;
   padding: .5rem;
 }
