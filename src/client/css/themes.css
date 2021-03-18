@@ -1,180 +1,158 @@
 @font-face {
-    font-family: "Nexa-Bold";
-    src: url(../fonts/Nexa-Bold.otf) format('truetype')
-  }
-  @font-face {
-    font-family: "Nexa-Light";
-    src: url(../fonts/Nexa-Light.otf) format('truetype')
-  }
-  :root{
-    --sky-blue:#1da1f2;
-    --lt-skyblue:#87CEEB;
-    --dark-blue:#152238;
-    --light-blue:#94bedd;
-    --grey:grey;
-  }
-  * {
-    box-sizing: border-box;
-  }
-  
-  body{
-       
-  }
-html{
-height: 100%;
-margin: auto;
-display: table;
+  font-family: "Nexa-Bold";
+  src: url(../fonts/Nexa-Bold.otf) format('truetype')
 }
-nav{  
-  font-size: 14px;
+@font-face {
+  font-family: "Nexa-Light";
+  src: url(../fonts/Nexa-Light.otf) format('truetype')
+}
+:root{
+  --sky-blue:#1da1f2;
+  --lt-skyblue:#87CEEB;
+  --dark-blue:#152238;
+  --light-blue:#94bedd;
+  --grey:grey;
+}
+* {
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+nav{
   padding: 1rem;
 }
-section{
-  padding: 1rem;
-}
-
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4,h5, h6{
   font-family: "Nexa-Bold";
   letter-spacing: 0.05rem;  
   color: var(--dark-blue);
   padding: 1rem;
 }
 h1{
-  font-size: 1.7rem;
+font-size: 2.5rem;
 }
-h2{  
-  font-size: 1.5rem;
+h2{
+font-size: 2.3rem;
 }
 h3{
-  font-size: 1.3rem;
+font-size: 2rem;
 }
 h4{
-  font-size: 1.1rem;
+font-size: 1.6rem;
 }
 h5{
-  font-size: 1.3rem;
+font-size: 1.4rem;
 }
 h6{
-  font-size: .9rem;
+font-size: 1.2rem;
 }
-
 p{
   font-family: "Nexa-Light";  
-  font-size: 1rem;
+  font-size: 1.4rem;
   color: var(--dark-blue);
   word-spacing: 0.1rem;  
   letter-spacing: 0.05rem;    
   line-height: 1.4;
   padding: 1rem;
 }
-
-input{
-  font-family: "Nexa-Light";
-  font-size: 0.8rem;
-  color: var(--dark-blue);
-  letter-spacing: 0.05rem;
-  padding: 1rem;
-}
-
-button{
-  font-family: "Nexa-Light";
-  border: none;
-  padding: 1rem;
-}
-
-button .primary{
-  color: white;
-  background-color: var(--dark-blue);
-}
-
-button .secondary{
-  color: white;
-  background-color: var(--sky-blue);
-  border-radius: 12px;
-}
-
-i{
-  position: absolute;
-  padding: 1rem;
-}
-form{
-  width: 100%;
-}
 img{
-  padding: 1rem;
-  height: 100%;
+  
+}
+a{
+padding: 1rem;
+}
+input{
+font-family: "Nexa-Light";
+font-size: 0.8rem;
+color: var(--dark-blue);
+letter-spacing: 0.05rem;
+padding: 1rem;
+width: 100%;
+border: none;
+height: 60px;
 }
 ::placeholder{
-  font-family: "Nexa-Light";
-  color: gray;
-  letter-spacing: 0.04rem;
+font-family: "Nexa-Light";
+font-size: 1.2rem;
+color: gray;
+letter-spacing: 0.05rem;
+}
+button{
+color: white;
+border: none;
+font-size: 1.3rem;
+padding: 1rem 4rem 1rem 4rem;
+letter-spacing: .1rem;
+border-radius: 10px;
+}
+.primary{
+background-color: var(--dark-blue);
+}
+.secondary{
+background-color: var(--sky-blue);
 }
 li{
-  font-family: "Nexa-Light";
-  color: var(--dark-blue);
-  padding: 1rem;
+font-family: "Nexa-Light";
+color: var(--dark-blue);
+padding-bottom: .5rem;
 }
 ul{
-  font-family: "Nexa-Light";
-  font-size: .8rem;
-  color: var(--dark-blue);
-  letter-spacing: 0.05rem;
-  padding: .5rem;
+font-family: "Nexa-Light";
+font-size: 1.2rem;
+color: var(--dark-blue);
+letter-spacing: 0.05rem;
+padding: .5rem;
 }
-footer{
-  padding: 1rem;
-}
-@media only screen and (min-width: 768px)
-{
-  h1{
-        font-size: 2.2rem;
-    }    
-  h2{
-        font-size:2rem;
-    }
-  h3{
-        font-size: 1.6rem;
-    }
-  h4{
-        font-size: 1.4rem;
-    }
-  h5{
-        font-size: 1.2rem;
-    }
-  h6{
-      font-size: 1rem;
+@media only screen and (min-width: 768px){
+  nav{
+    padding: .5rem;
   }
-  p{
-    font-size: 1.2rem;
-    word-spacing: 0.1rem;  
-    letter-spacing: 0.05rem;    
-    line-height: 1.6;
-    }
-}
-
-@media only screen and (min-width: 1024px){
   h1{
-      font-size: 2.4rem;
-  }    
+    font-size: 1.6rem;
+    padding: 1rem;
+  }
   h2{
-      font-size:2.2rem;
+    font-size: 1.5rem;
+    padding: 1rem;
   }
   h3{
-      font-size: 1.8rem;
-  }
-  h4{
-      font-size: 1.6rem;
-  }
-  h5{
-      font-size: 1.4rem;
-  }
-  h6{
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    padding: 1rem;
   }
   p{
-  font-size: 1.4rem;
-  word-spacing: 0.1rem;  
-  letter-spacing: 0.05rem;    
-  line-height: 1.8;
+    font-size: 1rem;
+    padding: .5rem;
   }
+  li{
+    font-size: 1rem;
+  }
+  input{
+    font-family: "Nexa-Light";
+    font-size: 0.8rem;
+    color: var(--dark-blue);
+    letter-spacing: 0.05rem;
+    width: 100%;
+    border: none;
+    }
+    ::placeholder{
+    font-family: "Nexa-Light";
+    font-size: .8rem;
+    color: gray;
+    letter-spacing: 0.05rem;
+    }
+    button{
+      color: white;
+      border: none;
+      font-size: .8rem;
+      letter-spacing: .1rem;
+      border-radius: 0%;
+      padding: inherit;
+      }
+      .primary{
+      background-color: var(--dark-blue);
+      }
+      .secondary{
+      background-color: var(--sky-blue);
+      }
 }

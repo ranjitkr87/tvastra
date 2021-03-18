@@ -1,272 +1,236 @@
-<!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Tvastra Home</title>
-    <script src="https://kit.fontawesome.com/6837ef4015.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="../css/reset.css">
-    <link rel="stylesheet" type="text/css" href="../css/themes.css">
-    <link rel="stylesheet" type="text/css" href="../css/styles.CSS">  
-</head>
-<body>   
-        <section>
-            <nav class="first-nav">
-                <img class="logo-tvastra" src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/footer.png" alt="logo">
-                <i class="fas fa-bars"></i>
-            </nav>
-        </section> 
+    <head>
+        <title>Tvastra.com</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+        <link rel="stylesheet" href="../css/reset.css">
+        <link rel="stylesheet" href="../css/themes.css">
+        <link rel="stylesheet" href="../css/styles.CSS">               
+    </head>
+    <body>
+        <nav class="top-nav">
+            <img class="logo-tvastra" src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/footer.png" >
+            <i class="fas fa-bars" style=" vertical-align: middle;"></i>
+        </nav>
         <section class="container1">
-            <div class="heading1">
-                <h1>Find Affordable Healthcare</h1>
-            </div>
-            
-            <div class="description1">
-                <p >
-                    Join the thousands of others who have exercised their right to quality healthcare at a price you can
-                    afford
-                </p>
-            </div>
-
-            <div class="search1">
-                <span <i class="fas fa-crosshairs"></span>
-                <span <i class="fa fa-map-marker"></span>
-                <input class="input" type="text" name="location"  placeholder="Ahemdabad" />
-                <input  class="input" type="text" name="specification" id="specification" placeholder="Search for doctors, hospitals and treatments.">
-            </div> 
-
-            <section class="search-button1">
-                <button class="primary">Search</button>
-            </section>
-        </section> 
+            <h1>Find Affordable Healthcare</h1>
+            <p >
+                Join the thousands of others who have exercised their right to quality healthcare at a price you can afford.
+            </p>
+            <div class="subcontainer1">
+                <div class="location">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <i class="fas fa-crosshairs"></i>
+                    <input type="text" name="location" id="location" placeholder="Ahmedabad"/>
+                </div>
+                <div class="search1">
+                    <input  type="text" placeholder="Search for doctors,hospitals and treatments.">
+                </div> 
+                <div class="button1">
+                    <button class="primary">Search</button>
+                </div>   
+            </div>                    
+        </section>
 
         <section class="container2">
-            <div class="heading2">
-                <h1>How it works</h1>
-            </div>
-            
-            <div class="description2">
-                <p >
-                    Various Facilities are provided here. But there is a protocol which need to be followed so that your get the service at its best.
-                </p>
-            </div>
-
-            <div class="FixConsultation">  
-                <span <i class="num">01</span>
-                <span <i class="tex">Fix Consultation</span>
-                <input class="input" type="text" name="location" />
-            </div>         
-            
-            <div class="img2">
-                <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/img1.png">
-            </div>
-
-            <div class="heading2_1" >
-                <h3>Fix Consultation</h3>
-            </div>
-
-            <div class="description2_1" >
-                <p >
-                This depicts that user will have to fix appoinment first when it selects a particular doctor
-                </p>
-            </div>
-
-            <div class="stages">
-                <input type="text" name="location"  placeholder="02 Upload Medical Reports" />
-                <input type="text" name="location"  placeholder="03 Consult with doctor" />
-                <input type="text" name="location"  placeholder="04 Fix Surgery" />
-                <input type="text" name="location"  placeholder="05 Hospital sent estimates" />
-                <input type="text" name="location"  placeholder="06 Payment" />
-                <input type="text" name="location"  placeholder="07 Surgery completed" />
-            </div>
-        </section> 
+            <h2>How it works</h2>
+            <p>Various facilities are provided here. But there is a protocol which needs to be followed so that you may get the services at its best.</p>
+            <div class="steps">
+                <a class="toggle-btn Stp1">
+                    <p >01</p>
+                    <p >Fix Consultation</p>
+                </a>
+                
+                <div class="FC-use">
+                    <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/img1.png" alt="">
+                    <h3>Fix Consultation</h3>
+                    <p>
+                        This depicts that user will have to fix appointment first when it selects a particular doctor .
+                    </p>
+                </div>
+                
+                <a class="toggle-btn2 Stp2">
+                    <p >02  Upload Medical Reports</p>
+                </a>
+                <a class="toggle-btn2 Stp3">
+                    <p >03  Consult with doctor</p>
+                </a>
+                <a class="toggle-btn2 Stp4">
+                    <p >04  Fix surgery</p>
+                </a>
+                <a class="toggle-btn2 Stp5">
+                    <p >05  Upload Medical Reports</p>
+                </a>
+                <a class="toggle-btn2 Stp6">
+                    <p >06  Hospital sent estimates</p>
+                </a>
+                <a class="toggle-btn2 Stp7">
+                    <p >07  Surgery Completed</p>
+                </a>
+            </div>            
+        </section>
 
         <section class="container3">
-            <div class="heading3">
-                <h2>World Class Expert Doctors!</h2>
+            <h2 >World Class Expert Doctors!</h2>
+            <p >
+                The Unviersity of Texas Southwestern Medical Center has long been a world renouned research hospital. But until the '80s, you couldn't go there. Now, with the addition of the Aston center and Zale Lipshy hospital, UT Southwestern is also a mecca for patients.
+            </p>
+            <div class="doctor-profile">
+                <div class="doc-details">
+                    <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--002.jpg" alt="">
+                    <h5 class="name">Duke Sanson</h5>
+                    <ul>
+                        <li>Neuro Surgeon</li>
+                        <li>Chain Department of Neurological Surgery</li>
+                        <li>Australia</li>
+                    </ul>
+                </div>
+                <div class="doc-details">
+                    <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--004.jpg" alt="">
+                    <h5 class="name">Georgia Peter</h5>
+                    <ul>
+                        <li>Breast Cancer Surgeon</li>
+                        <li>Director . UT . Southwest</li>
+                        <li>London</li>
+                    </ul>
+                </div>
+                <div class="doc-details">
+                    <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--005.jpg" alt="">
+                    <h5 class="name">Charlie Moon</h5>
+                    <ul>
+                        <li>Cardiac Surgeon</li>
+                        <li>MBBS, MD,FRCP, MRCP</li>
+                        <li>New Delhi</li>
+                    </ul>
+                </div>
+                <div class="doc-details">
+                    <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--003.jpg" alt="">
+                    <h5 class="name">Rose Moon</h5>
+                    <ul>
+                        <li>Plastic </li>
+                        <li>Department of Plastic and Reconstructive Surgery</li>
+                        <li>Dubai</li>
+                    </ul>
+                </div>
             </div>
-            
-            <div class="description3">
-                <p >
-                    The university of Texas Southeastern Medical centre has been a long world renowned research hospital. But until the `80s, you couldn't go there. Now, with the addition od Aston center and Zale Lipshy hospital, UT Southeastern is also a meccah of patients.
-                </p>
-            </div>
-            <div class="doc-profiles"> 
-                <div class="photo">
-                    <img class="doc-image" src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--002.jpg">
-                    <div class="doc-details">
-                        <h4 class="add color-blue">Duke Sanson</h4>  
-                    </div> 
-                    <div class="details-doc">                                  
-                        <ul >Neuro Surgeon</ul>
-                        <ul >Chain Department of Nuerological Surgery</ul>
-                        <ul >Australia</ul>    
-                    </div>                                   
-                </div>
-                <div class="photo">
-                    <img class="doc-image" src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--004.jpg">
-                    <div class="doc-details">
-                        <h4 class="add color-blue">Georgia Peter</h4>
-                    </div>
-                    <div class="details-doc">                    
-                        <ul >Breast Cancer Surgeon</ul>
-                        <ul >Director . UT . Southwest</ul>
-                        <ul >London</ul>
-                    </div>                          
-                </div>
-                <div class="photo">
-                    <img class="doc-image" src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--005.jpg">
-                    <div class="doc-details">
-                        <h4 class="add color-blue">Charlie Moon</h4>
-                    </div>
-                    <div class="details-doc">                    
-                        <ul >Cardiac Surgeon</ul>
-                        <ul >MBBS, MD,FRCP, MRCP</ul>
-                        <ul >New Delhi</ulli>
-                    </div>                            
-                </div>
-                <div class="photo">
-                    <img class="doc-image" src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--003.jpg">
-                    <div class="doc-details">
-                        <h4 class="add color-blue">Rose moon</h4>
-                    </div>
-                    <div class="details-doc">                    
-                        <ul >Plastic Surgeon</ul>
-                        <ul >Department of Plastic and Reconstructive Surgery</ul>
-                        <ul >Dubai</ul>
-                    </div>                          
-                </div>
-            </div> 
         </section>
         <section class="container4">
-            <div class="heading4">
-                <h2>Featered Medical Treatment</h2>         
+            <h2 >Featured Medical Treatment</h2>
+            <p >
+                Join the thousands of others who have exercised their rights to quality healthcare at a price you can afford.
+            </p>
+            <div class="treatment-grid">
+                <div class="treatments">
+                    <div class="background"></div>
+                    <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--009.jpg" alt="">
+                    <div class="on-image">
+                        <h4 >Dentistry</h4>
+                        <h5 >50+ Specialists</h5>
+                    </div>
+                </div>
+                <div class="treatments">
+                    <div class="background"></div>
+                    <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--010.jpg" alt="">
+                    <div class="on-image">
+                        <h4 >Cancer</h4>
+                        <h5 >50+ Specialists</h5>
+                    </div>
+                </div>
+                <div class="treatments">
+                    <div class="background"></div>
+                    <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--011.jpg" alt="">
+                    <div class="on-image">
+                        <h4 >Cardiologic Treatment</h4>
+                        <h5 >50+ Specialists</h5>
+                    </div>
+                </div>
+                <div class="treatments">
+                    <div class="background"></div>
+                    <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--006.jpg" alt="">
+                    <div class="on-image">
+                        <h4 >Multi Organ Transplan</h4>
+                        <h5 >50+ Specialists</h5>
+                    </div>
+                </div>
+                <div class="treatments">
+                    <div class="background"></div>
+                    <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--008.jpg" alt="">
+                    <div class="on-image">
+                        <h4 >Orthopedic Surgery</h4>
+                        <h5 >50+ Specialists</h5>
+                    </div>
+                </div>
+                <div class="treatments">
+                    <div class="background"></div>
+                    <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--007.jpg" alt="">
+                    <div class="on-image">
+                        <h4 >Infertility Treatment</h4>
+                        <h5 >50+ Specialists</h5>
+                    </div>
+                </div>
             </div>
-            <div class="description4">
-                <p>Join the thousands of others who have excercised their right to quality healthcare at a proice you can afford</p>         
-            </div>
-
-            <div class="treatments">
-                <div class="treatments-det">
-                    <img class="treatment-img" src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--009.jpg"
-                        alt="">
-                    <div class="department-details">                    
-                            <h5 class="treatment-name">Dentistry</h5>
-                            <p>50+ Specialists</p>
-                    </div>
-                </div> 
-                <div class="treatments-det">
-                    <img class="treatment-img" src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--010.jpg"
-                        alt="">
-                    <div class="department-details">                    
-                        <h5 class="treatment-name">Cancer</h5>
-                        <p>50+ Specialists</p>
-                    </div>
-                </div> 
-                <div class="treatments-det">
-                    <img class="treatment-img" src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--011.jpg"
-                        alt="">
-                    <div class="department-details">                    
-                        <h5 class="treatment-name">Cardiologic Treatment</h5>
-                        <p>50+ Specialists</p>
-                    </div>
-                </div>
-                <div class="treatments-det">
-                    <img class="treatment-img" src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--006.jpg"
-                        alt="">
-                    <div class="department-details">                    
-                        <h5 class="treatment-name">Multi Organ Transplant</h5>
-                        <p>50+ Specialists</p>
-                    </div>
-                </div>
-                <div class="treatments-det">
-                    <img class="treatment-img" src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--008.jpg"
-                        alt="">
-                    <div class="department-details">                    
-                        <h5 class="treatment-name">Orthopedic Surgery</h5>
-                        <p>50+ Specialists</p>
-                    </div>
-                </div>
-                <div class="treatments-det">
-                    <img class="treatment-img" src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--007.jpg"
-                        alt="">
-                    <div class="department-details">                    
-                        <h5 class="treatment-name">Infertility Treatment</h5>
-                        <p>50+ Specialists</p>
-                    </div>
-                </div>
-            </div> 
         </section>
         <section class="container5">
-            <div class="heading5">
-                <h1>Exclusive Services</h1>
-            </div>
-            
-            <div class="description5">
-                <p >
-                    We want you to be comfortable and thus apart from treating your illness, we provide with other services that you can see
-                </p>
-            </div>
-
-            <div class="Services">
-                <div class="service-icons">
-                    <img class="icon-img" src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Icons-01.png">
-                    <span class="on-icon">Travel</span>
+            <h1>Exclusive Services</h1>
+            <p>
+                We want you to be comfortable and thus apart from treating your illness, we provide you with other services that you can see.
+            </p>
+            <div class="other-services">
+                <div class="service-grid">
+                    <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Icons-01.png" alt="">
+                    <h6>Travel</h6>
                 </div>
-                <div class="service-icons">
-                    <img class="icon-img" src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Icons-02.png"> 
-                    <span class="on-icon">FOOD</span>
+                <div class="service-grid">
+                    <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Icons-02.png" alt="">
+                    <h6>Food</h6>
                 </div>
-                <div class="service-icons">
-                    <img class="icon-img" src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Icons-03.png">
-                    <span class="on-icon">Accomodation</span>
+                <div class="service-grid">
+                    <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Icons-03.png" alt="">
+                    <h6>Accomodation</h6>
                 </div>
-                <div class="service-icons">
-                    <img class="icon-img" src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Icons-04.png">
-                    <span class="on-icon">LABS</span>
+                <div class="service-grid">
+                    <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Icons-04.png" alt="">
+                    <h6>Lab</h6>
                 </div>
-                <div class="service-icons">
-                    <img class="icon-img" src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Icons-05.png">
-                    <span class="on-icon">REPORTS</span>
+                <div class="service-grid">
+                    <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Icons-05.png" alt="">
+                    <h6>Reports</h6>
                 </div>
-                <div class="service-icons">
-                    <img class="icon-img"src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Icons-06.png">
-                    <span class="on-icon">AMBULANCE</span>
+                <div class="service-grid">
+                    <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Icons-06.png" alt="">
+                    <h6>Ambulance</h6>
                 </div>
-            </div>
-        </section>      
-        <section class="container6">
-            <div class="heading6">
-                <h5>Need Help?</h5>         
-            </div>
-            <div class="description6">
-                <p>Just let us know, we will be happy to assist you</p>         
-            </div>
-            <div class="enquiry-button">
-                <button class="secondary">Submit your enquiry</button>      
             </div>
         </section>
+        <section class="container6">
+            <h2>Need Help ?</h2>
+            <p>Just let us know, we will be happy to assist you.</p>
+            <button class="secondary">Submit your enquiry</button>
+        </section>
         <section class="container7">
-            <div class="transperent-logo">
-                <img src="../images/Transperent-logo.png">      
-            </div>              
-            <div class="services-quick">
-                <p class="quick-services">Doctor</p>
-                <p class="quick-services">Hospital</p>
-                <p class="quick-services">Treatment</p>
-                <p class="quick-services">Other Services</p>
-                <p class="quick-services">FAQs</p>
-            </div>
-            <div class="social-media">
+            <div class="foot-image">
+                <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/footer.png" alt="">
+            </div> 
+            <div class="foot-list">          
+                <ul>
+                    <li>Doctor</li>
+                    <li>Hospital</li>
+                    <li>Treatments</li>
+                    <li>Other Services</li>
+                    <li>FAQs</li>
+                </ul>
+            </div> 
+            <div class="socialMedia">
                 <i class="fab fa-facebook-f"></i>
                 <i class="fab fa-pinterest-p"></i>
                 <i class="fab fa-twitter"></i>
                 <i class="fab fa-google-plus-g"></i>
-                <i class="fab fa-instagram"></i>          
-            </div> 
-            <div class="copy-right">
-                <p class="copy-right" >All rights reserved. © tvastra 2018</p>      
-            </div>            
-        </section> 
-</body>
+                <i class="fab fa-instagram"></i>
+            </div>
+            <div class="foot-rights">
+                <p>All Rights Reserved. © tvastra 2018</p>
+            </div>
+        </section>
+
+    </body>
 </html>
