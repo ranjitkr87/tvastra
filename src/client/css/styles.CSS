@@ -822,15 +822,15 @@ padding: 0rem 1rem 1rem 1rem;
     .container2{
       text-align: center;
       width: 100%;
-      padding: 2rem 2rem 5rem 4rem;
+      padding: 2rem 3rem 5rem 3rem;
       }
       .container2 h2{
-      padding: 2rem;
+      padding: 1rem 2rem;
       padding-bottom: .5rem;
       text-align: left;
       }
       .container2 p{
-      padding: 1rem 3rem;
+      padding: 1rem 2rem;
       letter-spacing: .03rem;
       }
       .mob-tab{
@@ -844,50 +844,45 @@ padding: 0rem 1rem 1rem 1rem;
         padding: 2rem;
         padding-top: .5rem;
       }
-      .steps{
-        display: grid;
-        grid-template-columns: 50% 50%;
-        padding-left: 1rem;
-        padding-bottom: 1rem;
-        grid-gap: 3rem;
-        height: auto;
+      .steps{        
+        padding: 0rem 2rem;
+        align-items: center;
+        grid-gap: 2.5rem;
       }
-      .Stp1, .Stp2, .Stp3, .Stp4, .Stp5, .Stp6, .Stp7{
+      .Stp1,.Stp2,.Stp3,.Stp4,.Stp5,.Stp6,.Stp7{
+        margin: 0rem;
         height: 100px;
-        width: 350px;
+        width: 375px;
       }
-      .toggle-btn2{
-        border-radius: 5px;
-        text-align: left;
-        padding:0%;
-        margin-bottom: 5rem;
+      .steps .toggle-btn{
+        border: .1rem solid var(--sky-blue);
+        border-radius: 10px;
+      }
+      .steps .toggle-btn2{
+        border: .2rem solid var(--light-gray);
+        border-radius: 10px;
+      }
+      .toggle-btn2 p{
+        padding-left: .5rem;
       }
       .FC-use{
-        text-align: left;
-        padding: 0%;
+        padding: 0rem;
       }
       .FC-use img{
-        height:auto;
-        width: auto;
-        padding-left: 0%;
-      }
-      .FC-use h3{
-        padding-left: 0%;
-        text-align: center;
+        object-fit:cover;
       }
       .FC-use p{
-        padding-left: 0%;
-        text-align: center;
+        padding: 0rem 7rem;
       }
       .container3{
         padding: 2rem 3rem;
       }
       .container3 h2{
-        padding: 1 rem 2rem 1rem 0rem;
+        padding: 1rem 2rem 1rem 2rem;
         text-align: left;
       }
       .container3 p{
-        padding: 1 rem 2rem 1rem 0rem;
+        padding: 1rem 2rem 1rem 2rem;
         text-align: left;
       }
       .container3 .doctor-profile{
@@ -936,31 +931,59 @@ padding: 0rem 1rem 1rem 1rem;
     padding: 3rem;
     }
     .container4 h2{
-      padding: 1 rem 2rem;
+      padding: 1rem 2rem;
       text-align: left;
     }
     .container4 p{
     text-align: left;
-    padding: 1em 2rem 2rem 2rem;
+    padding: 1rem 2rem 2rem 2rem;
     font-weight: bolder;
     }
       .treatment-grid{
-      position: relative;
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
-      padding: 1rem 2rem 2rem 2rem;
-      grid-gap: .5rem;
+        grid-template-columns: repeat(9, 1fr);
+        grid-template-rows: repeat(9,1fr);
+        grid-gap:.5rem;
+        padding: 1rem 2rem 2rem 2rem;
+        height: 100%
       }
+      .t1{
+        grid-column: 1/4;
+        grid-row: 1/4;
+    }
+  
+    .t2{        
+        grid-column: 4/7;
+        grid-row: 1/6;
+    }
+  
+    .t3{
+      grid-column: 7/10;
+      grid-row: 1/5;        
+    }
+  
+    .t4{
+      grid-column:1/4;
+      grid-row:4/11;
+        
+    }
+  
+    .t5{
+        grid-column:4/7;
+        grid-row: 6/11;
+    }
+    .t6{
+        grid-column:7/10;
+        grid-row: 5/11;
+    }
+  
       .treatments{
-      position: relative;
-      margin: 0;
+      width:100%;
+      height:100%;
       }
       .treatments img{
         width: 100%;
-        height: 300px;
-        object-fit: cover;
-      
+        height: 100%;
+        object-fit: cover;    
       }
       .treatments .on-image{
       position: absolute;
@@ -986,6 +1009,17 @@ padding: 0rem 1rem 1rem 1rem;
       height:30%;
       bottom: 0rem;
       position: absolute;
+      }
+      .dot2{
+        border: 2px solid ;
+        height: 10px;
+        width: 10px;
+        margin-top: 30px;
+        margin-left: 30px;
+        background-color: white;
+        border-radius: 50%;
+        border-color:var(--sky-blue);
+        display: inline-block;
       }
       .container5{
         background-color: var(--light-gray);
@@ -1047,7 +1081,6 @@ padding: 0rem 1rem 1rem 1rem;
         .cont6-2{
           grid-area: cont6-2;
           text-align: left;
-          align-items: flex-end;
         }
         .cont6-3{
           grid-area: cont6-3;
@@ -1063,6 +1096,7 @@ padding: 0rem 1rem 1rem 1rem;
           }
         .container6 button{
           border-radius: 3px;
+          background-color: var(--sky-blue);
           height: 60px;
           width: 250px;
           float: left;
@@ -1073,6 +1107,7 @@ padding: 0rem 1rem 1rem 1rem;
             padding: 1rem 3rem 0rem 3rem;
             grid-template-columns: 4fr 1fr;
             grid-template-rows: 1fr 1fr;
+            align-items: center;
             grid-template-areas: "foot-list foot-image"
             "foot-rights socialMedia";
             }
@@ -1082,14 +1117,14 @@ padding: 0rem 1rem 1rem 1rem;
             }
             .foot-image{
               grid-area:foot-image ;
-              padding: 0rem;
-              width: 80%;
+              margin: 0rem;
             }
             .socialMedia{
             grid-area:socialMedia ;
             padding: 0rem;
             color: var(--dark-blue);
             font-weight: bold;
+            margin: 0rem;
             }
             .foot-rights{
               grid-area:foot-rights ;
@@ -1100,8 +1135,11 @@ padding: 0rem 1rem 1rem 1rem;
               }
             .foot-rights p{
               color: var(--dark-blue);
-              font-size: .9rem;
-              text-align: left;
+              margin:auto 0;
+        text-align: left;
+        font-size: 1rem;
+        letter-spacing: 0.08rem;
+
             }
             .container7 li{
               color: var(--dark-blue);
