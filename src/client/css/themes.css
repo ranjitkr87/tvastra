@@ -30,29 +30,29 @@ h1, h2, h3, h4,h5, h6{
   padding: 1rem;
 }
 h1{
-font-size: 2.5rem;
+font-size: 1.8rem;
 }
 h2{
-font-size: 2.3rem;
-}
-h3{
-font-size: 2rem;
-}
-h4{
 font-size: 1.6rem;
 }
-h5{
+h3{
 font-size: 1.4rem;
 }
-h6{
+h4{
+font-size: 1.3rem;
+}
+h5{
 font-size: 1.2rem;
+}
+h6{
+font-size:.8rem;
 }
 p{
   font-family: "Nexa-Light";  
-  font-size: 1.4rem;
+  font-size: 1rem;
   color: var(--dark-blue);
   word-spacing: 0.1rem;  
-  letter-spacing: 0.05rem;    
+  letter-spacing: 0.06rem;    
   line-height: 1.4;
   padding: 1rem;
 }
@@ -74,17 +74,15 @@ height: 60px;
 }
 ::placeholder{
 font-family: "Nexa-Light";
-font-size: 1.2rem;
+font-size: .8rem;
 color: gray;
 letter-spacing: 0.05rem;
 }
 button{
 color: white;
 border: none;
-font-size: 1.3rem;
-padding: 1rem 4rem 1rem 4rem;
+font-size: 1rem;
 letter-spacing: .1rem;
-border-radius: 10px;
 }
 .primary{
 background-color: var(--dark-blue);
@@ -102,6 +100,7 @@ li{
 font-family: "Nexa-Light";
 color: var(--dark-blue);
 padding-bottom: .5rem;
+font-size: .8rem;
 }
 ul{
 font-family: "Nexa-Light";

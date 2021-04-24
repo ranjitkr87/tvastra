@@ -13,7 +13,7 @@
 }
 .top-nav .logo-tvastra
 {
-  padding: 1rem 0rem;
+  padding: .5rem 0rem;
   width: 30%;
 }
 .top-nav .nav-desktop{
@@ -22,8 +22,8 @@
 .top-nav .fa-bars{
   position: absolute; 
   top: 40%;
-  left: 95%;
-  font-size: 20px;
+  left: 90%;
+  font-size: 15px;
   color: #525659;
 }
 .container1{
@@ -32,10 +32,10 @@
     width: 100%;
 }            
 .container1 h1{
-    padding: 2rem 6rem 1rem 6rem;
+    padding: 1rem 1rem .5rem 1rem;
 }
 .container1 p{
-  padding: 1rem 2rem;
+  padding: .5rem 1rem;
 }
 .location{
   position: relative;
@@ -43,37 +43,44 @@
 }
 .location input{
   text-indent: 5%;
-  height: 60px;
+  height: 50px;
 }
 .location .fa-crosshairs{
   position: absolute;
-  right: 4%;
-  top: 45%;
-  font-size: 1.2rem;
+  right: 7%;
+  top: 48%;
+  font-size: .8rem;
 }
 .location .fa-map-marker-alt{
   position: absolute;
-  left: 4%;
-  top: 45%;
-  font-size: 1.2rem;
+  left: 7%;
+  top: 48%;
+  font-size: .8rem;
 }
 .container1 .search1{
-padding: 1rem;
+padding: .5rem 1rem;
+}
+.search1 input{
+  text-indent: 2%;
+  height: 50px;
 }
 .container1 .button1{
 position: relative;
 padding: 1rem 1rem 2rem 1rem;
 }
+.button1 button{
+  border-radius: 0%;
+  padding: 1rem 2rem;  
+}
 .container2{
 text-align: center;
 width: 100%;
-padding: 2rem 1rem 2rem 1rem;
 }
 .container2 h2{
-padding: 1rem;
+padding: 1rem 1rem .5rem 1rem;
 }
 .container2 p{
-padding: 1rem 3rem;
+padding: .5rem 1rem;
 }
 .desktop{
   display: none;
@@ -82,39 +89,41 @@ padding: 1rem 3rem;
 {
   display: initial;
 }
-.toggle-btn{
+.steps{
+  padding: 1rem 0rem;
+}
+.steps .toggle-btn{
   display:flex;
   border: 1px solid;
   border-color: var(--dark-blue);
   border-radius: 10px;
   margin: 0rem 1rem;
+  height: 60px;
 }
 
 .toggle-btn p{
 margin:auto 0;
-color: #bebaba;
 font-family: 'nexa-bold';
-font-size: 1.1rem;
 }
 
 .toggle-btn p:first-child {
 padding: 1 0.8rem;
 color: var(--sky-blue);
-font-size: 2rem;
+font-size: 1rem;
 }
 
 .toggle-btn p:last-child{
 padding: 0 0.5rem;
 text-align: start;
 color: var(--dark-blue);
-font-size: 2rem;
+font-size: 1rem;
 }
 .container2 img{
-padding: 1.5rem 0rem;
+padding: 1rem 2rem;
 width: 100%;
 }
 .container2 h3{
-padding: 1rem;
+padding: .5rem 1rem;
 }
 .toggle-btn2{
 display:flex;
@@ -123,7 +132,7 @@ border: 1px solid;
 border-color: var(--dark-blue);
 border-radius: 10px;
 margin: 1rem 1rem;
-height: 80px;
+height: 60px;
 }
 
 .toggle-btn2 p{
@@ -135,24 +144,23 @@ opacity: 50%;
 
 .container3{
 background-color: var(--dark-blue);
-padding: 2rem 1rem 2rem 1rem;
 position: relative;
+padding:0rem;
 }
 .container3 p{
 color: white;
 text-align: center;
-padding: 1rem;
+padding: .5rem 1rem 1rem 1rem;
 }
 .container3 h2{
 color: white;
 text-align: center;
-padding: 1rem;
+padding: 1rem 1rem .5rem 1rem;
 }
-.doc-profile {
-padding: 1rem;
+.doctor-profile{
+  padding: 1rem;
 }
 .doc-details{
-margin:1rem 0;
 background-color: white;  
 border-bottom: 0.5rem solid var(--lt-skyblue);
 }
@@ -183,18 +191,19 @@ padding-left:1.6rem ;
 }
 .container4{
 background-color: white;
-padding: 2rem 1rem 2rem 1rem;
+padding:0rem;
 }
 .container4 p{
 text-align: center;
-padding: 1rem 2rem;
+padding: .5rem 1rem .5rem 1rem;
 }
 .container4 h2{
 text-align: center;
-padding: 1rem;
+padding: 1rem 0rem .5rem 0rem;
 }
 .treatment-grid{
 position: relative;
+padding: 1rem;
 }
 .treatments{
 position: relative;
@@ -229,21 +238,25 @@ position: absolute;
 }
 .container5{
 background-color: var(--light-gray);
-padding: 2rem 1rem 2rem 1rem;
+padding:0rem;
 text-align: center;
 }
 .container5 h1{
-position: relative;
+padding: 1rem 1rem .5rem 1rem;
 }
+.container5 p{
+  text-align: center;
+  padding: .5rem 1rem;
+  }
 .other-services{
 display: grid;
-grid-template-columns: 50% 50%;
+grid-template-columns: 1fr 1fr;
 grid-template-rows: 1fr 1fr 1fr;
-
+grid-gap: .5rem;
+padding:.5rem 1rem 1rem 1rem;
 }
 .service-grid{
 background-color: white;
-margin: 1rem;
 text-transform: uppercase;
 border-radius: 10px;
 }
@@ -252,24 +265,34 @@ color: var(--grey);
 }
 .container6{
 background-color: var(--lt-skyblue);
-padding: 2rem 1rem 2rem 1rem;
+padding: 0rem;
 text-align: center;
 }
-.container6 h2{
-color: white;
-}
+.container6 h1{
+  padding: 1rem 1rem .5rem 1rem;
+  color: white;
+  }
+  .container6 p{
+    text-align: center;
+    padding: .5rem 1rem;
+    }
+   .container6 .cont6-3{
+     padding:.5rem 1rem 1rem 1rem;
+   }
+  .container6 button{
+      padding:1rem;
+      border-radius: 5px;
+    }
 .container7{
 background-color: var(--dark-blue);
 text-align: center;
 }
 .container7 p{
 color: white;
-font-size: 1.2rem;
-padding-bottom: 2rem;
 }
 .container7 img{
 width: 50%;
-padding: 2rem 1rem 1rem 1rem;
+padding: 2rem 1rem .5rem 1rem;
 }
 .container7 li{
 color: white;
@@ -716,7 +739,7 @@ padding: 0rem 1rem 1rem 1rem;
       bottom: 50%;
       }
   }
-  @media only screen and (min-width: 1200px ){
+  @media only screen and (min-width: 1024px ){
 
     .top-nav{
       display: grid;
@@ -857,6 +880,8 @@ padding: 0rem 1rem 1rem 1rem;
       .steps .toggle-btn{
         border: .1rem solid var(--sky-blue);
         border-radius: 10px;
+        margin: 0rem;
+        height: 95px;
       }
       .steps .toggle-btn2{
         border: .2rem solid var(--light-gray);
@@ -1033,7 +1058,7 @@ padding: 0rem 1rem 1rem 1rem;
         }
         .container5 p{
           text-align: left;
-          padding: 1em 2rem ;
+          padding: 1rem 2rem ;
           font-weight: bolder;
           font-size: .8rem;
           }
@@ -1087,12 +1112,13 @@ padding: 0rem 1rem 1rem 1rem;
           padding: 0rem;
         }
         .container6 h2{
-        padding: 2rem 0rem .5rem 2rem;
+        padding: 1rem 2rem;
         color: white;
         }
         .container6 p{
-          padding: .5rem 0rem 2rem 2rem;
+          padding: 1rem ;
           color: var(--dark-blue);
+          text-align: left;
           }
         .container6 button{
           border-radius: 3px;
