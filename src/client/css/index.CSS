@@ -1151,10 +1151,9 @@ padding: 0rem 1rem 1rem 1rem;
             .foot-rights p{
               color: var(--dark-blue);
               margin:auto 0;
-        text-align: left;
-        font-size: 1rem;
-        letter-spacing: 0.08rem;
-
+              text-align: left;
+              font-size: 1rem;
+              letter-spacing: 0.08rem;
             }
             .container7 li{
               color: var(--dark-blue);
@@ -1205,4 +1204,5 @@ padding: 0rem 1rem 1rem 1rem;
               width: 100%;
               transform: translateY(.3rem);
               }
-  }
+            }
+  
