@@ -1,0 +1,206 @@
+@font-face {
+  font-family: "Nexa-Bold";
+  src: url(../fonts/Nexa-Bold.otf) format('truetype')
+}
+@font-face {
+  font-family: "Nexa-Light";
+  src: url(../fonts/Nexa-Light.otf) format('truetype')
+}
+:root{
+  --sky-blue:#1da1f2;
+  --lt-skyblue:#87CEEB;
+  --dark-blue:#152238;
+  --light-blue:#94bedd;
+  --grey:grey;
+}
+* {
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+nav{
+  padding: 0rem;
+}
+h1, h2, h3, h4,h5, h6{
+  font-family: "Nexa-Bold";
+  color: var(--dark-blue);
+  line-height: 2rem;
+  letter-spacing: .1rem;
+}
+h1{
+font-size: 2rem;
+}
+h2{
+font-size: 1.6rem;
+}
+h3{
+font-size: 1.4rem;
+}
+h4{
+font-size: 1.2rem;
+}
+h5{
+font-size: 1rem;
+}
+h6{
+font-size:.8rem;
+}
+p{
+  font-family: "Nexa-Light";  
+  font-size: 1rem;
+  color: var(--dark-blue);
+  word-spacing: 0.1rem;  
+  letter-spacing: 0.06rem;    
+  line-height: 1.4;
+  padding: 1rem;
+}
+a{
+padding: 1rem;
+}
+input{
+font-family: "Nexa-Light";
+font-size: 0.8rem;
+color: var(--dark-blue);
+letter-spacing: 0.05rem;
+padding: 1rem;
+width: 100%;
+border: none;
+height: 60px;
+}
+::placeholder{
+font-family: "Nexa-Light";
+font-size: .8rem;
+color: gray;
+letter-spacing: 0.05rem;
+}
+button{
+color: white;
+border: none;
+font-size: .9rem;
+letter-spacing: .05rem;
+font-weight: lighter;
+}
+.primary{
+background-color: var(--dark-blue);
+}
+.secondary{
+background-color: var(--sky-blue);
+}
+.third{
+  background-color: white;
+  color: var(--dark-blue);
+  border: 1px solid;
+  border-color: var(--dark-blue);
+}
+li{
+font-family: "Nexa-Light";
+color: var(--dark-blue);
+padding-bottom: .5rem;
+font-size: .8rem;
+}
+ul{
+font-family: "Nexa-Light";
+letter-spacing: 0.05rem;
+}
+@media only screen and (min-width: 768px){
+  nav{
+    padding: .5rem;
+  }
+  h1{
+    font-size: 1.6rem;
+  }
+  h2{
+    font-size: 1.5rem;
+  }
+  h3{
+    font-size: 1.4rem;
+  }
+  p{
+    font-size: 1rem;
+  }
+  li{
+    font-size: 1rem;
+  }
+  input{
+    font-family: "Nexa-Light";
+    font-size: 0.8rem;
+    color: var(--dark-blue);
+    letter-spacing: 0.05rem;
+    width: 100%;
+    border: none;
+    }
+    ::placeholder{
+    font-family: "Nexa-Light";
+    font-size: .8rem;
+    color: gray;
+    letter-spacing: 0.05rem;
+    }
+    button{
+      color: white;
+      border: none;
+      font-size: .8rem;
+      letter-spacing: .1rem;
+      border-radius: 0%;
+      padding: inherit;
+      }
+      .primary{
+      background-color: var(--dark-blue);
+      }
+      .secondary{
+      background-color: var(--sky-blue);
+      }
+}
+@media only screen and (min-width: 1024px){
+  nav{
+    padding: .5rem;
+  }
+  h1{
+    font-size: 2.3rem;
+    padding: 1rem;
+  }
+  h2{
+    font-size: 2.1rem;
+    padding: 1rem;
+  }
+  h3{
+    font-size: 1.3rem;
+    padding: 1rem;
+  }
+  p{
+    font-size: 1rem;
+    padding: .5rem;
+  }
+  li{
+    font-size: 1rem;
+  }
+  input{
+    font-family: "Nexa-Light";
+    font-size: 0.8rem;
+    color: var(--dark-blue);
+    letter-spacing: 0.05rem;
+    width: 100%;
+    border: none;
+    }
+    ::placeholder{
+    font-family: "Nexa-Light";
+    font-size: .8rem;
+    color: gray;
+    letter-spacing: 0.05rem;
+    }
+    button{
+      color: white;
+      border: none;
+      font-size: .8rem;
+      letter-spacing: .1rem;
+      border-radius: 0%;
+      padding: inherit;
+      }
+      .primary{
+      background-color: var(--dark-blue);
+      }
+      .secondary{
+      background-color: var(--sky-blue);
+      }
+}

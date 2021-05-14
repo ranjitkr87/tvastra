@@ -1,0 +1,34 @@
+:root{
+    --sky-blue:#1da1f2;
+    --lt-skyblue:#87CEEB;
+    --dark-blue:#152238;
+    --light-blue:#94bedd;
+    --deep-blue:#7ab0d4;
+    --grey:grey;
+    --light-gray:#f0f0f5;
+  }
+  .top-nav{
+    position: relative;
+    width: 100%;
+  }
+  .top-nav .logo-tvastra
+  {
+    padding: 1rem 0rem;
+    width: 40%;
+  }
+  .top-nav .fa-bars{
+    position: absolute; 
+    top: 40%;
+    left: 90%;
+    font-size: 25px;
+    color: #525659;
+  }
+  .home{
+      color: black;
+      padding: 0rem 1rem;
+  }
+  .home h6{      
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
