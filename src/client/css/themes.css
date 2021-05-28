@@ -8,10 +8,15 @@
 }
 :root{
   --sky-blue:#1da1f2;
-  --lt-skyblue:#87CEEB;
-  --dark-blue:#152238;
+  --lt-skyblue:rgb(124, 176, 212);
+  --dark-blue:#13132e;
   --light-blue:#94bedd;
+  --deep-blue:#7ab0d4;
   --grey:grey;
+  --mid-grey:#595a5a46;
+  --light-gray:#f0f0f5;
+  --button-blue:#0568aa;
+  --black:#050505;
 }
 * {
   box-sizing: border-box;
@@ -51,10 +56,11 @@ p{
   font-family: "Nexa-Light";  
   font-size: 1rem;
   color: var(--dark-blue);
-  word-spacing: 0.1rem;  
-  letter-spacing: 0.06rem;    
-  line-height: 1.4;
+  word-spacing: 0.08rem;  
+  letter-spacing: 0.05rem;    
+  line-height: 1.5;
   padding: 1rem;
+  font-weight: 100;
 }
 a{
 padding: 1rem;
@@ -64,7 +70,6 @@ font-family: "Nexa-Light";
 font-size: 0.8rem;
 color: var(--dark-blue);
 letter-spacing: 0.05rem;
-padding: 1rem;
 width: 100%;
 border: none;
 height: 60px;
@@ -88,6 +93,10 @@ background-color: var(--dark-blue);
 .secondary{
 background-color: var(--sky-blue);
 }
+.doctor-button{
+  background-color: var(--mid-grey);
+  color: var(--black);
+}
 .third{
   background-color: white;
   color: var(--dark-blue);
@@ -97,7 +106,6 @@ background-color: var(--sky-blue);
 li{
 font-family: "Nexa-Light";
 color: var(--dark-blue);
-padding-bottom: .5rem;
 font-size: .8rem;
 }
 ul{
@@ -166,9 +174,6 @@ letter-spacing: 0.05rem;
     font-size: .9rem;
     letter-spacing: .03rem;
     font-weight: 900;
-  }
-  li{
-    font-size: .8rem;
   }
   input{
     font-family: "Nexa-Light";

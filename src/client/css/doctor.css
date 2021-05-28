@@ -1,34 +1,63 @@
 :root{
-    --sky-blue:#1da1f2;
-    --lt-skyblue:#87CEEB;
-    --dark-blue:#152238;
-    --light-blue:#94bedd;
-    --deep-blue:#7ab0d4;
-    --grey:grey;
-    --light-gray:#f0f0f5;
-  }
-  .top-nav{
-    position: relative;
-    width: 100%;
-  }
-  .top-nav .logo-tvastra
-  {
-    padding: 1rem 0rem;
-    width: 40%;
-  }
-  .top-nav .fa-bars{
-    position: absolute; 
-    top: 40%;
-    left: 90%;
-    font-size: 25px;
-    color: #525659;
-  }
+  --sky-blue:#1da1f2;
+  --lt-skyblue:rgb(124, 176, 212);
+  --dark-blue:#13132e;
+  --light-blue:#94bedd;
+  --deep-blue:#7ab0d4;
+  --grey:grey;
+  --mid-grey:#595a5a46;
+  --light-gray:#f0f0f5;
+  --button-blue:#0568aa;
+  --black:#050505;
+}
+  
+.mob-tab{
+  display: block;
+}
+.desktop{
+  display: none;
+}
+.top-nav{
+  position: relative;
+  width: 100%;
+  padding: 1rem;
+}
+.top-nav .logo-tvastra
+{
+  padding: .5rem 0rem;
+  width: 40%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.top-nav .nav-desktop{
+  display: none;
+}
+.top-nav .fa-bars{
+  position: absolute; 
+  top: 50%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  color:var(--grey);
+}
   .home{
-      color: black;
+      color: var(--black);
       padding: 0rem 1rem;
   }
   .home h6{      
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 1.8rem;
-    font-weight: bold;
+    font-size: 1.2rem;
+    font-weight: 550;
   }
+  .arrow {
+    border: solid black;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 5px;
+  }
+  
+.right {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
