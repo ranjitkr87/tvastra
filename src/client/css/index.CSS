@@ -60,10 +60,6 @@ text-align: center;
 .location{
   position: relative;
 }
-.location input{
-  height: 40px;
-  text-indent: 6%;
-}
 .location .fa-crosshairs{
   position: absolute;
   right: 3%;
@@ -80,10 +76,6 @@ text-align: center;
 }
 .container1 .search1{
 padding: .5rem 0rem;
-}
-.search1 input{
-  text-indent: 2%;
-  height: 40px;
 }
 .container1 .button1{
 position: relative;
@@ -358,16 +350,8 @@ text-align: center;
   padding: 0rem;
   padding-right: .1rem;
 }
-.location input{
-  text-indent: 10%;
-  height: 40px;
-}
 .subcontainer1 .search1{
   padding: 0rem;
-}
-.search1 input{
-  height: 40px;
-  text-indent: 2%;
 }
 .subcontainer1 .button1{
 position: relative;
@@ -631,11 +615,6 @@ border-radius: 10px;
       float: left;
       font-size: .9rem;
     }
-    .navButton1, .navButton2{
-      border-radius: 5px;
-      padding: .8rem 1rem;
-      font-size: .7rem;
-    }
     .top-nav .fa-bars{
       display: none;
     } 
@@ -681,10 +660,6 @@ border-radius: 10px;
     position: relative;
     padding: 0rem .1rem 0rem 0rem;
   }
-  .subcontainer1 input{
-    text-indent: 7%;
-    height: 50px;
-  }
   .container1 .search1{
   padding: 0rem;
   }
@@ -712,7 +687,7 @@ border-radius: 10px;
       }
       .steps li{
         height:100px ;
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         line-height: 100px;
         width: 85%;
         text-indent: 5%;
