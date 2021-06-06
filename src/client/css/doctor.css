@@ -597,6 +597,10 @@ font-size: .8rem;
   .doctor-searchBox h3{
     padding:5rem;
   }
+  .doctor-searchBox a{
+    text-decoration: underline;
+    font-family: Nexa-Bold;
+  }
     .home{
         padding: 2rem 5rem;
     }

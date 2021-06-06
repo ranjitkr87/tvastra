@@ -65,6 +65,8 @@ p{
   font-weight: 100;
 }
 a{
+  text-decoration:none;
+  color: inherit;
 }
 input{
 font-family: "Nexa-Light";
@@ -103,11 +105,13 @@ color: white;
 }
 .secondary{
 background-color: var(--sky-blue);
+color: white;
 }
 .doctor-button{
   background-color: var(--mid-grey);
   color: var(--black);
   width: 100%;
+  text-shadow: .8px 0;
 }
 .third{
   background-color: white;
@@ -220,6 +224,6 @@ letter-spacing: 0.05rem;
       .navButton1, .navButton2{
         border-radius: 5px;
         padding: .8rem 1rem;
-        font-size: .7rem;
+        font-size: .8rem;
       }
 }
