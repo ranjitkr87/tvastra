@@ -587,15 +587,14 @@ border-radius: 10px;
     }
     .top-nav{
       display: grid;
-      grid-template-columns: 25% 75%;
-      padding: 1rem 5rem;
+      grid-template-columns: 15% 60% 25%;
+      padding: 1.5rem 5rem;
     } 
-    .top-nav .logo-tvastra{
+    .nav-logo .logo-tvastra{
       padding: 0rem;
-      justify-self: center;
-    }
-    .top-nav figure{
-      width: 50%;
+      width: 90%;
+      align-self: flex-start;
+      justify-self: left;
     }
     .top-nav .nav-desktop{
       display: grid;
@@ -603,21 +602,25 @@ border-radius: 10px;
     }   
     .desktop-nav{
       padding: 0rem;
-      text-align: right;
+      justify-self: center;
+
     }
     .desktop-nav ul{
       list-style-type: none;
       padding: 0rem;
     }
     .desktop-nav li{
+      font-family: Nexa-Light;
       color: var(--dark-blue);
-      padding: 1rem;
+      padding: .8rem;
       float: left;
-      font-size: .9rem;
+      font-size: 1rem;
+      font-weight: 800;
     }
-    .top-nav .fa-bars{
-      display: none;
-    } 
+    .navButtons{
+      align-self: center;
+      justify-self: center;
+    }
     h1, h2, h3,h4{
       padding: 4rem 5rem 1rem 5rem;
       text-align: left;
