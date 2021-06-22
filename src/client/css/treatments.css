@@ -1,0 +1,501 @@
+:root{
+    --sky-blue:#1da1f2;
+    --lt-skyblue:rgb(124, 176, 212);
+    --dark-blue:#13132e;
+    --light-blue:#94bedd;
+    --deep-blue:#7ab0d4;
+    --grey:grey;
+    --mid-grey:#595a5a46;
+    --light-gray:#f0f0f5;
+    --button-blue:#0568aa;
+    --black:#050505;
+  }  
+  @font-face {
+    font-family: "Nexa-Bold";
+    src: url(../fonts/Nexa-Bold.otf) format('truetype')
+  }
+  @font-face {
+    font-family: "Nexa-Light";
+    src: url(../fonts/Nexa-Light.otf) format('truetype')
+  }
+  .top-nav{
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .top-nav .logo-tvastra
+  {  
+    width: 35%;
+  }
+  .top-nav .fa-bars{ 
+    font-size: 15px;
+    color:var(--grey);
+    align-self: center;
+    justify-self: flex-end;
+  }
+  .dentistrytHead{
+    text-align: center;
+    padding: 5rem 1rem;
+    background-image: linear-gradient(to left, rgba(255,0,0,0), rgb(51, 163, 255)),url(https://workspace.konfinity.com/swapnil/tvastra-wiki/-/wikis/uploads/f7c2fbbbf3947842be4daad2016f2771/dentist_hero_image.jpg);
+    color:white;
+    background-position: top;
+    background-size: cover;
+  }
+  .dentistrytHead h1, .dentistrytHead p{
+    padding: .5rem;
+  }
+  .aboutDentist{
+      padding: 1rem;
+      text-align: left;
+  }
+  .aboutDentist h3{
+      padding: 1rem;
+      text-align: center;
+  }
+  .aboutDentist h4{
+      padding: 1rem 0rem 0rem 0rem;
+  }
+  .aboutDentist p{
+      padding: 1rem 0rem 0rem 0rem;
+      font-size: .8rem;
+  }
+  .aboutDentist ul{
+    padding: 1rem 0rem 0rem 0rem;
+    list-style: none;
+  }
+.aboutDentist ul li::before {
+    content: "\2022";
+    color: var(--sky-blue);
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+}
+  .aboutDentist li{
+      padding-bottom: 1rem;
+  }
+  .dentistFigure{
+    width: 100%;
+  }
+  .dentistImage{
+    width: 100%;
+  }
+  .visitation{
+    padding: 1rem;
+    text-align: center;
+  }
+  .visitation i{
+    font-size: 1.5rem;
+    background-color: var(--light-blue);
+    padding: 1rem;
+    border-radius: 50%;
+  }
+  .visitation p{
+      font-size: .7rem;
+  }
+  .visitationDetails{
+      padding-bottom: 1rem;
+  }
+  .serviceDetails{
+      border:2px solid var(--mid-grey);
+      border-radius: 3%;
+      margin: 1rem;
+      padding: 1rem 0rem;
+  }  
+  .serviceDetailHead{
+      line-height: 100%;
+      padding-bottom: 1rem;
+  }
+.serviceDetailHead::before{
+    content: "";
+    border-top: .13rem solid var(--lt-skyblue);
+    display: inline-block;
+    width:1rem;
+    position: relative;
+    bottom:0.4rem;
+    margin-right: .5rem;
+
+    }
+  .details{
+      display: grid;
+      grid-template-columns: 50% 50%;
+      border-bottom: 1px solid var(--mid-grey);
+      padding: 0rem;
+      margin: 0rem 1rem 1rem 1.5rem;
+  }
+  .child1{
+      justify-self: flex-start;
+      opacity: 95%;
+  }
+  .child2{
+      justify-self: flex-end;
+      opacity: 60%;
+  }
+  .details p{
+      font-family: Nexa-Bold;
+      font-size: .8rem;
+  }
+  .moreServices{
+      background-color: var(--light-blue);
+      padding: 1rem;
+  }
+  .moreServiceHead{
+      text-align: center;
+      padding-bottom: 1rem;
+  }
+  .moreServiceHead h3{
+      color: white;
+  }
+  .moreServiceHead i{
+    padding: 0.65rem 0.8rem;
+    background-color: white;
+    font-size: 0.7rem;
+    border-radius: 50px;
+
+  }
+  .service{
+      background-color: white;
+      border-radius: 10px;
+      margin-bottom: .5rem;
+  }
+  .moreServicesfig{
+      height: 35%;
+  }
+  .moreServicesimg{
+    object-fit: cover;
+    width:100%;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .service .serviceDetailHead{
+      padding: 2rem 0rem;
+  }
+  .container7{
+  background-color: var(--dark-blue);
+  text-align: center;
+  padding: 0rem;
+  color: white;
+  border-bottom: 10px solid var(--sky-blue);
+  }
+  .container7 .foot-image{
+    padding: 1.5rem;
+  }
+  .foot-image{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .footer-image{
+    margin-left: auto;
+    margin-right: 0rem;
+    width: 100%;
+  }
+  .foot-list2{
+    padding: 1rem;
+  }
+  .foot-list2 li{
+    display: inline; 
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding:.5rem;
+  }
+  .foot-list{
+    padding: 0rem 1rem;
+  }
+  .foot-list ul{
+    padding: 0rem;
+  }
+  .foot-list li{
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 400;
+  padding:1rem;
+  }
+  .foot-rights p{
+    font-size: .9rem;
+    padding: 1rem;
+  }
+  .mob{
+    display: block;
+  }
+  .tab{
+    display: none;
+  }
+  .desktop{
+    display: none;
+  }
+  .mob-tab{
+    display: block;
+  }
+  .tab-desktop{
+    display: none;
+  }
+  @media only screen and (min-width: 768px){ 
+    .top-nav{
+        padding: 2rem;
+      }
+      .top-nav .logo-tvastra
+      {  
+        width: 50%;
+      }
+      .top-nav .fa-bars{ 
+        font-size: 18px;
+      }
+    .dentistrytHead{
+      text-align: left;
+    }
+    .aboutDentist{
+        padding: 2rem;
+    }
+    .aboutDentist h3{
+      text-align: left;
+      padding: 1rem 0rem;
+    }
+    .aboutGrid{
+        display: grid;
+        grid-template-columns: 40% 60%;
+        grid-gap: 1rem;
+    }
+    .dentistFigure{
+        height: 315Px;
+    }
+    .dentistImage{
+        height: 100%;
+        object-fit: fill;
+    }
+    .aboutDentistry{
+        padding-right: 1.5rem;
+    }
+    .aboutDentistry p, .aboutDentistry li{
+        font-size: 1rem;
+    }
+    .aboutDentistry h4{
+        padding: 0rem;
+        line-height: 100%;
+    }
+    .visitation{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1rem;
+        padding: 1rem 2rem;
+    }
+    .service{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 1rem 2rem;
+    }
+    .service .serviceDetailHead{
+      padding: 1rem 0rem;
+    }
+    .servicegrid2{
+        height: fit-content;
+    }
+    .moreServices{
+      padding: 2rem;
+    }
+    .moreServices .moreServiceHead{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    .moreServiceHead h3{
+      text-align: left;
+    }
+    .leftRightIcons{
+      justify-self: self-end;
+    }
+    .moreServicesItems{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 1rem;
+    }
+    .moreServicesItems .service{
+      display: block;
+      padding: 0rem;
+    }
+    .moreServicesfig{
+      height: 12rem;
+    }
+    .moreServicesimg{ 
+      object-fit: cover;
+      height: 100%;
+      width:100%;  
+    }
+    .service .serviceDetailHead{
+      padding: 2rem 0rem;
+    }
+    .container7{
+    background-color: white;
+    text-align: center;
+    padding: 1rem 2rem;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center;
+    border-bottom: 5px solid var(--lt-skyblue);
+    }
+    .container7 .foot-image{
+      grid-column: 3/4;
+      grid-row: 1/2;
+      padding: 1rem 0rem;
+      justify-self: flex-end;
+    }
+    .foot-image{
+      width: 70%;
+      margin: 0rem;
+    }
+    .footer-image{
+      margin-left: auto;
+      margin-right: 0rem;
+      width: 100%;
+    }
+    .foot-list{
+      grid-column: 1/3;
+      grid-row: 1/2;
+      padding: 0rem ;
+      justify-self: flex-start;
+    }
+    .foot-list ul{
+      padding:0rem;
+    }
+    .foot-list li{
+    color: var(--dark-blue);
+    font-size:.8rem;
+    font-weight: 400;
+    padding: 1rem .5rem 1rem 0rem;
+    display: inline;
+    height: auto;
+    word-wrap: break-word;
+    }
+    .container7 .foot-list2{
+      grid-column: 3/4;
+      grid-row: 2/3;
+      justify-self: flex-end;
+      font-size: 1.5rem;
+      padding-right: 0rem;
+    }
+    .foot-list2 li{
+      font-size: 1.2rem;
+      color: var(--dark-blue);
+      padding: .25rem;
+    }
+    .foot-rights{
+      grid-column: 1/2;
+      grid-row: 2/3;
+    }
+    .foot-rights p{
+      font-size: .8rem;
+      color: var(--dark-blue);
+      padding: 0rem;
+    }
+    .mob{
+      display: none;
+    }
+    .tab{
+      display: block;
+    }
+    .desktop{
+      display: none;
+    }
+    .mob-tab{
+      display: block;
+    }
+    .tab-desktop{
+      display: block;
+    }
+  }
+  @media only screen and (min-width: 1024px){  
+    .top-nav{
+      display: grid;
+      grid-template-columns: 15% 60% 25%;
+      padding: 1.5rem 5rem;
+    } 
+    .nav-logo .logo-tvastra{
+      padding: 0rem;
+      width: 90%;
+      align-self: flex-start;
+      justify-self: left;
+    }
+    .top-nav .nav-desktop{
+      display: grid;
+      text-align: center;
+    }   
+    .desktop-nav{
+      padding: 0rem;
+      justify-self: center;
+    }
+    .desktop-nav ul{
+      list-style-type: none;
+      padding: 0rem;
+    }
+    .desktop-nav li{
+      font-family: Nexa-Light;
+      color: var(--dark-blue);
+      padding: .8rem;
+      float: left;
+      font-size: 1rem;
+      font-weight: 800;
+    }
+    .navButtons{
+      align-self: center;
+      justify-self: flex-end;
+    }
+    .dentistrytHead{
+      padding: 5rem;
+    }
+    .vaccinationSection{
+      padding: 2rem 5rem;
+      display: grid;
+      grid-template-columns: 70% 30%;
+    }
+    .vaccinationSubSection{
+    }
+    .aboutDentist{
+      padding: 0rem 0rem 2rem 0rem;
+    }
+    .visitation{
+      padding: 0rem;
+    }
+    .service{
+      grid-template-columns: 1fr;
+      height: fit-content;
+      padding: 0rem;
+    }
+    .serviceDetails{
+      padding: 0rem;
+      margin-bottom: 0rem;
+      height: fit-content;
+    }
+    .service .serviceDetailHead{
+      padding: 1rem 0rem;
+    }
+    .moreServices{
+      padding: 2rem 5rem;
+    }
+    .container7{
+    background-color: white;
+    padding: 1rem 5rem;
+    }
+    .foot-image{
+      width: 40%;
+    }
+    .foot-rights{
+      text-align: left;
+    }
+    .mob{
+      display: none;
+    }
+    .tab{
+      display: none;
+    }
+    .desktop{
+      display: block;
+    }
+    .mob-tab{
+      display: none;
+    }
+    .tab-desktop{
+      display: block;
+    }
+  }

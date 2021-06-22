@@ -1,0 +1,467 @@
+.logo-tvastra
+{
+  height: 40%;
+  width: 30%;
+}
+.first-nav{
+  position: relative;   
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.first-nav .fa-bars{
+  position: absolute; 
+  right: 5%;
+  top: 40%;
+  color: var(--grey);
+}
+.container1 {
+    display: grid;
+    background-color:var(--light-blue);
+    position: relative;
+    width: 100%;
+    grid-template-areas:
+    "heading1 heading1"
+    "description1 description1"
+    "search1 search1"
+    "search-button1 search-button1";
+  }
+  
+  .heading1 {    
+    grid-area: heading1;
+    text-align: center;
+    color: var(--dark-blue);
+    padding: 2rem 2rem 1rem 2rem;
+  }
+
+  .description1 {
+    grid-area: description1;
+    text-align: center;
+    color:var(--dark-blue);
+    padding: .5rem 2rem 1rem 2rem;
+  }
+  .search1 { 
+    position: relative; 
+    grid-area: search1;
+    padding: .5rem 1rem .5rem 1rem;    
+  }
+  .search1 input { 
+    text-indent: 20px; 
+    margin-top: .25rem;
+    margin-bottom: .25rem; 
+    border: none;
+    width: 100%;
+    height: 40px;
+  }
+  .search1 .fa-map-marker { 
+    position: absolute;
+    top: 25px;
+    right: 92%;
+    font-size: 14px;
+  }
+  .search1 .fa-crosshairs { 
+    position: absolute;
+    top: 25px;
+    left: 92%;
+    font-size: 14px;
+  }
+  
+  .search-button1 {    
+    grid-area: search-button1; 
+    text-align: center;  
+    padding: .5rem 1rem 1rem 1rem;   
+  }
+  .search-button1 button
+  {
+    background-color: var(--dark-blue);
+    color: white;
+    height: 40px;
+    width: 140px;
+    font-size: .9rem;
+    letter-spacing: .05rem;
+  }
+
+.container2 {
+    display: grid;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    grid-template-areas: 
+    "heading2 heading2"
+    "description2 description2"
+    "FixConsultation FixConsultation"
+    "img2 img2"
+    "heading2_1 heading2_1"
+    "description2_1 description2_1"
+    "stages stages";    
+  }
+
+  .heading2 {    
+    grid-area: heading2;
+    color:var(--dark-blue);
+    text-align: center;
+    padding: 1.5rem 2rem .5rem 2rem;
+  }
+
+  .description2 {    
+    grid-area: description2;
+    text-align: center;
+    color: var(--dark-blue);
+    padding: .5rem 1rem 1rem 1rem;
+  }
+
+  .FixConsultation{
+    position: relative; 
+    grid-area: FixConsultation;
+    font-family: "Nexa-Bold";  
+    padding: 1rem 1rem 1rem 1rem;
+  }
+  .FixConsultation input{      
+    width: 100%;
+    height: 40px; 
+    padding-top: .5rem;
+    padding-bottom: .5rem; 
+    font-size: 40px;
+    border: 1px solid;
+    border-color:var(--dark-blue);
+    border-radius: 10px;
+  }
+  .FixConsultation .num { 
+    position: absolute;
+    font-size: 1.2rem;
+    top: 40%;
+    right: 90%;    
+    color: var(--sky-blue)
+  }
+  .FixConsultation .tex { 
+    position: absolute;
+    font-size: 1.2rem;
+    top: 40%;
+    left: 15%;
+    color: var(--dark-blue);
+  }
+  .img2{
+    grid-area: img2;
+    margin: auto;
+    display: block;
+    width: 80%;    
+    padding: 1rem 1rem 1rem 1rem;  
+  }
+  .heading2_1{
+    grid-area: heading2_1;
+    color:var(--dark-blue);
+    width: 100%;
+    padding: .5rem 1rem .5rem 1rem;
+  }
+  
+  .description2_1{
+    grid-area: description2_1;
+    text-align: center;
+    color:var(--dark-blue);
+    padding: .5rem 1rem .5rem 1rem;
+  }
+  .stages
+  {
+    grid-area: stages;
+    padding: .5rem 1rem .5rem 1rem;
+  }
+
+  .stages input {      
+    width: 100%;
+    height: 40px;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    opacity: 50%;
+    text-indent: 20px; 
+    box-sizing: border-box;
+    border: 1px solid;
+    border-radius: 10px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  .stages ::placeholder{
+    font-family: "Nexa-Bold";
+  }
+
+  .container3 {
+    display: grid;
+    width: 100%;
+    position: relative;
+    background-color: var(--dark-blue);
+    grid-template-areas: 
+    "heading3 heading3"
+    "description3 description3"  
+    "doc-profiles doc-profiles";
+  }
+  .heading3{
+    grid-area: heading3;
+    text-align: center;
+    color: white;
+    padding: 2rem 2rem .5rem 2rem;
+  }
+  .description3 {
+    grid-area: description3;
+    text-align: center;
+    color:white;padding: 1rem 1rem 1rem 1rem;
+  }
+  .doc-profiles{
+    grid-area: doc-profiles;
+    width: 100%;
+  }
+  .photo {
+    background-color: white;
+    color: black;
+    border-bottom: 5px solid var(--lt-skyblue);
+    margin: .5rem 1rem 1rem 1rem;
+  }
+  .doc-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+  }
+  .new-add{
+    padding: .5rem .5rem ;
+  }
+  .doc-details{
+    padding-top: .5rem;
+    padding-bottom: .25rem;;
+  }
+  .details-doc{
+    padding: .25rem  2rem;
+  }
+  .details-doc ul{
+    padding-bottom: .55rem;
+  }
+  .add {
+    display: flex;
+    padding: 0rem;
+  }
+  .color-blue {
+    color:var(--sky-blue);
+    padding: 0rem;
+  }
+  .color-blue::before {
+    display: block;
+    content: "";
+    border-top: .2rem solid var(--sky-blue);
+    width: 2rem;
+    transform: translateY(0.5rem);    
+  }
+  
+.container4{
+    display: grid;
+    width: 100%;
+    position: relative;
+    background-color:white;
+    grid-template-areas: 
+    "heading4 heading4"  
+    "description4 description4"
+    "treatments treatments";
+}
+.heading4{
+  grid-area: heading4;
+  color: var(--dark-blue);
+  text-align: center;
+  padding: 2rem 1rem .5rem 1rem;
+}
+.description4{
+  grid-area: description4;
+  text-align: center;
+  color:var(--dark-blue);
+  padding: .5rem 1rem .5rem 1rem;  
+}
+.treatments{
+  position: relative;
+  grid-area: treatments;
+  padding: .5rem 1rem .5rem 1rem;  
+}
+.treatments-det{
+  margin: .5rem;
+}
+.treatments-det .treatment-img{
+  object-fit: cover;
+  height: 350px;
+}
+.treatments-det .department-details{
+  position: absolute;    
+  bottom: 1rem;
+  left: 5%;
+  font-size: .5rem;
+  color: white;
+}
+.department-details p{
+  font-size: .9rem;  
+}
+.treatment-name{
+  padding-bottom: .5rem;
+}
+.treatments-det{
+  position: relative;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+.treatments-det::before {
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  left: auto;
+  width: 100%;
+  height: 70px;
+  content: "";
+  z-index: 0;
+  background: linear-gradient(to top, rgba(0,0,0,1), transparent);
+}
+.container5{
+  display: grid;
+  width: 100%;
+  position: relative;
+  background-color: rgba(128, 128, 128, 0.171);
+  grid-template-areas: 
+    "heading5 heading5"  
+    "description5 description5"
+    "Services Services";
+}
+.heading5{
+  grid-area: heading5;
+  text-align: center;
+    color:var(--dark-blue);
+    padding:2rem 1rem .5rem 1rem;
+}
+.description5{
+  grid-area: description5;
+  text-align: center;
+  color:var(--dark-blue);
+  padding:.5rem .5rem 1rem .5rem;  
+}
+.Services{
+  display: grid;
+  position: relative;
+  grid-area: Services;
+  padding:.5rem .5rem 1rem .5rem;  ;
+  text-align: center;
+  font-family: "Nexa-Bold";
+  color:var(--grey);
+  text-transform: uppercase;
+  grid-template-rows:    1fr 1fr 1fr;
+  grid-template-columns:50% 50%;
+}
+.service-icons {
+  position: relative;
+  background-color: white;
+  height: 130px;
+  margin: .5rem;
+  border-radius: 10px;
+}
+.icon-img{
+  position: absolute;
+  display: block;
+  max-width:80px;
+  max-height:95px;
+  left: 25%;
+  top: 8%;
+}
+.on-icon { 
+  font-size: .8rem; 
+  display: inline-block; 
+  padding: 90px 10px 0 0;
+}
+.container6{
+  display: grid;
+  width: 100%;
+  position: relative;
+  background-color: var(--lt-skyblue);
+  text-align: center;
+  grid-template-areas: 
+    "heading6 heading6"  
+    "description6 description6"
+    "enquiry-button enquiry-button";
+}
+.heading6{
+  grid-area: heading6;
+  position: relative;
+  color: white;
+  padding:1.5rem .5rem 1rem .5rem;  
+}
+.description6{
+  grid-area: description6;
+  position: relative;
+  padding:.5rem;  
+}
+.enquiry-button{
+  grid-area: enquiry-button;
+  position: relative;
+  padding:.5rem .5rem 1rem .5rem;  
+  border-radius: 12px;
+}
+.Button-enquiry{  
+  width: 190px;
+  background-color:var(--sky-blue);
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 10px;
+  padding:.5rem
+}
+.container7{
+  display: grid;
+  position: relative;
+  width: 100%;
+  background-color:var(--dark-blue);    
+  color: white; 
+  grid-template-areas: 
+    "transperent-logo transperent-logo"  
+    "services-quick services-quick"
+    "social-media social-media"
+    "copy-right copy-right";    
+}
+.transperent-logo{
+  grid-area: transperent-logo;
+  margin: auto;
+  display: block;
+  width: 40%;
+  padding-top: 1rem;
+  padding-bottom: .5rem;
+}
+.services-quick{
+  grid-area: services-quick;
+  text-align: center;
+}
+.quick-services{
+  font-size: .8rem;
+  font-weight: 100;
+  letter-spacing: .09rem;
+  padding-top: .5rem;
+  padding-bottom: 1rem;
+}
+.social-media { 
+  grid-area: social-media;
+  position: relative; 
+  padding-top: .5rem;
+  padding-bottom: .5rem;  
+}
+.fa-facebook-f { 
+  left: 30%;
+  font-size: 14px;
+}
+.fa-pinterest-p {
+  left: 40%;
+  font-size: 14px;
+}
+.fa-twitter { 
+  left: 50%;
+  font-size: 14px;
+}
+.fa-google-plus-g { 
+  left: 60%;
+  font-size: 14px;
+}
+.fa-instagram { 
+  left: 70%;
+  font-size: 14px;
+}
+.copy-right{
+  grid-area: copy-right;  
+  text-align: center;
+  font-size: .7rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}

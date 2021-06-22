@@ -1,4 +1,5 @@
 @font-face {
+<<<<<<< HEAD
   font-family: "Nexa-Bold";
   src: url(../fonts/Nexa-Bold.otf) format('truetype')
 }
@@ -12,6 +13,29 @@
   --dark-blue:#152238;
   --light-blue:#94bedd;
   --grey:grey;
+=======
+    font-family: "Nexa-Bold";
+    src: url(../fonts/Nexa-Bold.otf) format('truetype')
+  }
+  @font-face {
+    font-family: "Nexa-Light";
+    src: url(../fonts/Nexa-Light.otf) format('truetype')
+  }
+  :root{
+    --sky-blue:#1da1f2;
+    --lt-skyblue:#87CEEB;
+    --dark-blue:#152238;
+    --light-blue:#94bedd;
+    --grey:grey;
+  }
+  body{
+        
+  }
+html{
+height: 100%;
+margin: auto;
+display: table;
+>>>>>>> 1bc5f9f (Theme file)
 }
 * {
   box-sizing: border-box;
@@ -95,10 +119,14 @@ background-color: var(--sky-blue);
   border-color: var(--dark-blue);
 }
 li{
+<<<<<<< HEAD
 font-family: "Nexa-Light";
 color: var(--dark-blue);
 padding-bottom: .5rem;
 font-size: .8rem;
+=======
+  font-family: "Nexa-Light";
+>>>>>>> 1bc5f9f (Theme file)
 }
 ul{
 font-family: "Nexa-Light";

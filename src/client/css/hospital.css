@@ -1,0 +1,701 @@
+:root{
+    --sky-blue:#1da1f2;
+    --lt-skyblue:rgb(124, 176, 212);
+    --dark-blue:#13132e;
+    --light-blue:#94bedd;
+    --deep-blue:#7ab0d4;
+    --grey:grey;
+    --mid-grey:#595a5a46;
+    --light-gray:#f0f0f5;
+    --button-blue:#0568aa;
+    --black:#050505;
+  }  
+  @font-face {
+    font-family: "Nexa-Bold";
+    src: url(../fonts/Nexa-Bold.otf) format('truetype')
+  }
+  @font-face {
+    font-family: "Nexa-Light";
+    src: url(../fonts/Nexa-Light.otf) format('truetype')
+  }
+  h1,h2,h4,p,li{     
+    font-family:serif;
+    font-weight: 400;
+    letter-spacing: 0.01rem;
+  }
+  h4{
+      font-size: 1.5rem;
+  }
+  .top-nav{
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .top-nav .logo-tvastra
+  {  
+    width: 35%;
+  }
+  .top-nav .fa-bars{ 
+    font-size: 15px;
+    color:var(--grey);
+    align-self: center;
+    justify-self: flex-end;
+  }
+    .home{
+        color: var(--black);
+        padding:2rem;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas: "heading head-button";
+    }
+    .home h6{      
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-size: 1.5rem;
+      font-weight: 400;
+    }
+    .heading{
+      align-self: flex-start;
+      justify-self:left;
+      padding: 0rem;
+    }
+    .home .head-button{
+      padding: 0rem;
+      justify-self:right;
+      align-self: center;
+    }
+    .home .head-button button{
+      padding: .75rem;
+      width: auto;
+    }
+    .home .doctor-button .fa-angle-down{
+      font-size: 1rem;
+      color:black;
+    }
+    .hospitalSection{
+        padding: 2rem;
+    }
+    .hospitalList{
+        border: 1px solid var(--mid-grey);
+        margin-bottom: 1rem;
+    }    
+    .hospitalFigure {
+      width: 100%;
+      margin: 0rem;
+    }
+    .hospitalImage {
+      width: 100%;
+       object-fit: contain;
+      }
+    .name{
+    display: flex;
+    color:var(--sky-blue);
+    padding: 1rem 0rem;
+    }
+    .name::before{
+    display: block;
+    content: "";
+    border-top: .15rem solid var(--lt-skyblue);
+    width: 2rem;
+    transform: translateY(.85rem);
+    margin-right: 7px;
+    }
+    .hospitalDetails{
+        position: relative;
+        padding: .5rem 1rem 1rem 2.5rem;
+    }
+    .hospitalDetails p{
+        font-weight: 500;
+        font-size: 1.2rem;
+    }
+    .hospitalDetails .fas{
+        position: absolute;
+        left: 1rem;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: .8rem;
+        color: var(--sky-blue);
+    }
+    .appliedFilters{
+        font-family: serif;
+        font-size: 1rem;
+        letter-spacing: .01rem;
+        display: flex;
+        flex-wrap: wrap;
+        padding: .5rem 1rem;
+        grid-gap: .5rem;
+        color: rgb(58, 58, 58);
+      }
+      .selectedFilters{
+        position: relative;
+        padding: .5rem 1.5rem .5rem 1rem;
+        border: 1px solid var(--mid-grey);
+        border-radius: 25px;
+      }   
+      .callButton{
+          text-align: center;
+          padding: 1rem;
+      }
+      .callButton .primary{
+          padding: .5rem 4rem;
+      }
+  .container6{
+    background-color: var(--lt-skyblue);
+    text-align: center;
+  }
+  .container6 h2{
+    padding: 2rem 2rem .5rem 2rem;
+    color: white;
+  }
+  .container6 p{
+    padding: 0rem 2rem 1rem 2rem;
+    font-size: 1.2rem;
+  }
+  .container6 button{
+    padding:1rem;
+    border-radius: 5px;
+    background-color:var(--button-blue);
+    font-size: 1.2rem;
+  }
+  .cont6-3{
+    padding: 0rem 0rem 2rem 0rem;
+  }
+  .container7{
+  background-color: var(--dark-blue);
+  text-align: center;
+  padding: 0rem;
+  color: white;
+  }
+  .container7 .foot-image{
+    padding: 3rem;
+  }
+  .container7 figure{
+    width: 100%;
+    margin: 0rem;
+  }
+  .container7 figure img{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  }
+  .foot-list{
+    padding: 0rem 1rem 2rem 1rem;
+  }
+  .foot-list ul{
+    padding: 1rem 2rem 0rem 2rem;
+  }
+  .container7 li{
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 400;
+  padding-top: 1.5rem;
+  }
+  .container7 .socialMedia{
+  position: relative;
+  padding: 1rem;
+  color: white;
+  font-size: .8rem;
+  }
+  .foot-rights p{
+    font-size: .9rem;
+    padding-bottom: .5rem;
+  }
+  .mob{
+    display: block;
+  }
+  .tab{
+    display: none;
+  }
+  .desktop{
+    display: none;
+  }
+  .mob-tab{
+    display: block;
+  }
+  .tab-desktop{
+    display: none;
+  }
+  @media only screen and (min-width: 768px){ 
+    .top-nav{
+        padding: 2rem;
+      }
+      .top-nav .logo-tvastra
+      {  
+        width: 50%;
+      }
+      .top-nav .fa-bars{ 
+        font-size: 18px;
+      }
+    .home{
+        padding: 1rem 2rem;
+    }
+    .hospitalList{
+        display: grid;
+        grid-template-columns: 70% 30%;
+        padding: 0rem;
+    } 
+    .name{
+      padding: 1rem 0rem;
+    }  
+    .hospitalSummary{
+        display: flex;
+        flex-wrap: wrap;
+        padding: .5rem 2rem;
+    }
+    .hospitalDetails{
+        width: 50%;
+        align-self: center;
+        padding: 0rem;
+        padding-left: 2.5rem;
+    }
+    .hospitalDetails .fas{
+        font-size: 1rem;
+        left: 0rem;
+    }
+    .hospitalDetails p{
+  font-size: 1.2rem;
+    }
+    .appliedFilters{
+        padding-left: 2rem;
+    }
+    .selectedFilters{
+        font-size: .9rem;
+        letter-spacing: .05rem;
+        padding: .5rem;
+    }
+    .callButton{
+        text-align: left;
+        padding: 2rem 0rem 1rem 2rem;
+    }
+    .callButton .primary{
+        font-size: 1rem;
+        padding:.5rem 4rem
+    }
+    .hospitalList {
+      margin: .5rem 0rem;
+      margin-top: 0rem;
+    }
+    .hospitalFigure {
+      height: 100%;
+      }
+    .hospitalImage {
+      height: 404px;
+      object-fit: cover;
+      }
+    .container6{
+      background-color: var(--deep-blue);
+      text-align: center;
+      color: white;
+    }
+    .container6 h2{
+      font-family: serif;
+      font-size: 2rem;
+      padding: 2rem 2rem .5rem 2rem;
+    }
+    .container6 p{
+      font-family: serif;
+      font-size: 1.2rem;
+      text-shadow: .4px 0;
+      color:var(--dark-blue);
+      padding: 0rem 2rem 1rem 2rem;
+    }
+    .container6 button{
+      padding:1rem;
+      border-radius: 5px;
+      background-color:var(--sky-blue);
+      font-size: 1.2rem;
+    }
+    .cont6-3{
+      padding: 0rem 0rem 2rem 0rem;
+    }
+    .container7{
+    background-color: white;
+    text-align: center;
+    padding: 1rem 4rem;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center;
+    border-bottom: 5px solid var(--lt-skyblue);
+    }
+    .container7 .foot-image{
+      grid-column: 3/4;
+      grid-row: 1/2;
+      padding: 1rem 0rem;
+      justify-self: flex-end;
+    }
+    .container7 figure{
+      width: 100%;
+      margin: 0rem;
+    }
+    .container7 figure img{
+      display: block;
+      margin-left: auto;
+      margin-right: 0rem;
+      width: 80%;
+    }
+    .foot-list{
+      grid-column: 1/3;
+      grid-row: 1/2;
+      padding: 0rem ;
+      justify-self: flex-start;
+    }
+    .foot-list ul{
+      padding:0rem;
+    }
+    .container7 li{
+    color: var(--dark-blue);
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding: 1.5rem .5rem 1.5rem 0rem;
+    display: inline;
+    width: 2rem;
+    height: auto;
+    word-wrap: break-word;
+    }
+    .container7 .socialMedia{
+      grid-column: 3/4;
+      grid-row: 2/3;
+    position: relative;
+    padding: 0rem;
+    color: white;
+    font-size: 1rem;
+    justify-self: flex-end;
+    }
+    .socialMedia .fab{
+      color: var(--dark-blue);
+      padding-left: 1rem;
+    }
+    .foot-rights{
+      grid-column: 1/2;
+      grid-row: 2/3;
+    }
+    .foot-rights p{
+      font-family: serif;
+      font-size: 1.2rem;
+      text-shadow: .2px 0;
+      padding-bottom: .5rem;
+      color: var(--dark-blue);
+    }
+    .mob{
+      display: none;
+    }
+    .tab{
+      display: block;
+    }
+    .desktop{
+      display: none;
+    }
+    .mob-tab{
+      display: block;
+    }
+    .tab-desktop{
+      display: block;
+    }
+  }
+  @media only screen and (min-width: 1024px){  
+    .top-nav{
+      display: grid;
+      grid-template-columns: 15% 60% 25%;
+      padding: 1.5rem 5rem;
+    } 
+    .nav-logo .logo-tvastra{
+      padding: 0rem;
+      width: 90%;
+      align-self: flex-start;
+      justify-self: left;
+    }
+    .top-nav .nav-desktop{
+      display: grid;
+      text-align: center;
+    }   
+    .desktop-nav{
+      padding: 0rem;
+      justify-self: center;
+    }
+    .desktop-nav ul{
+      list-style-type: none;
+      padding: 0rem;
+    }
+    .desktop-nav li{
+      font-family: Nexa-Light;
+      color: var(--dark-blue);
+      padding: .8rem;
+      float: left;
+      font-size: 1rem;
+      font-weight: 800;
+    }
+    .navButtons{
+      align-self: center;
+      justify-self: flex-end;
+    }
+    .hospital-searchBox{
+      position: relative;
+      font-weight: normal;
+      background-image: linear-gradient(to bottom, rgba(168,197,236,0.85), rgba(168,197,236,0.85)), url(https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Doctors.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      padding: 3rem 0rem;
+    }
+    .hospital-searchBox h3{
+      font-family: Nexa-Light;
+      font-size: 1.5rem;
+      text-shadow: 1px 0;
+      padding:5rem;
+    }
+    .hospital-searchBox a{
+      text-decoration: underline;
+      font-family: Nexa-Bold;
+    }
+      .home{
+          padding: 2rem 5rem;
+      }
+      .home h6{  
+        font-family: Nexa-Light;
+        color: var(--dark-blue);
+      }
+      .hospitalSection{
+        display: grid;
+        grid-template-columns: 25% 75%;
+        padding: 2rem 5rem;
+      }
+      .filterBox{
+        padding-right: 2rem;
+      }
+    .filterHead{
+      background-color: var(--mid-grey);
+    }
+    .filterHead h5{
+      padding: .2rem 1rem;
+      font-size: .8rem;
+      color: var(--dark-blue);
+    }
+    .filterCriteria{      
+      border-bottom: .1px solid var(--grey);
+    }
+    .criteriaHead
+    {
+      position: relative;
+      display: grid;
+      grid-template-columns: 5fr 1fr 1fr;
+      padding: 2rem 0rem;
+    }
+    .criteriaHead h3{
+      font-family: Nexa-Light;
+      font-size: 1rem;
+      line-height: 1.2rem;
+      padding-left: 1rem;
+    }
+    .criteriaHead .fa-search{
+      position: absolute;
+      right: 10%;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--sky-blue);
+      font-size: .8rem;
+      align-self: center;
+      justify-self: self-end;
+    }
+    .criteriaHead .fa-minus{
+      position: absolute;
+      right: 5%;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--grey);
+      font-size: .8rem;
+      font-weight: bolder;
+      align-self: center;
+      justify-self: self-end;
+    }
+    .filterDetails{
+      display: grid;
+      grid-template-columns: 10% 90%;
+      grid-gap: 1rem;
+    }
+    .filterItems{
+      position: relative;
+      padding-left: 1rem;
+    }
+    .filterItems .fas{
+      position: absolute;
+      font-size: .6rem;
+      left: 80%;
+      top: 25%;
+      color: var(--sky-blue);
+    }
+    .itemName{
+      padding-left: 1rem;
+    }
+    .showMoreButton{
+      padding: 1rem;
+    }
+    .hospitalList{
+      display: grid;
+      grid-template-columns: 65% 35%;
+    }
+    .hospitalSummary{
+    }
+    .hospitalDetailSection{
+      display: block;
+      padding-right: 2rem;
+    }
+    .hospitalDetails{
+      padding: 1rem 1rem 1rem 2.5rem;
+    }
+    .hospitalImage{
+      height: 370px;
+    }
+    .hospitalDetailSection h4{
+      font-family: Nexa-bold;
+    }
+    .hospitalDetailSection p{
+      font-family: Nexa-Light;
+      font-size: .8rem;
+      text-shadow: .2px 0;
+    }
+    .selectedFilters{
+      font-family: Nexa-Light;
+      text-shadow: .2px 0;
+      font-size: .8rem;
+    }
+    .selectedFilters2{
+      background-color: var(--light-gray);
+    }
+    .callButton{
+      padding:1rem 2rem
+    }
+    .container6{
+      background-color: var(--lt-skyblue);
+      text-align: center;
+      color: white;
+      padding: 0rem;
+    }
+    .subcontainer{
+      padding: 3rem 5rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+    }
+    .container6 h2{
+      font-family: Nexa-Bold;
+      font-size: 2rem;
+      padding: 0rem;
+      padding-bottom: .5rem;
+    }
+    .container6 p{
+      font-family: Nexa-Light;
+      font-size: 1rem;
+      color:var(--dark-blue);
+      padding: 0rem;
+      padding-top: 1rem;
+    }
+    .cont6-1{
+    grid-column:1/2 ;
+    grid-row: 1/2;
+    justify-self: flex-start;
+    align-self: flex-end;
+    }
+    .cont6-2{
+      grid-column:1/2 ;
+      grid-row: 2/3;
+      justify-self: flex-start;
+    }
+    .cont6-3{
+      grid-column:2/3 ;
+      grid-row: 1/3;
+      justify-self: flex-end;align-self: center;
+      padding: 0rem;
+    }
+    .container6 button{
+      padding:1rem;
+      border-radius: 5px;
+      background-color:var(--button-blue);
+      font-size: 1rem;
+    }
+    .container7{
+    background-color: white;
+    text-align: center;
+    padding: 2rem 5rem;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center;
+    border-bottom: 5px solid var(--lt-skyblue);
+    }
+    .container7 .foot-image{
+      grid-column: 3/4;
+      grid-row: 1/2;
+      padding: 0rem 0rem 1.5rem 0rem;
+      justify-self: flex-end;
+    }
+    .container7 figure{
+      width: 60%;
+      margin: 0rem;
+    }
+    .container7 figure img{
+      display: block;
+      margin-left: auto;
+      margin-right: 0rem;
+      width: inherit;
+    }
+    .foot-list{
+      grid-column: 1/3;
+      grid-row: 1/2;
+      padding: 0rem ;
+      justify-self: flex-start;
+      padding: 0rem 0rem 1.5rem 0rem;
+    }
+    .foot-list ul{
+      padding:0rem;
+    }
+    .container7 li{
+    color: var(--dark-blue);
+    font-family: Nexa-Light;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 1.5rem 1rem 1.5rem 0rem;
+    display: inline;
+    }
+    .container7 .socialMedia{
+      grid-column: 3/4;
+      grid-row: 2/3;
+    position: relative;
+    padding: 0rem;
+    color: white;
+    font-size: 1rem;
+    justify-self: flex-end;
+    }
+    .socialMedia .fab{
+      color: var(--dark-blue);
+      padding-left: 1rem;
+    }
+    .foot-rights{
+      grid-column: 1/2;
+      grid-row: 2/3;
+      justify-self: flex-start;
+    }
+    .foot-rights p{
+      font-family: Nexa-Light;
+      font-size: 1rem;
+      padding: 0rem;
+      color: var(--dark-blue);
+    }
+    .mob{
+      display: none;
+    }
+    .tab{
+      display: none;
+    }
+    .desktop{
+      display: block;
+    }
+    .mob-tab{
+      display: none;
+    }
+    .tab-desktop{
+      display: block;
+    }
+  }
