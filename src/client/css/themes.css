@@ -25,7 +25,6 @@ nav{
 }
 h1, h2, h3, h4,h5, h6{
   font-family: "Nexa-Bold";
-<<<<<<< HEAD
   color: var(--dark-blue);
   line-height: 2rem;
   letter-spacing: .1rem;
@@ -47,29 +46,6 @@ font-size: 1rem;
 }
 h6{
 font-size:.8rem;
-=======
-  letter-spacing: 0.05rem;  
-  color: var(--dark-blue);
-  padding: 1rem;
-}
-h1{
-  font-size: 1.7rem;
-}
-h2{  
-  font-size: 1.5rem;
-}
-h3{
-  font-size: 1.3rem;
-}
-h4{
-  font-size: 1.1rem;
-}
-h5{
-  font-size: 1.3rem;
-}
-h6{
-  font-size: .9rem;
->>>>>>> 98b3bfc (Theme.css)
 }
 p{
   font-family: "Nexa-Light";  
@@ -84,7 +60,6 @@ a{
 padding: 1rem;
 }
 input{
-<<<<<<< HEAD
 font-family: "Nexa-Light";
 font-size: 0.8rem;
 color: var(--dark-blue);
@@ -93,13 +68,6 @@ padding: 1rem;
 width: 100%;
 border: none;
 height: 60px;
-=======
-  font-family: "Nexa-Light";
-  font-size: 0.8rem;
-  color: var(--dark-blue);
-  letter-spacing: 0.05rem;
-  padding: 1rem;
->>>>>>> 98b3bfc (Theme.css)
 }
 ::placeholder{
 font-family: "Nexa-Light";
@@ -107,42 +75,18 @@ font-size: .8rem;
 color: gray;
 letter-spacing: 0.05rem;
 }
-<<<<<<< HEAD
 button{
 color: white;
 border: none;
 font-size: .9rem;
 letter-spacing: .05rem;
 font-weight: lighter;
-=======
-
-button .primary{
-  color: white;
-  background-color: var(--dark-blue);
-}
-
-button .secondary{
-  color: white;
-  background-color: var(--sky-blue);
-  border-radius: 12px;
-}
-
-i{
-  position: absolute;
-  padding: 1rem;
->>>>>>> 98b3bfc (Theme.css)
 }
 .primary{
 background-color: var(--dark-blue);
 }
-<<<<<<< HEAD
 .secondary{
 background-color: var(--sky-blue);
-=======
-img{
-  padding: 1rem;
-  height: 100%;
->>>>>>> 98b3bfc (Theme.css)
 }
 .third{
   background-color: white;
@@ -151,7 +95,6 @@ img{
   border-color: var(--dark-blue);
 }
 li{
-<<<<<<< HEAD
 font-family: "Nexa-Light";
 color: var(--dark-blue);
 padding-bottom: .5rem;
@@ -260,11 +203,6 @@ letter-spacing: 0.05rem;
       .secondary{
       background-color: var(--sky-blue);
       }
-=======
-  font-family: "Nexa-Light";
-  color: var(--dark-blue);
-  padding: 1rem;
->>>>>>> 98b3bfc (Theme.css)
 }
 ul{
   font-family: "Nexa-Light";
