@@ -64,15 +64,6 @@
     grid-area: search-button1; 
     text-align: center;   
   }
-  .search-button1 button
-  {
-    background-color: var(--dark-blue);
-    color: white;
-    height: 40px;
-    width: 140px;
-    font-size: .9rem;
-    letter-spacing: .05rem;
-  }
 
 .container2 {
     display: grid;
@@ -336,7 +327,7 @@
   display: grid;
   width: 100%;
   position: relative;
-  background-color: var(--lt-skyblue);
+  background-color: var(--light-blue);
   text-align: center;
   grid-template-areas: 
     "heading6 heading6"  
@@ -354,16 +345,6 @@
 }
 .enquiry-button{
   grid-area: enquiry-button;
-  position: relative; 
-  border-radius: 12px;
-}
-.Button-enquiry{  
-  width: 190px;
-  background-color:var(--sky-blue);
-  color: white;
-  font-size: 16px;
-  text-align: center;
-  border-radius: 10px;
 }
 .container7{
   display: grid;
@@ -384,13 +365,16 @@
   width: 40%;
 }
 .services-quick{
+  position: relative;
   grid-area: services-quick;
   text-align: center;
 }
 .quick-services{
+  position: relative;
   font-size: .8rem;
   font-weight: 100;
-  letter-spacing: .09rem;
+  letter-spacing: .09rem;  
+  color: white;
 }
 .social-media { 
   grid-area: social-media;
@@ -419,5 +403,6 @@
 .copy-right{
   grid-area: copy-right;  
   text-align: center;
-  font-size: .7rem;
+  font-size: .7rem;  
+  color: white;
 }
