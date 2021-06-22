@@ -1,0 +1,212 @@
+:root{
+  --sky-blue:#1da1f2;
+  --lt-skyblue:rgb(124, 176, 212);
+  --dark-blue:#13132e;
+  --light-blue:#94bedd;
+  --deep-blue:#7ab0d4;
+  --grey:grey;
+  --mid-grey:#0707074d;
+  --light-gray:rgb(222, 222, 224);
+  --button-blue:#0568aa;
+  --black:#bbbaba;
+}  
+@font-face {
+  font-family: "Nexa-Bold";
+  src: url(../fonts/Nexa-Bold.otf) format('truetype')
+}
+@font-face {
+  font-family: "Nexa-Light";
+  src: url(../fonts/Nexa-Light.otf) format('truetype')
+}
+.top-nav{
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.top-nav .logo-tvastra
+{  
+  width: 35%;
+}
+.top-nav .fa-bars{ 
+  font-size: 15px;
+  color:var(--grey);
+  align-self: center;
+  justify-self: flex-end;
+}
+.container{
+  padding: 1rem;
+  background-color: var(--light-blue);
+}
+.subcontainer{
+  padding: .5rem 1rem;
+}
+.container h4{    
+  text-align: center;
+  background-color: white;
+  color: var(--sky-blue);
+  padding: 1.5rem;
+  border-bottom: solid 1px var(--mid-grey)
+}
+.appoinmentContainer{
+  background-color: white;
+}
+.appoinmentContainer input{
+  border: 2px solid var(--mid-grey);
+}
+.appoinmentContainer h5{
+  padding: .5rem 0rem;
+}
+.appoinmentContainer h5{
+  padding-bottom: 1rem;
+}
+[type=radio] {
+  padding: 0;
+  margin: 0rem;
+}
+.radio{
+display:grid;
+grid-template-columns: 5% 95%;
+align-items: center;
+grid-gap: .5rem;
+}
+.uploadSection input{
+border: none;
+}
+.detailsSection input{
+height: 90px;
+}
+.buttonSection{
+position: relative;
+}
+.buttonSection button{ 
+width: 100%;
+height: 55px;
+font-size: 1rem;
+letter-spacing: .25rem;
+font-weight: 500;
+}
+.buttonSection .fas{
+      position: absolute;
+      right: 10%;
+      top: 50%;
+      transform: translateY(-50%);
+      color: white;
+  }
+.foot-rights p{
+  font-size: .9rem;
+  padding: 1rem 0rem 0rem 0rem;
+  text-align: center;
+  font-weight: 600;
+}
+.mob{
+  display: block;
+}
+.tab{
+  display: none;
+}
+.desktop{
+  display: none;
+}
+.mob-tab{
+  display: block;
+}
+.tab-desktop{
+  display: none;
+}
+@media only screen and (min-width: 768px){  
+.top-nav{
+    padding: 2rem;
+  }
+  .top-nav .logo-tvastra
+  {  
+    width: 50%;
+  }
+  .top-nav .fa-bars{ 
+    font-size: 18px;
+  }
+  .container{
+    padding: 7rem 7rem 2rem 7rem;
+  }
+  .appoinmentContainer{
+    margin-bottom: 7rem;
+  }
+  .radio{
+    grid-template-columns: 2% 95%;
+  }
+  .mob{
+    display: none;
+  }
+  .tab{
+    display: block;
+  }
+  .desktop{
+    display: none;
+  }
+  .mob-tab{
+    display: block;
+  }
+  .tab-desktop{
+    display: block;
+  }
+}
+@media only screen and (min-width: 1024px){  
+  .top-nav{
+    display: grid;
+    grid-template-columns: 15% 60% 25%;
+    padding: 1.5rem 5rem;
+  } 
+  .nav-logo .logo-tvastra{
+    padding: 0rem;
+    width: 90%;
+    align-self: flex-start;
+    justify-self: left;
+  }
+  .top-nav .nav-desktop{
+    display: grid;
+    text-align: center;
+  }   
+  .desktop-nav{
+    padding: 0rem;
+    justify-self: center;
+  }
+  .desktop-nav ul{
+    list-style-type: none;
+    padding: 0rem;
+  }
+  .desktop-nav li{
+    font-family: Nexa-Light;
+    color: var(--dark-blue);
+    padding: .8rem;
+    float: left;
+    font-size: 1rem;
+    font-weight: 800;
+  }
+  .navButtons{
+    align-self: center;
+    justify-self: flex-end;
+  }
+  .container{
+    padding: 7rem 22rem 2rem 22rem;
+  }
+  .appoinmentContainer{
+    margin-bottom: 7rem;
+  }
+  .radio{
+    grid-template-columns: 2% 95%;
+  }
+  .mob{
+    display: none;
+  }
+  .tab{
+    display: none;
+  }
+  .desktop{
+    display: block;
+  }
+  .mob-tab{
+    display: none;
+  }
+  .tab-desktop{
+    display: block;
+  }
+}

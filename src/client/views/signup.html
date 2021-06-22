@@ -5,7 +5,7 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
         <link rel="stylesheet" href="../css/reset.css">
         <link rel="stylesheet" href="../css/themes.css">
-        <link rel="stylesheet" href="../css/login.css">               
+        <link rel="stylesheet" href="../css/signup.css">               
     </head>
     <body>
         <nav class="top-nav">
@@ -32,23 +32,32 @@
             <i class="fas fa-bars mob-tab"></i>
         </nav>
         <section class="container">
-            <div class="loginBox">
-                <div class="loginBoxhead">
-                    <h4>Login</h4>
+            <div class="signUpBox">
+                <div class="signUpBoxhead">
+                    <h4>Sign Up</h4>
                 </div>
                 <div class="inputContainer">
-                    <div class="mobNumInput">
-                        <input type="tel" name="mobileNumber" placeholder="Enter Mobile Number">
-                        <i class="fas fa-question-circle"></i>
-                    </div>
-                    <input type="text" placeholder="Enter OTP">
-                    <div class="loginButton">
-                        <button class="primary" type="submit">LOGIN</button>
+                    <input type="text" placeholder="Enter Name">
+                    <input type="text" placeholder="Enter Email">
+                    <input type="text" placeholder="Enter Password">
+                    <Select name="gender">
+                          <option selected>Select Your Gender</option>
+                          <option value="male">Male</option>
+                          <option value="female">Female</option>
+                          <option value="others">Others</option>
+                    </Select>
+                    <input type="text" placeholder="dd/mm/yyyy">
+                    <input type="text" placeholder="Enter Phone Number">
+                    <input class="subInput" type="text" placeholder="Enter City">
+                    <input class="subInput" type="text" placeholder="Enter State">
+                    <input type="text" placeholder="Select Your Country">
+                    <div class="signUpButton">
+                        <button class="primary" type="submit">Sign Up</button>
                         <i class="fas fa-arrow-right"></i>                        
                     </div>
                 </div>
                 <div class="redirect">
-                    <p >Not Registered?<a href="/signup">&nbsp;Sign Up</a> </p>
+                    <p >Already Registered?<a href="/login">&nbsp;Login</a> </p>
                 </div>
             </div>
             <div class="foot-rights">

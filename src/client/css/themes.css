@@ -35,7 +35,7 @@ label{
 }
 h1, h2, h3, h4,h5, h6{
   font-family: "Nexa-Bold";
-  line-height: 2rem;
+  line-height: 100%;
   letter-spacing: .05rem;
 }
 h1{
@@ -68,7 +68,7 @@ a{
   text-decoration:none;
   color: inherit;
 }
-input{
+input, select{
 font-family: "Nexa-Light";
 font-size: 0.8rem;
 color: var(--dark-blue);
@@ -76,7 +76,6 @@ letter-spacing: 0.05rem;
 width: 100%;
 border: none;
 height: 40px;
-text-indent: 1.2rem;
 }
 
 input[type="checkbox"]
@@ -85,7 +84,7 @@ input[type="checkbox"]
       height: 15px;
       border-color: var(--mid-grey);
     }
-::placeholder{
+::placeholder, option{
 font-family: "Nexa-Light";
 font-size: .8rem;
 color: gray;
@@ -104,8 +103,10 @@ font-size: .8rem;
 color: white;
 }
 .secondary{
-background-color: var(--sky-blue);
+background-color: var(--button-blue);
 color: white;
+padding:.5rem;
+font-weight: 600;
 }
 .doctor-button{
   background-color: var(--mid-grey);
@@ -123,6 +124,9 @@ color: white;
 color: var(--sky-blue);
 background-color: white;
 font-size: .9rem;
+}
+.chooseButton{
+
 }
 li{
 font-family: "Nexa-Light";
