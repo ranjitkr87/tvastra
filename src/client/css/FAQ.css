@@ -25,7 +25,7 @@
   }
   .top-nav .logo-tvastra
   {  
-    width: 35%;
+    width: 60%;
   }
   .top-nav .fa-bars{ 
     font-size: 15px;
@@ -47,10 +47,34 @@
   .mainContainer{
     padding: 1rem;
   }
-  .subContainer{
-    border:1px solid var(--mid-grey);
-    padding-bottom: 1rem;
+  .faqItems{   
+    display: grid;
+    grid-template-columns: 95% 5%;
+    border: none; 
+    font-family: 'nexa-bold';
+    font-size: 1.5rem;
+    color: var(--button-blue);
+    position: relative;
+    text-align: left;
+  }  
+  .faqItems h5{
+    padding: .5rem 0rem;
+    line-height: 1.5rem;
   }
+  .fa-angle-down{
+    text-align: center;
+    border-radius: 50%;
+    height: 1.4rem;
+    width: 1.4rem;padding-top: .3rem;
+    background-color: var(--light-blue);
+    font-size: .8rem;
+    align-self: center;
+    }
+    .description{
+      background-color: var(--light-blue);
+      font-size: .8rem;  
+      padding: .5rem 0rem .5rem .5rem;
+    }
   .container6{
     background-color: var(--lt-skyblue);
     text-align: center;
@@ -138,7 +162,7 @@
       }
       .top-nav .logo-tvastra
       {  
-        width: 50%;
+        width: 40%;
       }
       .top-nav .fa-bars{ 
         font-size: 18px;
@@ -146,16 +170,23 @@
     .about{
       text-align: center;
       padding: 5rem 2rem;
-      background-position:left;
+      background-position:right;
       background-size: cover;
     }
     .mainContainer{
       padding: 2rem;
     }
-    .subContainer{
-      display: grid;
-      grid-template-columns: 6fr 3fr;
-      grid-template-rows: 1fr;
+    .faqItems h5 {
+      padding: 1rem 0rem;
+      word-spacing: .1rem;
+  }
+  .description {
+    font-size: .9rem;
+    letter-spacing: .02rem;
+    line-height: 1.5rem;
+  }
+    .fa-angle-down{
+      justify-self: flex-end;
     }
     .container6{
       background-color: var(--lt-skyblue);
@@ -302,9 +333,21 @@
       padding: 5rem;
       background-position:left;
       background-size: cover;
-    }
+    }    
+  .about p{
+    font-size: 1.2rem;
+  }
     .mainContainer{
       padding: 3rem 5rem;
+    }
+    .mainContainer h5{
+      font-size: 1.4rem;
+    }
+    .mainContainer p{
+      font-size: 1.1rem;
+      font-weight: lighter;
+      line-height: 150%;
+      word-spacing: .05rem;
     }
     .container6{
       background-color: var(--lt-skyblue);

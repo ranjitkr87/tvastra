@@ -2,13 +2,13 @@
   --sky-blue:#1da1f2;
   --lt-skyblue:rgb(124, 176, 212);
   --dark-blue:#13132e;
-  --light-blue:#94bedd;
+  --light-blue:#94bedd3d;
   --deep-blue:#7ab0d4;
   --grey:grey;
-  --mid-grey:#0707074d;
-  --light-gray:rgb(222, 222, 224);
+  --mid-grey:#595a5a46;
+  --light-gray:#f0f0f5;
   --button-blue:#0568aa;
-  --black:#bbbaba;
+  --black:#050505;
 }  
 @font-face {
   font-family: "Nexa-Bold";

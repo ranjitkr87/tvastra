@@ -2,12 +2,14 @@
   --sky-blue:#1da1f2;
   --lt-skyblue:rgb(124, 176, 212);
   --dark-blue:#13132e;
-  --light-blue:#94bedd;
+  --light-blue:#94bedd3d;
   --deep-blue:#7ab0d4;
   --grey:grey;
+  --mid-grey:#595a5a46;
   --light-gray:#f0f0f5;
   --button-blue:#0568aa;
-}
+  --black:#050505;
+} 
 .mob-tab{
   display: block;
 }

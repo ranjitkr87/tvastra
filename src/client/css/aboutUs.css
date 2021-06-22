@@ -1,16 +1,15 @@
 :root{
-    --sky-blue:#1da1f2;
-    --lt-skyblue:rgb(124, 176, 212);
-    --dark-blue:#18182d;
-    --light-blue:#94bedd;
-    --deep-blue:#7ab0d4;
-    --grey:grey;
-    --dark-grey:#0d0e0ed6;
-    --mid-grey:#595a5a46;
-    --light-gray:#ffffff6b;
-    --button-blue:#0568aa;
-    --black:#050505;
-  }  
+  --sky-blue:#1da1f2;
+  --lt-skyblue:rgb(124, 176, 212);
+  --dark-blue:#13132e;
+  --light-blue:#94bedd3d;
+  --deep-blue:#7ab0d4;
+  --grey:grey;
+  --mid-grey:#595a5a46;
+  --light-gray:#f0f0f5;
+  --button-blue:#0568aa;
+  --black:#050505;
+}  
   @font-face {
     font-family: "Nexa-Bold";
     src: url(../fonts/Nexa-Bold.otf) format('truetype')
