@@ -87,7 +87,7 @@ input[type="checkbox"]
 ::placeholder, option{
 font-family: "Nexa-Light";
 font-size: .8rem;
-color: gray;
+color: var(--mid-grey);
 letter-spacing: 0.05rem;
 }
 button{

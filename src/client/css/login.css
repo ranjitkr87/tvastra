@@ -40,6 +40,7 @@
   .loginBox{  
     background-color: white;
     margin: 10rem 0rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
   .loginBoxhead{
       text-align: center;
@@ -81,12 +82,12 @@
         color: white;
     }
   .inputContainer input{
-      border: solid 1px var(--light-gray);
+      border: solid 1px var(--mid-grey);
       height: 60px;
   }
   ::placeholder{
     font-weight: 800;
-    color: var(--light-gray);
+    color: var(--grey);
   }
   .redirect{
       text-align: center;

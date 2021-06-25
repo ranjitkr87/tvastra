@@ -359,7 +359,15 @@
         </section>
         <div class="under desktop">
         </div>
+        <script>
+            function activatePlacesSearch(){
+                var input=document.getElementById("autocomplete");
+                var autoinput=new google.maps.places.Autocomplete(input);
+            }
+        </script>
+        <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAx-vtPquzekRHRBbru4QBdx3_7yVZclzw&libraries=places&callback=activatePlacesSearch">
+        </script>
+        <script src="../scripts/script1.js"></script>
     </body>
-    <script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyChNflEUuwwiAM4saXcaaW75452pgtKxqo"></script>
-<script src="../scripts/script1.js"></script>
 </html>
