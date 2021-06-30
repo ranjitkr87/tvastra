@@ -27,7 +27,7 @@ object-fit: contain;
 }
 .top-nav .logo-tvastra
 {  
-  width: 35%;
+  width: 65%;
 }
 .top-nav .fa-bars{ 
   font-size: 15px;
@@ -144,14 +144,14 @@ margin-bottom:1rem;
 display: flex;
 color:var(--sky-blue);
 font-family: 'nexa-bold';
-padding-bottom: 0rem;
+padding: 1rem 0rem;
 }
 .name::before{
 display: block;
 content: "";
 border-top: .13rem solid var(--lt-skyblue);
 width: 1.5rem;
-transform: translateY(1rem);
+transform: translateY(.5rem);
 margin-right: 7px;
 }
 .doc-details li{
@@ -181,11 +181,11 @@ margin-bottom: 1rem;
 }
 .treatments .on-image{
 position: absolute;
-bottom: 0%;
+bottom: 5%;
 color: white;
 }
 .on-image h4{
-padding-left: 1rem;
+padding: 1rem;
 color: white;
 text-align: left;
 }
