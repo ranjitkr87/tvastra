@@ -97,6 +97,11 @@ border: none;
 font-size: .9rem;
 letter-spacing: .05rem;
 font-weight: lighter;
+cursor: pointer;
+}
+button:hover {
+  height: 50px;
+  font-size: 1.2rem;
 }
 .primary{
 background-color: var(--dark-blue);
