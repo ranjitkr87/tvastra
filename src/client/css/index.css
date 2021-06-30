@@ -651,7 +651,7 @@ border-radius: 10px;
     grid-gap: 0rem;
     grid-template-columns: 30% 50% 20%;
     animation-name: moveLeft;
-    animation-duration: 2s;
+    animation-duration: 3s;
   }
   .subcontainer1 .location{
     position: relative;
@@ -926,8 +926,11 @@ border-radius: 10px;
                 0%{
                   opacity: 0;
                 }
-                50%{
+                25%{
                   transform: translateX(100px);
+                }                
+                50%{
+                  transform: translateX(-40px);
                 }
                 100%{
                   opacity: 1;
