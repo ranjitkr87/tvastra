@@ -650,6 +650,8 @@ border-radius: 10px;
     width: 950px;
     grid-gap: 0rem;
     grid-template-columns: 30% 50% 20%;
+    animation-name: moveLeft;
+    animation-duration: 2s;
   }
   .subcontainer1 .location{
     position: relative;
@@ -919,6 +921,18 @@ border-radius: 10px;
               border-top: .5rem solid var(--sky-blue);
               width: 100%;
               transform: translateY(.3rem);
+              }
+              @keyframes moveLeft{
+                0%{
+                  opacity: 0;
+                }
+                50%{
+                  transform: translateX(100px);
+                }
+                100%{
+                  opacity: 1;
+                  transform: translate(0);
+                }
               }
             }
   
