@@ -43,7 +43,6 @@
     }
     .container6 p{
       padding: 0rem 2rem 1rem 2rem;
-      font-size: 1.2rem;
     }
     .container6 button{
       padding:1rem;
@@ -112,14 +111,14 @@
     }
     @media only screen and (min-width: 768px){ 
       .top-nav{
-          padding: 2rem;
+          padding: 1.5rem 2rem;
         }
         .top-nav .logo-tvastra
         {  
-          width: 50%;
+          width: 35%;
         }
         .top-nav .fa-bars{ 
-          font-size: 18px;
+          font-size: 14px;
         }
       .container6{
         background-color: var(--deep-blue);
@@ -127,30 +126,28 @@
         color: white;
       }
       .container6 h2{
-        font-family: serif;
-        font-size: 2rem;
-        padding: 2rem 2rem .5rem 2rem;
+        padding: .5rem;
       }
       .container6 p{
-        font-family: serif;
-        font-size: 1.2rem;
         text-shadow: .4px 0;
         color:var(--dark-blue);
-        padding: 0rem 2rem 1rem 2rem;
+        padding: .5rem;
       }
       .container6 button{
         padding:1rem;
         border-radius: 5px;
-        background-color:var(--sky-blue);
-        font-size: 1.2rem;
+        background-color:var(--button-blue);
+        font-size: 1rem;
+        font-family: Nexa-Light;
       }
       .cont6-3{
-        padding: 0rem 0rem 2rem 0rem;
+        padding:.5rem;
       }
       .container7{
       background-color: white;
       text-align: center;
-      padding: 1rem 4rem;
+      padding: 2rem;
+      grid-gap: 1rem;
       color: white;
       display: grid;
       grid-template-columns: repeat(3,1fr);
@@ -161,7 +158,7 @@
       .container7 .foot-image{
         grid-column: 3/4;
         grid-row: 1/2;
-        padding: 1rem 0rem;
+        padding: 0rem;
         justify-self: flex-end;
       }
       .container7 figure{
@@ -185,7 +182,7 @@
       }
       .container7 li{
       color: var(--dark-blue);
-      font-size: 1.2rem;
+      font-size: 1rem;
       font-weight: 400;
       padding: 1.5rem .5rem 1.5rem 0rem;
       display: inline;
@@ -204,18 +201,16 @@
       }
       .socialMedia .fab{
         color: var(--dark-blue);
-        padding-left: 1rem;
+        padding-left: .5rem;
       }
       .foot-rights{
         grid-column: 1/2;
         grid-row: 2/3;
       }
       .foot-rights p{
-        font-family: serif;
-        font-size: 1.2rem;
         text-shadow: .2px 0;
-        padding-bottom: .5rem;
         color: var(--dark-blue);
+        padding: 0rem;
       }
       .mob{
         display: none;

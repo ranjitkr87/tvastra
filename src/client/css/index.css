@@ -78,13 +78,6 @@ padding: .5rem 1.5rem;
 text-align: center;
 width: 100%;
 }
-.steps{
-}
-
-.diffColor{
- color: var(--grey);
- opacity: 80%;
-}
 .steps  li{
 list-style-type:none;
 list-style-position: inside;
@@ -117,8 +110,6 @@ color: white;
 }
 .container3 h2{
 color: white;
-}
-.doctor-profile{
 }
 .doc-details{
 background-color: white;  
@@ -228,19 +219,20 @@ h1, h2, h3,h4{
 }
 p{
 text-align: center;
+letter-spacing: 0.04rem;
 }
 .container{
-padding: 0rem;
+padding: 2rem;
 text-align: center;
 }
   .container1{
     text-align: center;
-    background-color: var(--light-blue);
-    padding:0rem;
+    padding:2rem;
 }
 .subcontainer1{
   display: grid;
   grid-template-columns: 35% 48.5% 15%;
+  padding: .5rem;
 }
 .subcontainer1 .location{
   position: relative;
@@ -254,36 +246,42 @@ text-align: center;
 position: relative;
 padding: 0rem;
 }
+.container1 input {
+  height: 40px;
+}
 .button1 button{
   height: 40px;
   padding:.5rem 2rem;
 }
 .container2{
-  padding:0rem;
+  padding:2rem;
   }
 .steps{
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 45% 55%;
   grid-template-rows: repeat(7,1fr);
+  padding: 1rem 0rem;
+  grid-gap: 1rem;
 }
 .steps li{
   height:55px ;
   line-height: 55px;
+  border-radius: 10px;
 }
 .stp1{
 grid-column:1/2 ;
 grid-row: 1/2;
-padding-right: 2rem;
 }
 .stp2{
   grid-column:1/2 ;
   grid-row: 2/8;
-  padding-right: 2rem;
+  display: grid;
+  grid-auto-rows: repeat(6,1fr);
 }
 .FC-use{
   grid-column:2/3 ;
   grid-row: 1/8;
-  padding:0rem;
+  padding:1rem;
 }
 .FC-use figure {
   width: 100%;
@@ -297,16 +295,17 @@ padding-right: 2rem;
   .container3{
     background-color: var(--dark-blue);
     position: relative;
-    padding: 0rem;
     }
     .container3 p{
       color: white;
       }
       .container3 h2{
       color: white;
+      padding: .5rem;
       }
       .container3 .doctor-profile{
         background-color: var(--dark-blue);
+        padding: .5rem;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
@@ -323,9 +322,11 @@ padding-right: 2rem;
       height: 21.5rem;
       object-fit: cover;
     }
+    .doc-details figcaption {
+      padding: 0rem;
+  }
     .container4{
       background-color: white;
-      padding: 0rem;
       }
       .treatment-grid{
       position: relative;
@@ -333,6 +334,7 @@ padding-right: 2rem;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr;
       grid-gap: .5rem;
+      padding: .5rem;
       }
       .treatments{
       position: relative;
@@ -455,6 +457,11 @@ border-radius: 10px;
         padding: 2rem 0rem;
         align-items: center;
       }
+      
+.diffColor{
+  color: var(--grey);
+  opacity: 80%;
+ }
       .steps li{
         height:100% ;
         font-size: 1.4rem;
