@@ -58,7 +58,6 @@ font-size:.8rem;
 }
 p{
   font-family: "Nexa-Light";  
-  font-size: 1rem;
   word-spacing: 0.08rem;  
   letter-spacing: 0.05rem;    
   line-height: 1.5;
@@ -76,7 +75,6 @@ a:hover{
 }
 input, select{
 font-family: "Nexa-Light";
-font-size: 0.8rem;
 color: var(--dark-blue);
 letter-spacing: 0.05rem;
 width: 100%;
@@ -92,14 +90,12 @@ input[type="checkbox"]
     }
 ::placeholder, option{
 font-family: "Nexa-Light";
-font-size: .8rem;
 color: var(--grey);
 letter-spacing: 0.05rem;
 text-indent: 5%;
 }
 button{
 border: none;
-font-size: .9rem;
 letter-spacing: .05rem;
 font-weight: lighter;
 cursor: pointer;
@@ -108,15 +104,11 @@ button:hover {
   height: 50px;
   font-size: 1.2rem;
   box-shadow: 0 0 1rem 0 rgba(99, 99, 99, 0.3);
-  opacity: .9;
-  background-color:var(--button-blue);
-  color:wheat;
   border: none;
 }
 .primary{
 background-color: var(--dark-blue);
 padding:.5rem 1rem;
-font-size: .8rem;
 color: white;
 }
 .secondary{
@@ -148,7 +140,6 @@ font-size: .9rem;
 li{
 font-family: "Nexa-Light";
 color: var(--dark-blue);
-font-size: .8rem;
 }
 ul{
 font-family: "Nexa-Light";
@@ -166,12 +157,8 @@ letter-spacing: 0.05rem;
   h3{
     font-size: 1.4rem;
   }
-  p{
-    font-size: 1rem;
-  }
   input{
     font-family: "Nexa-Light";
-    font-size: 0.8rem;
     color: var(--dark-blue);
     letter-spacing: 0.05rem;
     width: 100%;
@@ -180,14 +167,12 @@ letter-spacing: 0.05rem;
     }
     ::placeholder{
     font-family: "Nexa-Light";
-    font-size: .8rem;
     color: gray;
     letter-spacing: 0.05rem;
     }
     button{
       color: white;
       border: none;
-      font-size: .8rem;
       letter-spacing: .1rem;
       border-radius: 0%;
       }
@@ -211,29 +196,23 @@ letter-spacing: 0.05rem;
     font-size: 1.3rem;
   }
   p{
-    font-size: .9rem;
     letter-spacing: .03rem;
-    font-weight: 900;
   }
   input{
     font-family: "Nexa-Light";
-    font-size: 0.8rem;
     color: var(--dark-blue);
     letter-spacing: 0.05rem;
     width: 100%;
     border: none;
-    height: 50px;
     }
     ::placeholder{
     font-family: "Nexa-Light";
-    font-size: .8rem;
     color: gray;
     letter-spacing: 0.05rem;
     }
     button{
       color: white;
       border: none;
-      font-size: .8rem;
       letter-spacing: .1rem;
       }
       .primary{
@@ -244,7 +223,7 @@ letter-spacing: 0.05rem;
       }
       .navButton1, .navButton2{
         border-radius: 5px;
-        padding: .5rem 1rem;
+        padding: .8rem .5rem;
         font-size: .8rem;
       }
 }

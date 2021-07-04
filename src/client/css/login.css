@@ -18,21 +18,6 @@
     font-family: "Nexa-Light";
     src: url(../fonts/Nexa-Light.otf) format('truetype')
   }
-  .top-nav{
-    padding: 1rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-  .top-nav .logo-tvastra
-  {  
-    width: 35%;
-  }
-  .top-nav .fa-bars{ 
-    font-size: 15px;
-    color:var(--grey);
-    align-self: center;
-    justify-self: flex-end;
-  }
   .container{    
     background-color: var(--deep-blue);
     padding: 1rem;
@@ -109,104 +94,16 @@
     font-size: .8rem;
     padding:1rem;
   }
-  .mob{
-    display: block;
-  }
-  .tab{
-    display: none;
-  }
-  .desktop{
-    display: none;
-  }
-  .mob-tab{
-    display: block;
-  }
-  .tab-desktop{
-    display: none;
-  }
   @media only screen and (min-width: 768px){  
-    .top-nav{
-        padding: 2rem;
-      }
-      .top-nav .logo-tvastra
-      {  
-        width: 50%;
-      }
-      .top-nav .fa-bars{ 
-        font-size: 18px;
-      }
+    
     .loginBox{
       margin: 15rem 8rem;
     }
-    .mob{
-      display: none;
-    }
-    .tab{
-      display: block;
-    }
-    .desktop{
-      display: none;
-    }
-    .mob-tab{
-      display: block;
-    }
-    .tab-desktop{
-      display: block;
-    }
   }
   @media only screen and (min-width: 1024px){  
-    .top-nav{
-      display: grid;
-      grid-template-columns: 15% 60% 25%;
-      padding: 1.5rem 5rem;
-    } 
-    .nav-logo .logo-tvastra{
-      padding: 0rem;
-      width: 90%;
-      align-self: flex-start;
-      justify-self: left;
-    }
-    .top-nav .nav-desktop{
-      display: grid;
-      text-align: center;
-    }   
-    .desktop-nav{
-      padding: 0rem;
-      justify-self: center;
-    }
-    .desktop-nav ul{
-      list-style-type: none;
-      padding: 0rem;
-    }
-    .desktop-nav li{
-      font-family: Nexa-Light;
-      color: var(--dark-blue);
-      padding: .8rem;
-      float: left;
-      font-size: 1rem;
-      font-weight: 800;
-    }
-    .navButtons{
-      align-self: center;
-      justify-self: flex-end;
-    }
+    
     .loginBox{
       margin: 15rem 25rem;
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    }
-    .mob{
-      display: none;
-    }
-    .tab{
-      display: none;
-    }
-    .desktop{
-      display: block;
-    }
-    .mob-tab{
-      display: none;
-    }
-    .tab-desktop{
-      display: block;
     }
   }

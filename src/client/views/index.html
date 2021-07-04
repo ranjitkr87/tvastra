@@ -5,7 +5,8 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
         <link rel="stylesheet" href="../css/reset.css">
         <link rel="stylesheet" href="../css/themes.css">
-        <link rel="stylesheet" href="../css/index.css">               
+        <link rel="stylesheet" href="../css/index.css">       
+        <link rel="stylesheet" href="../css/common.css">             
     </head>
     <body>
         <nav class="top-nav">
@@ -34,11 +35,11 @@
             <i class="fas fa-bars mob-tab"></i>
         </nav>
         <section class="container container1">
-            <h2>Find Affordable Healthcare</h2>
+            <h1>Find Affordable Healthcare</h1>
             <p >
                 Join the thousands of others who have exercised their right to quality healthcare at a price you can afford.
             </p>
-            <div class="subcontainer subcontainer1">
+            <div class="subcontainer1">
                 <div class="location">
                     <i class="fas fa-map-marker-alt"></i>
                     <i class="fas fa-crosshairs"></i>
@@ -62,12 +63,9 @@
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut
                 </p>
             </div>           
-            <div class="subcontainer steps">
+            <div class="steps">
                 <ol class="stp1">
-                    <li class="color-li-1">
-                        01
-                        <span>&nbsp;Fix Consultation</span>
-                    </li> 
+                    <li class="color-li-1"> 01 <span>&nbsp;&nbsp;&nbsp;&nbsp;Fix Consultation</span></li> 
                 </ol>
                 <figure class="FC-use">
                     <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/img1.png" alt="">
@@ -79,14 +77,14 @@
                     </figcaption>
                 </figure>
                 <ol class="stp2">
-                    <li>02 Upload Medical Reports</li>
-                    <li>03 Consult with doctor</li>
-                    <li>04 Fix surgery</li>
-                    <li class="desktop">05 Upload Medical Reports</li>
-                    <li class="mob-tab">05 Hospital sent estimates</li>
-                    <li class="desktop">06 Hospital sent estimates</li>
-                    <li class="mob-tab">06 Payment</li>
-                    <li>07 Surgery Completed</li>                
+                    <li >02 <span class="diffColor">&nbsp;&nbsp;&nbsp;&nbsp;Upload Medical Reports</span></li>
+                    <li >03 <span class="diffColor">&nbsp;&nbsp;&nbsp;&nbsp;Consult with doctor</span></li>
+                    <li >04 <span class="diffColor">&nbsp;&nbsp;&nbsp;&nbsp;Fix surgery</span></li>
+                    <li class="desktop">05 <span class="diffColor">&nbsp;&nbsp;&nbsp;&nbsp;Upload Medical Reports</span></li>
+                    <li class="mob-tab">05 <span class="diffColor">&nbsp;&nbsp;&nbsp;&nbsp;Hospital sent estimates</span></li>
+                    <li class="desktop">06 <span class="diffColor">&nbsp;&nbsp;&nbsp;&nbsp;Hospital sent estimates</span></li>
+                    <li class="mob-tab">06 <span class="diffColor">&nbsp;&nbsp;&nbsp;&nbsp;Payment</span></li>
+                    <li >07 <span class="diffColor">&nbsp;&nbsp;&nbsp;&nbsp;Surgery Completed</span></li>                
                 </ol>       
             </div>        
         </section>
@@ -102,7 +100,7 @@
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut
                 </p>
             </div>
-            <div class="subcontainer doctor-profile"> 
+            <div class="doctor-profile"> 
                 <figure class="doc-details mob-tab">
                     <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--002.jpg" alt="">
                     <figcaption>
@@ -211,7 +209,7 @@
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut
                 </p>
             </div>            
-            <div class="subcontainer treatment-grid">
+            <div class="treatment-grid">
                 <figure class="treatments t1">
                     <div class="background"></div>
                     <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--009.jpg" alt="">
@@ -279,7 +277,7 @@
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut
                 </p>
             </div>            
-            <div class="subcontainer other-services">
+            <div class="other-services">
                 <figure class="service-grid">
                     <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Icons-01.png" alt="">
                     <figcaption >
@@ -334,12 +332,13 @@
             </div>
         </section>
         <section class="container7">
-            <div class="subcontainer">
-                <figure class="foot-image">
-                    <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/footer.png" alt="">
-                </figure> 
-                <div class="foot-list">          
-                    <ul>
+            <figure class="foot-image">
+                <a href="../views/index.html">
+                <img class="footer-image" src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/footer.png" alt="">
+                </a>
+            </figure> 
+                <div class="foot-list">       
+                    <ul>                       
                         <li><a href="doctor.html">Doctors</a></li>
                         <li><a href="hospital.html">Hospitals</a></li>
                         <li><a href="treatments.html">Treatments</a></li>
@@ -347,17 +346,18 @@
                         <li><a href="FAQ.html">FAQs</a></li>
                     </ul>
                 </div> 
-                <div class="socialMedia">
-                    <i class="fab fa-facebook-f"></i>
-                    <i class="fab fa-pinterest-p"></i>
-                    <i class="fab fa-twitter"></i>
-                    <i class="fab fa-google-plus-g"></i>
-                    <i class="fab fa-instagram"></i>
+                <div class="foot-list2 socialMedia">
+                    <ul>                       
+                        <li><i class="fab fa-facebook-f"></i></li>
+                        <li> <i class="fab fa-pinterest-p"></i></li>
+                        <li><i class="fab fa-twitter"></i></li>
+                        <li><i class="fab fa-google-plus-g"></i></li>
+                        <li> <i class="fab fa-instagram"></i></li>
+                    </ul>
                 </div>
                 <div class="foot-rights">
                     <p>All Rights Reserved. © tvastra 2018</p>
                 </div>
-            </div>
         </section>
         <div class="under desktop">
         </div>
