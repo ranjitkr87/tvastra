@@ -421,12 +421,19 @@ border-radius: 10px;
   .container1 h1{
     animation-name: moveRight;
     animation-duration: 3s;
+    padding: 0rem;
     padding-bottom: 1.5rem;
+  }
+  .subcontainer1{
+    padding: 0rem;
   }
   .subcontainer1 .location{
     position: relative;
     padding: 0rem .1rem 0rem 0rem;
   }
+  .container1 input {
+    height: 50px;
+}
   .container1 .search1{
   padding: 0rem;
   }

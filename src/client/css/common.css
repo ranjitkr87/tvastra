@@ -328,7 +328,6 @@
       .container7 .foot-image{
         grid-column: 3/4;
         grid-row: 1/2;
-        padding: 0rem 0rem 1.5rem 0rem;
         justify-self: flex-end;
       }
       .container7 figure{
@@ -348,7 +347,6 @@
         grid-row: 1/2;
         padding: 0rem ;
         justify-self: flex-start;
-        padding: 0rem 0rem 1.5rem 0rem;
       }
       .foot-list ul{
         padding:0rem;
@@ -376,6 +374,7 @@
       .socialMedia .fab{
         color: var(--dark-blue);
         padding-left: 1rem;
+        font-size: 1.2rem;
       }
       .foot-rights{
         grid-column: 1/2;
