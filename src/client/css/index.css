@@ -36,7 +36,9 @@ text-align: center;
   padding: .5rem 1rem;
 }   
 .container1 input{
-  height: 50px;
+  border-width: 2px;
+  border-style: inset;
+  border-color: -internal-light-dark(rgba(111, 154, 218, 0.438), rgb(59, 75, 219));
 } 
 .location  ::placeholder{
   font-size: .8rem;
@@ -51,15 +53,15 @@ text-align: center;
 }
 .location .fa-crosshairs{
   position: absolute;
-  right: 3%;
-  top: 50%;
+  right: 10px;
+  top: 25px;
   transform: translateY(-50%);
   font-size: .8rem;
 }
 .location .fa-map-marker-alt{
-  position: absolute;
-  left: 3%;
-  top: 50%;
+  position: absolute;  
+  left: 10px;
+  top: 25px;
   transform: translateY(-50%);
   font-size: .8rem;
 }
@@ -79,10 +81,14 @@ padding: .5rem 0rem;
   font-size: .8rem;
   letter-spacing: .1rem;
   cursor: pointer;
+  display: block;
 }
 .autocom-box li:hover{
   background-color: var(--button-blue);
   font-size: 1rem;
+}
+.active {
+  background-color: cornflowerblue;
 }
 
 .container1 .button1{

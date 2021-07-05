@@ -19,10 +19,21 @@ inputBox.onkeyup=(e)=>{
         })
         console.log(emptyArray);
         searchWrapper.classList.add("active");
+        showSuggesions(emptyArray);
+        let allList=searchBox.querySelectorAll("li");
+        for (let i = 0; i < allList.length; i++) {
+            allList[i].setAttribute("onclick","select(this)");            
+        }
     }else{
         searchWrapper.classList.remove("active");
     }
-    showSuggesions(emptyArray);
+}
+
+function select(element){
+    let selectUserData=element.textContent;
+    inputBox.value=selectUserData;
+    searchWrapper.classList.remove("active");
+    
 }
 
 function showSuggesions(list){
