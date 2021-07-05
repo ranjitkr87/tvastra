@@ -356,7 +356,8 @@
       font-family: Nexa-Light;
       font-size: 1.5rem;
       font-weight: 400;
-      padding: 1.5rem 0rem 1.5rem 0rem;
+      padding: 0rem;
+    padding-right: 1rem;
       display: inline;
       }
       .container7 a{
