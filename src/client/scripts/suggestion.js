@@ -1,7 +1,7 @@
 const doctors=[ "Charlie Moon","Coni Star","Kisten Misel","John Nission","Rose Moon"];
 const hospitals =["Apollo Hospital","Fortis  Hospital","Rockland Hospital","Primus Super Speciality Hospital"];
 const treatments=["Dentistry","Orthopedic Surgery","Cancer","Cardiology"];
-const masterArray=[doctors,hospitals,treatments]
+const masterArray=doctors.concat(hospitals,treatments)
 
 const searchWrapper=document.querySelector(".search1");
 const inputBox=searchWrapper.querySelector("input");
@@ -11,7 +11,7 @@ inputBox.onkeyup=(e)=>{
     let userData=e.target.value;
     let emptyArray=[];
     if (userData){
-        emptyArray=doctors.filter((data)=>{
+        emptyArray=masterArray.filter((data)=>{
             return data.toLowerCase().startsWith(userData.toLocaleLowerCase());
         });
         emptyArray=emptyArray.map((data)=>{
@@ -32,8 +32,7 @@ inputBox.onkeyup=(e)=>{
 function select(element){
     let selectUserData=element.textContent;
     inputBox.value=selectUserData;
-    searchWrapper.classList.remove("active");
-    
+    searchWrapper.classList.remove("active");    
 }
 
 function showSuggesions(list){
@@ -44,4 +43,23 @@ function showSuggesions(list){
         listData=list.join("");
     }
     searchBox.innerHTML=listData;
+}
+var button = document.getElementById("searchButton");
+button.onclick = function () {
+    var text = document.getElementById("myInput").value;
+
+    for (let j = 0; j < text.length; j++) 
+    {        
+        if (text==doctors[j]) {
+            window.open("../views/doctor.html");
+        }
+        else if (text==hospitals[j])
+        {
+            window.open("../views/hospital.html"); 
+        }
+        else
+        {
+            window.open("../views/treatments.html"); 
+        }        
+    }
 }
