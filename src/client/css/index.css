@@ -108,13 +108,17 @@ text-align: center;
 width: 100%;
 }
 .steps  li{
-list-style-type:none;
-list-style-position: inside;
-font-family: 'nexa-bold';
-border: .1px solid var(--dark-blue);
-color: var(--mid-grey);
-padding-left: 1rem;
-text-align: left;
+  list-style-type: none;
+  list-style-position: inside;
+  font-family: 'nexa-bold';
+  border: .1px solid var(--dark-blue);
+  border-radius: 5px;
+  color: var(--mid-grey);
+  padding-left: 1rem;
+  text-align: left;
+  height: 50px;
+  line-height: 50px;
+  margin-bottom: 1rem;
 }
 .steps .color-li-1{
   opacity: 90%;
