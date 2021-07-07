@@ -195,6 +195,9 @@
         grid-gap: 1rem;
         padding: 1rem 2rem;
     }
+  .visitationDetails h5{
+    padding: .5rem 0rem;
+  } 
     .service{
         display: grid;
         grid-template-columns: 1fr 1fr;

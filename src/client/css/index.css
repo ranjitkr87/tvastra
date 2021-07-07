@@ -39,6 +39,9 @@ text-align: center;
   border-width: 2px;
   border-style: inset;
   border-color: -internal-light-dark(rgba(111, 154, 218, 0.438), rgb(59, 75, 219));
+  color: var(--button-blue);
+  font-weight: bold;
+  padding-left: 1rem;
 } 
 .location  ::placeholder{
   font-size: .8rem;
@@ -54,21 +57,24 @@ text-align: center;
 .location .fa-crosshairs{
   position: absolute;
   right: 10px;
-  top: 25px;
+  top: 20px;
   transform: translateY(-50%);
   font-size: .8rem;
 }
 .location .fa-map-marker-alt{
   position: absolute;  
   left: 10px;
-  top: 25px;
+  top: 20px;
   transform: translateY(-50%);
   font-size: .8rem;
 }
 .container1 .search1{
+  position: relative;
 padding: .5rem 0rem;
 }
-.autocom-box{
+.search1 .autocom-box{
+  position: absolute;
+  width: 100%;
   background-color: var(--deep-blue);
 }
 .autocom-box li{
@@ -81,16 +87,14 @@ padding: .5rem 0rem;
   font-size: .8rem;
   letter-spacing: .1rem;
   cursor: pointer;
-  display: block;
 }
 .autocom-box li:hover{
   background-color: var(--button-blue);
   font-size: 1rem;
 }
-.active {
-  background-color: cornflowerblue;
+.autocom-box .show{
+  display: none;
 }
-
 .container1 .button1{
 position: relative;
 padding: .5rem 1.5rem;
@@ -458,6 +462,14 @@ border-radius: 10px;
   }
   .container1 input {
     height: 50px;
+}
+.location .fa-crosshairs{
+  right: 10px;
+  top: 25px;
+}
+.location .fa-map-marker-alt{
+  left: 10px;
+  top: 25px;
 }
   .container1 .search1{
   padding: 0rem;
