@@ -56,6 +56,6 @@ button.onclick = function () {
 
         else if (text==hospitals[j]) { window.open("../views/hospital.html"); }
 
-        else { window.open("../views/treatments.html"); }        
+        else if (text==treatments[j]) { window.open("../views/treatments.html"); }
     }
 }

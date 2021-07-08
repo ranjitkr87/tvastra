@@ -60,7 +60,7 @@
     color: white;
     }
     .container7 .foot-image{
-      padding: 3rem;
+      padding: 2rem 1rem 1rem 1rem;
     }
     .container7 figure{
       width: 100%;
@@ -73,16 +73,17 @@
     width: 50%;
     }
     .foot-list{
-      padding: 0rem 1rem 2rem 1rem;
+      padding: 1rem;
     }
     .foot-list ul{
-      padding: 1rem 2rem 0rem 2rem;
+      padding: 0rem;
     }
     .container7 li{
     color: white;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 400;
-    padding-top: 1.5rem;
+    padding: 0rem;
+    padding-bottom: 1rem;
     }
     .container7 .socialMedia{
     position: relative;
