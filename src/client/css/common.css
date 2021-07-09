@@ -49,24 +49,25 @@
       border-radius: 5px;
       background-color:var(--button-blue);
       font-size: 1.2rem;
+      font-weight: 100;
     }
     .cont6-3{
       padding: 0rem 0rem 2rem 0rem;
     }
-    .container7{
+    .footer1,.footer2{
     background-color: var(--dark-blue);
     text-align: center;
     padding: 0rem;
     color: white;
     }
-    .container7 .foot-image{
+    .footer1 .foot-image, .footer2 .foot-image{
       padding: 2rem 1rem 1rem 1rem;
     }
-    .container7 figure{
+    .footer1 figure, .footer2 figure{
       width: 100%;
       margin: 0rem;
     }
-    .container7 figure img{
+    .footer1 figure img,  .footer2 figure img{
       display: block;
     margin-left: auto;
     margin-right: auto;
@@ -74,26 +75,47 @@
     }
     .foot-list{
       padding: 1rem;
+      color: white;
     }
     .foot-list ul{
       padding: 0rem;
     }
-    .container7 li{
+    .footer1 li{
     color: white;
-    font-size: 1rem;
+    font-size: .8rem;
     font-weight: 400;
     padding: 0rem;
     padding-bottom: 1rem;
     }
-    .container7 .socialMedia{
+    .footer1 .socialMedia{
     position: relative;
-    padding: 1rem;
     color: white;
     font-size: .8rem;
     }
+    .socialMedia li{
+      display: inline;
+      padding: 0rem .5rem;
+    }
+    .foot-rights{
+      padding: 1rem;
+      padding-bottom: .3rem;
+    }
     .foot-rights p{
-      font-size: .9rem;
-      padding-bottom: .5rem;
+      font-size: .8rem;
+    padding-bottom: .5rem;
+    font-weight: 100;
+    }
+    .footer2 h2{
+      font-family: serif;
+      font-weight: 100;
+      padding: 1rem;
+    }
+    .footer2 li, footer2 a{
+      color: white;
+      padding: .5rem;
+      font-family: serif;
+      font-size: 1.2rem;
+      font-weight: lighter;
     }
     .mob{
       display: block;
@@ -125,12 +147,12 @@
         background-color: var(--deep-blue);
         text-align: center;
         color: white;
+        padding: 2rem;
       }
       .container6 h2{
         padding: .5rem;
       }
       .container6 p{
-        text-shadow: .4px 0;
         color:var(--dark-blue);
         padding: .5rem;
       }
@@ -144,7 +166,7 @@
       .cont6-3{
         padding:.5rem;
       }
-      .container7{
+      .footer1{
       background-color: white;
       text-align: center;
       padding: 2rem;
@@ -156,17 +178,17 @@
       align-items: center;
       border-bottom: 5px solid var(--lt-skyblue);
       }
-      .container7 .foot-image{
+      .footer1 .foot-image{
         grid-column: 3/4;
         grid-row: 1/2;
         padding: 0rem;
         justify-self: flex-end;
       }
-      .container7 figure{
+      .footer1 figure{
         width: 100%;
         margin: 0rem;
       }
-      .container7 figure img{
+      .footer1 figure img{
         display: block;
         margin-left: auto;
         margin-right: 0rem;
@@ -181,17 +203,17 @@
       .foot-list ul{
         padding:0rem;
       }
-      .container7 li{
+      .footer1 li{
       color: var(--dark-blue);
       font-size: 1rem;
       font-weight: 400;
-      padding: 1.5rem .5rem 1.5rem 0rem;
+      padding: 1.5rem 0rem 1.5rem 0rem;
       display: inline;
       width: 2rem;
       height: auto;
       word-wrap: break-word;
       }
-      .container7 .socialMedia{
+      .footer1 .socialMedia{
         grid-column: 3/4;
         grid-row: 2/3;
       position: relative;
@@ -202,11 +224,12 @@
       }
       .socialMedia .fab{
         color: var(--dark-blue);
-        padding-left: .5rem;
+        padding-left: 1rem;
       }
       .foot-rights{
         grid-column: 1/2;
         grid-row: 2/3;
+        padding: 0rem;
       }
       .foot-rights p{
         text-shadow: .2px 0;
@@ -315,7 +338,7 @@
         background-color:var(--button-blue);
         font-size: 1rem;
       }
-      .container7{
+      .footer1{
       background-color: white;
       text-align: center;
       padding: 2rem 5rem;
@@ -326,21 +349,21 @@
       align-items: center;
       border-bottom: 5px solid var(--lt-skyblue);
       }
-      .container7 .foot-image{
+      .footer1 .foot-image{
         grid-column: 3/4;
         grid-row: 1/2;
         justify-self: flex-end;
       }
-      .container7 figure{
+      .footer1 figure{
         width: 60%;
         margin: 0rem;
       }
-      .container7 figure a img{
+      .footer1 figure a img{
         display: block;
         margin-left: auto;
         margin-right: 0rem;
       }
-      .container7 a{
+      .footer1 a{
         font-size: 1rem;
       }
       .foot-list{
@@ -352,19 +375,18 @@
       .foot-list ul{
         padding:0rem;
       }
-      .container7 li{
+      .footer1 li{
       color: var(--dark-blue);
       font-family: Nexa-Light;
-      font-size: 1.5rem;
       font-weight: 400;
       padding: 0rem;
-    padding-right: 1rem;
+      padding-right: 1rem;
       display: inline;
       }
-      .container7 a{
+      .footer1 a{
         font-size: 1rem;
       }
-      .container7 .socialMedia{
+      .footer1 .socialMedia{
         grid-column: 3/4;
         grid-row: 2/3;
       position: relative;
@@ -372,6 +394,9 @@
       color: white;
       font-size: 1rem;
       justify-self: flex-end;
+      }
+      .socialMedia li{
+        padding-right: 0rem;
       }
       .socialMedia .fab{
         color: var(--dark-blue);

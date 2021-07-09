@@ -222,7 +222,7 @@
       background-color: var(--mid-grey);
     }
     .filterHead h5{
-      padding: .2rem 1rem;
+      padding: 1rem;
       font-size: .8rem;
       color: var(--dark-blue);
     }
@@ -267,6 +267,7 @@
       display: grid;
       grid-template-columns: 10% 90%;
       grid-gap: 1rem;
+      padding-bottom: .5rem;
     }
     .filterItems{
       position: relative;
