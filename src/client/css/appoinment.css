@@ -20,9 +20,9 @@
 }
 .container{
   padding: 1rem;
-  background-color: var(--light-blue);
+  background-color: var(--deep-blue);
 }
-.subcontainer{
+.subcont{
   padding: .5rem 1rem;
 }
 .container h4{    

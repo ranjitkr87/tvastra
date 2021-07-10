@@ -213,6 +213,10 @@
       height: auto;
       word-wrap: break-word;
       }
+      .foot-list li {
+        padding-right: 1rem;
+        font-size: .8rem;
+      }
       .footer1 .socialMedia{
         grid-column: 3/4;
         grid-row: 2/3;

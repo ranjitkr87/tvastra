@@ -34,8 +34,12 @@
     background-image:linear-gradient(to right,rgba(0,0,0,0.4),rgba(0, 0, 0,0.4)),  url(https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/aboutUs_hero.jpeg);
     background-size: cover;
     padding: 10rem 1rem;
+    text-align: center;
     background-position: center;
     color: white;
+  }
+  .livingHealthy h3{
+    padding-bottom: 1rem;
   }
 .docFigure{
   height: 30rem;
@@ -47,9 +51,12 @@
 .container2{
   color: white;
   background-color: black;
+  text-align: center;
+  padding:  1rem 0rem;
 }
 .container2 .containerPara{
   padding: .5rem;
+  font-size: .8rem;
 }
 .checkupButton{
   padding: 1rem;
@@ -58,6 +65,9 @@
   padding: .5rem 1rem;
   border-radius: 5px;
   background-color: var(--button-blue);
+}
+.stats{
+  padding: 0rem 1rem;
 }
 .statItem{
   border: 2px solid var(--light-gray);
@@ -84,7 +94,9 @@
   font-size: 1rem;
 }
   @media only screen and (min-width: 768px){ 
-    
+    .livingHealthy p{
+      letter-spacing: .02rem;
+    }
       .container{
         padding: 1.5rem;
       }
@@ -126,9 +138,11 @@
         grid-gap: .5rem;
         text-align: center;
         justify-items: center;
+        padding:1rem 0rem;
       }
       .statItem{
         margin-bottom: 0rem;
+        width: 100%;
       }
   }
   @media only screen and (min-width: 1024px){  
@@ -167,10 +181,30 @@
     }
     .container2{
       padding: 2rem 5rem;
-      grid-template-columns: 1fr 1fr;
-      background-color: var(--grey);
-      grid-gap: 5rem;
+      display: block;
+      width: 100%;
+    height: fit-content;
+    position: relative;
+    overflow: hidden;
     }
+    
+    .container2 video {
+      position: absolute;
+    left: 50%;
+    top: 50%;
+    object-fit: cover;
+    min-width: 100%;
+    height: 100%;
+    transform: translate(-50%,-50%);
+    z-index: 0;
+} 
+.contentOverVideo{
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5rem;
+}  
     .container2 h3{
       font-size: 1.8rem;
     }
@@ -180,7 +214,9 @@
     }
     .container2-sub{
       display: grid;
-      grid-template-rows: repeat(4,fr);
+      grid-template-rows: repeat(4,1fr);
+      padding: 1rem 0rem;
+      align-items: center;
     }
     .containerHeading{
       grid-row: 1/2;
@@ -195,12 +231,16 @@
       padding: 1rem;
       font-size: 1rem;
     }
+    .stats{
+      align-items: center;
+    }
     .statItem{
       border: 2px solid #ffffff6b;
       height: 180px;
       padding: 0rem 1.8rem;
       grid-gap: .5rem;
       width: 180px;
+      height: 200px;
     }
     .statItem p{
       color: var(--light-gray);

@@ -32,7 +32,7 @@
 .mainContainer{
   padding: 1rem;
 }
-.subContainer{
+.subContainerDocProf{
   border:1px solid var(--mid-grey);
   padding-bottom: 1rem;
 }
@@ -57,7 +57,7 @@
   color: var(--button-blue);
   position: relative;
   text-align: left;
-  padding: 2rem 2rem 2rem 3.5rem;
+  padding: 2rem 2rem 1rem 3.5rem;
 }
 .name::before{
   content: '';
@@ -67,7 +67,7 @@
   margin-right: 0.2rem;
   margin-left: -3.5rem;
   position: absolute;
-  bottom:2.6rem;
+  bottom:2rem;
 }
 .Summary{
   border-bottom: .5px dashed var(--mid-grey);
@@ -75,6 +75,7 @@
 .Summary p{
 text-align: center;
 font-size: .8rem;
+padding: 1rem 0rem;
 }
 .specialization{
   padding: 0rem 1rem;
@@ -112,7 +113,7 @@ font-size: .8rem;
   .mainContainer{
     padding: 2rem;
   }
-  .subContainer{
+  .subContainerDocProf{
     display: grid;
     grid-template-columns: 6fr 3fr;
     grid-template-rows: 1fr;
@@ -122,6 +123,7 @@ font-size: .8rem;
     padding: 1rem;
   }
   .aboutDoctorSection{
+    padding: 2rem;
     grid-row: 1/2;
   }
   .Summary{    
@@ -137,8 +139,9 @@ font-size: .8rem;
     content: '';
     border-bottom: 2px solid var(--button-blue);
     display: inline-block;
-    width: .75rem;
+    width: 2rem;
     margin: 0rem;
+    margin-left: -2rem;
     position: absolute;
     bottom: 50%;
     left: 0rem;
@@ -149,6 +152,10 @@ font-size: .8rem;
   }
   .specialization{
     padding:  0rem 0rem 0rem 1rem;
+  }
+  .specializationHeading {
+    padding: 1rem 0rem;
+    grid-template-columns:4% 86% 10%;    
   }
   .specializationHeading .fa-angle-down {
     justify-self: flex-end;

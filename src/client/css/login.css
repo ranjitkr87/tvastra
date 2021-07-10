@@ -45,7 +45,7 @@
       right: 5%;
       top: 50%;
       transform: translateY(-70%);
-      color: var(--light-gray);
+      color: var(--mid-grey);
       font-size: 1.2rem;
   }
   .loginButton{

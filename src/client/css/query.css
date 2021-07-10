@@ -88,10 +88,10 @@
   color: white;
   transform: translateY(-50%);
 }
-    .foot-rights{
+    .foot-rightsQuery{
         text-align: center;
     }
-    .foot-rights p{
+    .foot-rightsQuery p{
       font-family: Nexa-Bold;
       font-size: .8rem;
       padding: 2rem 0rem 0rem 0rem;

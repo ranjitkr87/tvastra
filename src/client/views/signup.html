@@ -53,9 +53,17 @@
                     <input type="text" placeholder="Enter Phone Number">
                     <input class="subInput" type="text" placeholder="Enter City">
                     <input class="subInput" type="text" placeholder="Enter State">
-                    <input type="text" placeholder="Select Your Country">
+                    <div class="input-box">
+                        <select name="country" id="country">
+                            <option value="" disabled selected hidden>Select your Country</option>
+                            <option value="India">India</option>
+                            <option value="UK">UK</option>
+                            <option value="USA">USA</option>
+                        </select>
+                    </div>
+    
                     <div class="signUpButton">
-                        <button class="primary" type="submit">Sign Up</button>
+                        <button class="primary" type="submit">SIGN UP</button>
                         <i class="fas fa-arrow-right"></i>                        
                     </div>
                 </div>
@@ -63,7 +71,7 @@
                     <p >Already Registered?<a href="/login">&nbsp;Login</a> </p>
                 </div>
             </div>
-            <div class="foot-rights">
+            <div class="rights">
                 <p class="copyright">All Rights Reserved &copy; Tvastra 2020</p>
             </div>
         </section>
