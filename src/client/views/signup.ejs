@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>Tvastra.com</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+        <link rel="stylesheet" href="../css/reset.css">
+        <link rel="stylesheet" href="../css/themes.css">
+        <link rel="stylesheet" href="../css/signup.css">            
+        <link rel="stylesheet" href="../css/common.css">        
+    </head>
+    <body>
+        <%- include ('partials/header.ejs') %>
+        
+        <section class="container">
+            <div class="signUpBox">
+                <div class="signUpBoxhead">
+                    <h4>Sign Up</h4>
+                </div>
+                <div class="inputContainer">
+                    <input type="text" placeholder="Enter Name">
+                    <input type="text" placeholder="Enter Email">
+                    <input type="text" placeholder="Enter Password">
+                    <Select name="gender">
+                          <option selected>Select Your Gender</option>
+                          <option value="male">Male</option>
+                          <option value="female">Female</option>
+                          <option value="others">Others</option>
+                    </Select>
+                    <input type="text" placeholder="dd/mm/yyyy">
+                    <input type="text" placeholder="Enter Phone Number">
+                    <input class="subInput" type="text" placeholder="Enter City">
+                    <input class="subInput" type="text" placeholder="Enter State">
+                    <div class="input-box">
+                        <select name="country" id="country">
+                            <option value="" disabled selected hidden>Select your Country</option>
+                            <option value="India">India</option>
+                            <option value="UK">UK</option>
+                            <option value="USA">USA</option>
+                        </select>
+                    </div>
+    
+                    <div class="signUpButton">
+                        <button class="primary" type="submit">SIGN UP</button>
+                        <i class="fas fa-arrow-right"></i>                        
+                    </div>
+                </div>
+                <div class="redirect">
+                    <p >Already Registered?<a href="login">&nbsp;Login</a> </p>
+                </div>
+            </div>
+            <div class="rights">
+                <p class="copyright">All Rights Reserved &copy; Tvastra 2020</p>
+            </div>
+        </section>
+        <script src="../scripts/navigation.js"></script>
+    </body>
+</html>

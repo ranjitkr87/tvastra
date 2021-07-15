@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Tvastra.com</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+        <link rel="stylesheet" href="../css/reset.css">
+        <link rel="stylesheet" href="../css/themes.css">
+        <link rel="stylesheet" href="../css/query.css">    
+        <link rel="stylesheet" href="../css/common.css">                
+    </head>
+    <body>
+        <%- include ('partials/header.ejs') %>
+        
+        <section class="container">
+            <div class="queryBox">
+                <div class="queryBoxhead">
+                    <h4>Submit your query</h4>
+                </div>
+                <div class="inputContainer">
+                    <input placeholder="Enter Name">
+                    <input placeholder="Enter Phone Number">
+                    <input placeholder="Enter Email">
+                    <div class="queryMessage">
+                        <textarea placeholder="Message"></textarea>         
+                    </div>
+                    <div class="submitButton">
+                        <button class="primary" type="submit">SUBMIT</button>
+                        <i class="fas fa-arrow-right"></i>                        
+                    </div>
+                </div>
+            </div>
+            <div class="foot-rightsQuery">
+                <p class="copyright">All Rights Reserved &copy; Tvastra 2020</p>
+            </div>
+        </section>
+        <script src="../scripts/navigation.js"></script>
+    </body>
+</html>

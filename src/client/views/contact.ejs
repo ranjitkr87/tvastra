@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>Tvastra.com</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+        <link rel="stylesheet" href="../css/reset.css">
+        <link rel="stylesheet" href="../css/themes.css">
+        <link rel="stylesheet" href="../css/contact.css">    
+        <link rel="stylesheet" href="../css/common.css">                
+    </head>
+    <body>
+        <%- include ('partials/header.ejs') %>
+
+        <section class="contactHead">
+            <h1>Contact Us</h1>
+            <p>Home/Contact Us</p>
+        </section>
+
+        <section class="mapImage">
+            <div class="map" id="map"></div>
+        </section>
+
+        <section class="contactSection">
+            <div class="contact">
+                <div class="contactDetails detail1">
+                    <i class="fas fa-home"></i>
+                    <h4>Noida, India</h4>
+                    <p>Sector 45</p>
+                </div>
+                <div class="contactDetails detail2">
+                    <i class="fas fa-phone"></i>
+                    <h4>00 (440) 9865 562</h4>
+                    <p>Mon to Fri 9am to 6pm</p>
+                </div>
+                <div class="contactDetails detail3">
+                    <i class="fas fa-home"></i>
+                    <h4>support@tvastra.com</h4>
+                    <p>Send us your query anytime!</p>
+                </div>
+            </div>            
+            <div class="inputContainer">
+                <input class="ip1" type="text" placeholder="Enter your name">
+                <input class="ip2" type="text" placeholder="Enter your email address">
+                <input class="ip3" type="text" placeholder="Enter subject">
+                <input class="ip4" type="text" placeholder="Enter message">
+                <div class="messageButton">
+                    <button class="secondary" type="submit">Send Message</button> 
+                </div>
+            </div>
+        </section>
+
+        <%- include ('partials/submitQuery.ejs') %>        
+        <%- include ('partials/footer.ejs') %>
+
+        <script src="../scripts/map.js"></script>
+    
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDipoKXR0jrMeoCg-K7DyVqWblRwsv-LPw&callback=myMap"></script>
+        
+        <script src="../scripts/navigation.js"></script>
+    </body>
+</html>
