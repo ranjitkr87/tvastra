@@ -9,7 +9,10 @@
     --light-gray:#f0f0f5;
     --button-blue:#0568aa;
     --black:#050505;
-  }  
+  } 
+  select{
+    cursor: pointer;
+  } 
     @font-face {
       font-family: "Nexa-Bold";
       src: url(../fonts/Nexa-Bold.otf) format('truetype')
