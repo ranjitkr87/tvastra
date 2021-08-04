@@ -100,6 +100,12 @@
       }
       .signFigure{
         padding: 0.5rem;
+        width: 100%;
+      text-align: left;
+      }
+      .signFigure img{
+        object-fit: cover;
+        width: fit-content;
       }
       .docFigure{
         height: auto;

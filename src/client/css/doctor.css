@@ -79,12 +79,12 @@ h1, h2, h3, h4, h5, h6, p,li {
     font-weight: 500;
     margin: auto;
   }
-  .name{
+  .docName{
   display: flex;
   color:var(--sky-blue);
   padding: 1rem 0rem;
   }
-  .name::before{
+  .docName::before{
   display: block;
   content: "";
   border-top: .15rem solid var(--lt-skyblue);
@@ -373,12 +373,12 @@ p, li{
       padding-right: .5rem;
       vertical-align: middle;
     }
-    .name{
+    .docName{
     display: flex;
     color:var(--button-blue);
     padding: 0rem 0rem;
     }
-    .name::before{
+    .docName::before{
     display: block;
     content: "";
     border-top: .1rem solid var(--button-blue);

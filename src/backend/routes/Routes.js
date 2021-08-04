@@ -1,9 +1,15 @@
 const express = require('express');
 const router = express.Router();
+const middle= require("../controllers/middle");
+const mainController = require("../controllers/MainController");
+const signupController= require("../controllers/SignupController");
 
 router.get('/', (req, res) => {
   res.render('index');
 });
+
+router.route("/signup").get(middle.redirect, mainController.signup);
+router.route("/signup").post(signupController.signup);
 
 router.get('/aboutApollo', (req, res) => {
   res.render('aboutApollo');
@@ -47,10 +53,6 @@ router.get('/login', (req, res) => {
 
 router.get('/query', (req, res) => {
   res.render('query');
-});
-
-router.get('/signup', (req, res) => {
-  res.render('signup');
 });
 
 router.get('/treatments', (req, res) => {

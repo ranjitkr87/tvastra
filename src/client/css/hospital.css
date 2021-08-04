@@ -71,12 +71,12 @@
       width: 100%;
        object-fit: contain;
       }
-    .name{
+    .hospName{
     display: flex;
     color:var(--sky-blue);
     padding: 1rem 0rem;
     }
-    .name::before{
+    .hospName::before{
     display: block;
     content: "";
     border-top: .15rem solid var(--lt-skyblue);
@@ -133,7 +133,7 @@
         grid-template-columns: 70% 30%;
         padding: 0rem;
     } 
-    .name{
+    .hospName{
       padding: 1rem 0rem;
     }  
     .hospitalSummary{
@@ -292,6 +292,9 @@
     }
     .hospitalSummary{
     }
+    .hospName::before {
+      transform: translateY(.5rem);
+  }
     .hospitalDetailSection{
       display: block;
       padding-right: 2rem;
@@ -309,6 +312,7 @@
       font-family: Nexa-Light;
       font-size: .8rem;
       text-shadow: .2px 0;
+      padding: 0rem;
     }
     .selectedFilters{
       font-family: Nexa-Light;

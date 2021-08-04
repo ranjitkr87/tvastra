@@ -52,10 +52,10 @@ button.onclick = function () {
 
     for (let j = 0; j < text.length; j++) 
     {        
-        if (text==doctors[j]) { window.open("../views/doctor.html"); }
+        if (text==doctors[j]) { window.open("../doctor"); }
 
-        else if (text==hospitals[j]) { window.open("../views/hospital.html"); }
+        else if (text==hospitals[j]) { window.open("../hospital"); }
 
-        else if (text==treatments[j]) { window.open("../views/treatments.html"); }
+        else if (text==treatments[j]) { window.open("../treatments"); }
     }
 }

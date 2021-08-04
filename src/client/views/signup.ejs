@@ -17,32 +17,34 @@
                     <h4>Sign Up</h4>
                 </div>
                 <div class="inputContainer">
-                    <input type="text" placeholder="Enter Name">
-                    <input type="text" placeholder="Enter Email">
-                    <input type="text" placeholder="Enter Password">
-                    <Select name="gender">
-                          <option selected>Select Your Gender</option>
-                          <option value="male">Male</option>
-                          <option value="female">Female</option>
-                          <option value="others">Others</option>
-                    </Select>
-                    <input type="text" placeholder="dd/mm/yyyy">
-                    <input type="text" placeholder="Enter Phone Number">
-                    <input class="subInput" type="text" placeholder="Enter City">
-                    <input class="subInput" type="text" placeholder="Enter State">
-                    <div class="input-box">
-                        <select name="country" id="country">
-                            <option value="" disabled selected hidden>Select your Country</option>
-                            <option value="India">India</option>
-                            <option value="UK">UK</option>
-                            <option value="USA">USA</option>
-                        </select>
-                    </div>
-    
-                    <div class="signUpButton">
-                        <button class="primary" type="submit">SIGN UP</button>
-                        <i class="fas fa-arrow-right"></i>                        
-                    </div>
+                    <form method="POST" action="/signup">
+                        <input type="text" name="name" id="name" placeholder="Enter Name" required>
+                        <input type="email" name="email" id="email" placeholder="Enter email" required>
+                        <input type="password" name="password" id="password" placeholder="Enter password" required>
+                        <Select name="gender" id="gender">
+                              <option disabled selected hidden>Select Your Gender</option>
+                              <option value="male">Male</option>
+                              <option value="female">Female</option>
+                              <option value="others">Others</option>
+                        </Select>
+                        <input type="text" name="DOB" id="DOB" placeholder="dd/mm/yyyy">
+                        <input type="text" name="number" id="number" placeholder="Enter Phone Number" required>
+                        <input class="subInput" type="text" name="city" id="city" placeholder="Enter City"required>
+                        <input class="subInput" type="text" name="state" id="state" placeholder="Enter State" required>
+                        <div class="input-box">
+                            <select name="country" id="country">
+                                <option value="" disabled selected hidden>Select your Country</option>
+                                <option value="India">India</option>
+                                <option value="UK">UK</option>
+                                <option value="USA">USA</option>
+                            </select>
+                        </div>
+        
+                        <div class="signUpButton">
+                            <button class="primary" type="submit">SIGN UP</button>
+                            <i class="fas fa-arrow-right"></i>                        
+                        </div>
+                    </form>
                 </div>
                 <div class="redirect">
                     <p >Already Registered?<a href="login">&nbsp;Login</a> </p>

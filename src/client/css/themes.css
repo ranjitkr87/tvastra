@@ -69,8 +69,6 @@ a{
   cursor: pointer;
 }
 a:hover{  
-  box-shadow: 0 0 1rem 0 rgba(99, 99, 99, 0.3);
-  font-size: 1.2rem;
   color: var(--button-blue);
 }
 input, select{
@@ -80,6 +78,7 @@ letter-spacing: 0.05rem;
 width: 100%;
 border: none;
 height: 40px;
+text-indent: 1rem;
 }
 
 input[type="checkbox"]
@@ -92,7 +91,7 @@ input[type="checkbox"]
 font-family: "Nexa-Light";
 color: var(--grey);
 letter-spacing: 0.05rem;
-text-indent: 5%;
+text-indent: 1rem;
 }
 button{
 border: none;

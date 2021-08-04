@@ -86,6 +86,7 @@
   .inputContainer input, .inputContainer select{
       border: solid 1px #e0e0e0;
       height: 35px;
+      margin-bottom: .5rem;
   }
   .subInput{
     width: 48%;
