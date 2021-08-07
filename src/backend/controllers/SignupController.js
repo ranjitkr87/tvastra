@@ -29,6 +29,43 @@ function signup(req, res){
         }
 }
 
+function login(req,res){
+    const{email,password}=req.body;
+    if(!(email || password)){
+        return res.render("login",{
+            err:"Please fill all fields"
+        })
+    }
+    else{
+        User.findOne({
+            where: {
+                email: email,
+                password: password,
+            },            
+        })
+        .then((user)=>{
+            console.log("user found");
+            req.session.name = user.name;
+            req.session.user_Id = user.id;
+            req.session.email = user.email;
+            if(user){
+                return res.redirect('/');
+            }
+        })
+        .catch((err)=>{
+            console.log('err');
+            return res.redirect("/signin")
+        });
+    }
+}
+
+function logout(req,res){
+    req.session.destroy();
+    res.redirect("/login");
+}
+
 module.exports={
-    signup: signup
+    signup: signup,
+    login:login,
+    logout:logout
 };

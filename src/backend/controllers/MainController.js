@@ -1,5 +1,9 @@
 const db = require('../databases/sqlite');
 
+function login(req, res){
+    res.render("login");
+}
+
 function signup(req, res){
     res.render("signup");
 }
@@ -18,6 +22,7 @@ function user_profile(req,res){
 }
 
 module.exports = { 
+    login:login,
     signup: signup,
     user_profile: user_profile
  };

@@ -11,6 +11,11 @@ router.get('/', (req, res) => {
 router.route("/signup").get(middle.redirect, mainController.signup);
 router.route("/signup").post(signupController.signup);
 
+router.route("/login").get(middle.redirect, mainController.login);
+router.route("/login").post(signupController.login);
+
+router.route('/logout').get(signupController.logout);
+
 router.get('/aboutApollo', (req, res) => {
   res.render('aboutApollo');
 });
@@ -45,10 +50,6 @@ router.get('/FAQ', (req, res) => {
 
 router.get('/hospital', (req, res) => {
   res.render('hospital');
-});
-
-router.get('/login', (req, res) => {
-  res.render('login');
 });
 
 router.get('/query', (req, res) => {

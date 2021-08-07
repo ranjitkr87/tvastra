@@ -35,7 +35,7 @@ app.use(session({
 
 app.use("/", routes);
 
-app.set("port", process.env.PORT || 5000);
+app.set("port", process.env.PORT || 2200);
 app.listen(app.get("port"), () => {
   console.log("App listening on port ", app.get("port"));
 });

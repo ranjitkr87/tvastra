@@ -36,11 +36,11 @@
   .inputContainer{
     padding: 1rem;
   }
-  .mobNumInput{
+  .emailInput{
       position: relative;
       padding-bottom: .5rem;
   }
-  .mobNumInput .fas{
+  .emailInput .fas{
       position: absolute;
       right: 5%;
       top: 50%;
