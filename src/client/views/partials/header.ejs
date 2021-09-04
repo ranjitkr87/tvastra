@@ -17,7 +17,7 @@
             </div>
             <div class="desktop-nav desktop">          
                     <ul>                            
-                        <li><a href="doctor">Doctors</a></li>
+                        <li><a href="doctor">Doctor</a></li>
                         <li><a href="hospital">Hospitals</a></li>
                         <li><a href="treatments">Treatments</a></li>
                         <li>Other Services</li>
@@ -25,13 +25,21 @@
                     </ul>
             </div>
             <div class="navButtons desktop">
+                <% if (session.userId) { %>
+                    <button class="third navButton1 navButton" onclick="location.href='/logout'">
+                            Logout
+                        </button>
+                        <button class="primary navButton2 navButton">                        
+                            Tvastra Plus
+                        </button>
+                    <% } else { %>
                         <button class="third navButton1" onclick="location.href='/login'">
                             Login/Signup
                         </button>
                         <button class="primary navButton2">                        
                             Get a Quote
                         </button>
-                        <a href="/logout">Logout</a>
+                    <% } %>
             </div>
             <i class="fas fa-bars mob-tab"></i>
         </nav>

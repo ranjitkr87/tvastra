@@ -5,7 +5,7 @@ const mainController = require("../controllers/MainController");
 const signupController= require("../controllers/SignupController");
 
 router.get('/', (req, res) => {
-  res.render('index');
+  res.render('index', {session: req.session});
 });
 
 router.route("/signup").get(middle.redirect, mainController.signup);
@@ -17,51 +17,51 @@ router.route("/login").post(signupController.login);
 router.route('/logout').get(signupController.logout);
 
 router.get('/aboutApollo', (req, res) => {
-  res.render('aboutApollo');
+  res.render('aboutApollo', {session: req.session});
 });
 
 router.get('/aboutUs', (req, res) => {
-  res.render('aboutUs');
+  res.render('aboutUs', {session: req.session});
 });
 
 router.get('/appoinment', (req, res) => {
-  res.render('appoinment');
+  res.render('appoinment', {session: req.session});
 });
 
 router.get('/contact', (req, res) => {
-  res.render('contact');
+  res.render('contact', {session: req.session});
 });
 
 router.get('/doctor', (req, res) => {
-  res.render('doctor');
+  res.render('doctor', {session: req.session});
 });
 
 router.get('/doctor-profile', (req, res) => {
-  res.render('doctor-profile');
+  res.render('doctor-profile', {session: req.session});
 });
 
 router.get('/doctor', (req, res) => {
-  res.render('doctor');
+  res.render('doctor', {session: req.session});
 });
 
 router.get('/FAQ', (req, res) => {
-  res.render('FAQ');
+  res.render('FAQ', {session: req.session});
 });
 
 router.get('/hospital', (req, res) => {
-  res.render('hospital');
+  res.render('hospital', {session: req.session});
 });
 
 router.get('/query', (req, res) => {
-  res.render('query');
+  res.render('query', {session: req.session});
 });
 
 router.get('/treatments', (req, res) => {
-  res.render('treatments');
+  res.render('treatments', {session: req.session});
 });
 
 router.get('/tvastraPlus', (req, res) => {
-  res.render('tvastraPlus');
+  res.render('tvastraPlus', {session: req.session});
 });
 
 module.exports = router;

@@ -12,11 +12,19 @@ function signup(req, res){
             .then((result)=>{
                 if(result){
                     console.log(result)
-                    req.session.email = result.email;
-                    req.session.user_Id = result.id;
-                    req.session.name = result.name
+                    req.session.user={email,password};
+                    req.session.name=name;
+                    req.session.email=email;
+                    req.session.gender=gender;
+                    req.session.DOB=DOB;
+                    req.session.number=number;
+                    req.session.state=state;
+                    req.session.city=city;
+                    req.session.country=country;
+                    
+            req.flash("success", "Signup successfull, Please Login!");
+            return res.redirect("/login");   
 
-                    return res.redirect('/')
                 }
             })
             .catch((error)=>{
@@ -29,39 +37,33 @@ function signup(req, res){
         }
 }
 
-function login(req,res){
-    const{email,password}=req.body;
-    if(!(email || password)){
-        return res.render("login",{
-            err:"Please fill all fields"
-        })
-    }
-    else{
-        User.findOne({
-            where: {
-                email: email,
-                password: password,
-            },            
-        })
-        .then((user)=>{
-            console.log("user found");
-            req.session.name = user.name;
-            req.session.user_Id = user.id;
-            req.session.email = user.email;
-            if(user){
-                return res.redirect('/');
+const login=async(req,res)=>{
+    if(req.body.email && req.body.password){
+        const user=await User.findOne({where:{email:req.body.email}});
+        if (user){
+            const checkPassword=await User.findOne({where:{password:req.body.password}});
+            if(checkPassword){
+                req.session.userId=user.id;
+                req.user=user;
+                req.session.error="";
+                res.redirect("/");                
             }
-        })
-        .catch((err)=>{
-            console.log('err');
-            return res.redirect("/signin")
-        });
+            else{
+                req.session.error="Incorrect email or password";
+                res.redirect("/login");
+            }
+        }
+        else{
+            req.session.error = "Email Not Registered"
+			res.redirect('/login');
+        }
     }
 }
 
 function logout(req,res){
     req.session.destroy();
     res.redirect("/login");
+    console.log("session destroyed");
 }
 
 module.exports={

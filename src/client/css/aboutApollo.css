@@ -51,25 +51,6 @@
     font-size: 1rem;
     font-weight: 500;
   }
-  .name{
-    font-family: 'nexa-bold';
-    font-size: 1.5rem;
-    color: var(--button-blue);
-    position: relative;
-    text-align: left;
-    padding: 1rem 2rem 1rem 0rem;
-  }
-  .name::before{
-    display: inline-block;
-        content: "";
-        width: 2rem;
-        height: 2px;
-        background: var(--button-blue);
-        border-radius: 1rem;
-        margin-right: .5rem;
-        transform: translateY(-0.1rem);
-        vertical-align: middle;
-  }
   .Summary p{
   text-align: left;
   font-size: .8rem;
@@ -158,20 +139,6 @@
       grid-template-columns: 1fr 1fr;
       padding: 0rem 1rem 2rem 0rem;
     }
-    .name{
-      padding: 1.5rem 0rem 1.5rem 1rem;
-    }
-    .name::before {
-      content: '';
-    border-bottom: .1px solid var(--button-blue);
-    display: inline-block;
-    width: 2rem;
-    margin: 0rem;
-    margin-left: -1rem;
-    position: absolute;
-    bottom: 50%;
-    left: 0rem;
-  }
   .addressAndBed{
     grid-gap: .5rem;
   }
@@ -232,15 +199,6 @@
     .addressAndBed {
       grid-template-columns: 3% 97%;
   }  
-    .name{
-      font-size: 2.2rem;
-      padding: 2rem;
-    }
-    
-    .name::before {
-      border-bottom:1px;
-      width: 2rem
-  }
     .hospitalLoc {
       padding: 0rem 1rem 2rem 2rem;
   }

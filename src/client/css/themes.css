@@ -225,4 +225,7 @@ letter-spacing: 0.05rem;
         padding: .8rem .5rem;
         font-size: .8rem;
       }
+      .navButton{
+        width: 106.34px;
+      }
 }

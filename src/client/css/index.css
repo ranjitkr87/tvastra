@@ -152,20 +152,6 @@ margin-bottom:1rem;
 .doctor-profile figure{
   width: 100%;
   }
-.name{
-display: flex;
-color:var(--sky-blue);
-font-family: 'nexa-bold';
-padding: 1rem 0rem;
-}
-.name::before{
-display: block;
-content: "";
-border-top: .13rem solid var(--lt-skyblue);
-width: 1.5rem;
-transform: translateY(.5rem);
-margin-right: 7px;
-}
 .doc-details li{
 position: relative;
 text-align: left;

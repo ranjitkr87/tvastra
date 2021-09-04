@@ -1,13 +1,13 @@
 const express = require('express');
+const app = express();
 const session = require('express-session');
 const cookieParser = require("cookie-parser");
+const flash = require('connect-flash');
 const cors = require("cors");
 const compression = require("compression");
 const logger = require('morgan');
 const path = require('path');
 const routes = require('./backend/routes/Routes');
-
-const app = express();
 
 app.use(cors());
 app.use(compression());
@@ -25,17 +25,16 @@ app.use(session({
   secret: "KonfinitySecretKey",
   resave: false,
   saveUninitialized: false,
-  cookie: {
-    path: "/",
-    httpOnly: true,
-    secure: false,
-    maxAge: null
-}
+  cookie: { path: "/", httpOnly: true, secure: false, maxAge: null}
 }));
+
+app.use(flash());
 
 app.use("/", routes);
 
-app.set("port", process.env.PORT || 2200);
+
+
+app.set("port", process.env.PORT || 1200);
 app.listen(app.get("port"), () => {
   console.log("App listening on port ", app.get("port"));
 });
