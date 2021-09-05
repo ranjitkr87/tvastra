@@ -5,7 +5,7 @@ function login(req, res){
 }
 
 function signup(req, res){
-    res.render("signup");
+    res.render("signup", {session: req.session});
 }
 
 function user_profile(req,res){

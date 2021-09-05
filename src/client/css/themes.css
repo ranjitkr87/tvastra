@@ -99,12 +99,6 @@ letter-spacing: .05rem;
 font-weight: lighter;
 cursor: pointer;
 }
-button:hover {
-  height: 50px;
-  font-size: 1.2rem;
-  box-shadow: 0 0 1rem 0 rgba(99, 99, 99, 0.3);
-  border: none;
-}
 .primary{
 background-color: var(--dark-blue);
 padding:.5rem 1rem;
@@ -224,6 +218,12 @@ letter-spacing: 0.05rem;
         border-radius: 5px;
         padding: .8rem .5rem;
         font-size: .8rem;
+      }
+      .navButton1:hover{
+        background-color: var(--mid-grey);
+      }
+      .navButton2:hover{
+        background-color: #353558;
       }
       .navButton{
         width: 106.34px;
