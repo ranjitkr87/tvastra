@@ -450,4 +450,7 @@
       .tab-desktop{
         display: block;
       }
+      .hidden {
+        display: none;
+      }
     }

@@ -12,6 +12,16 @@
         <%- include ('partials/header.ejs') %>
 
         <section class="container">
+            <% if (session.error) { %>
+                <div class="failure" id="failure" >
+                    <i class="fas fa-times-circle"></i> 
+                    <div class="failure-message">
+                       <h5>Failure</h5> 
+                       <h6>Incorrect Email or password</h6>                                                                                                                                                                
+                    </div>  
+                    <i class="fas fa-times"></i>                                                                                                                                                                                                                                                                                                                                   
+                </div>
+                <% }  %>
             <div class="loginBox">
                 <div class="loginBoxhead">
                     <h4>Email Login</h4>

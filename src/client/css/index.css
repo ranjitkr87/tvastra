@@ -447,7 +447,6 @@ border-radius: 10px;
   }
   .success-message h5, .success-message h6{
     padding: .2rem;
-    justify-self: self-start;
   }
 
   .container1 p{
