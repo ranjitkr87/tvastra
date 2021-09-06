@@ -21,10 +21,7 @@ function signup(req, res){
                     req.session.state=state;
                     req.session.city=city;
                     req.session.country=country;
-                    
-            req.flash("success", "Signup successfull, Please Login!");
-            return res.redirect("/login");   
-
+                    return res.redirect("/login");   
                 }
             })
             .catch((error)=>{

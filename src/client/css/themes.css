@@ -211,8 +211,14 @@ letter-spacing: 0.05rem;
       .primary{
       background-color: var(--dark-blue);
       }
+      .primary:hover{
+        background-color: #353558;
+      }
       .secondary{
       background-color: var(--sky-blue);
+      }
+      .secondary:hover{
+      background-color: #0298f5;
       }
       .navButton1, .navButton2{
         border-radius: 5px;
@@ -220,7 +226,7 @@ letter-spacing: 0.05rem;
         font-size: .8rem;
       }
       .navButton1:hover{
-        background-color: var(--mid-grey);
+        background-color: #f8f7f7;
       }
       .navButton2:hover{
         background-color: #353558;

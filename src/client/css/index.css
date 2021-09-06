@@ -438,6 +438,7 @@ border-radius: 10px;
     width: 220px;
     border-left: 5px solid rgba(3, 133, 3, 0.827);
     padding: 0.5rem;
+    visibility: hidden;
   }
   .success .fa-check-circle{
     font-size: 1.5rem;

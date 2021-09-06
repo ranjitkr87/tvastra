@@ -11,7 +11,7 @@
     <body>
         <%- include ('partials/header.ejs') %>
         <section class="container container1">
-            <% if (session.userId) { %>
+            <% if (session) { %>
                 <div class="success" id="success">
                     <i class="far fa-check-circle"></i> 
                     <div class="success-message">
@@ -22,7 +22,7 @@
                 </div>
                 <% }  %>
             <h1>Find Affordable Healthcare</h1>
-            <p >cd <source>
+            <p >
                 Join the thousands of others who have exercised their right to quality healthcare at a price you can afford.
             </p>
             <div class="subcontainer1">
