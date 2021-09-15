@@ -40,13 +40,30 @@
       position: relative;
       padding-bottom: .5rem;
   }
-  .emailInput .fas{
+  .emailInput .fas,.emailInput .far{
       position: absolute;
       right: 5%;
       top: 50%;
       transform: translateY(-70%);
       color: var(--mid-grey);
       font-size: 1.2rem;
+  }
+  .emailInput .far{
+    color: var(--sky-blue);
+    font-weight: bolder;
+  }
+  .otpandForgotpswd{
+    color: var(--sky-blue);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem 0rem;
+  }
+  .otpandForgotpswd a{
+    font-family: "Nexa-Bold";
+    justify-self: left;
+  }
+  .otpandForgotpswd a:nth-child(2){
+    justify-self: right;
   }
   .loginButton{
     position: relative;
@@ -106,7 +123,39 @@
       margin: 15rem 25rem;
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
-    
+    .inputContainer {
+      text-align: center;
+    }
+    .inputContainer p{
+      color: var(--grey);
+      font-size: .8rem;
+      padding: 1rem 0rem;
+    }
+    #partitioned {
+      padding: 1rem 0rem;
+      border: none;
+      width: 6ch;
+      background:                           
+    repeating-linear-gradient(90deg, 
+    var(--deep-blue) 0, 
+    var(--deep-blue) 1ch, 
+        transparent 0, 
+        transparent 1.5ch) 
+      0 100%/100% 2px no-repeat;
+  font: 9ch "Nexa-Light";
+  letter-spacing: .5ch;
+    }    
+  .resend{
+    color: var(--sky-blue);
+    padding: 1rem 0rem .5rem 0rem;
+  }
+  .loginWithPassword{
+    padding: 1rem 0rem;
+  }
+  .loginWithPassword a{
+    font-family: "Nexa-Bold";
+    color: var(--sky-blue);
+  }
   .failure{
     position: absolute;
     right: 1%;

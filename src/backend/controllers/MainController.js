@@ -7,9 +7,18 @@ function login(req, res){
 function signup(req, res){
     res.render("signup", {session: req.session});
 }
+function OTP(req, res){
+    res.render("OTP",{session: req.session});
+}
+function index(req, res){
+    res.render("index", {name : req.session.name});
+}
+
 
 
 module.exports = { 
     login:login,
     signup: signup,
+    OTP:OTP,
+    index:index
  };

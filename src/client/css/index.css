@@ -446,6 +446,9 @@ border-radius: 10px;
   .success .fa-times{
     color: var(--grey);
   }
+  .success .fa-times:hover{
+    color: black;
+  }
   .success-message h5, .success-message h6{
     padding: .2rem;
   }

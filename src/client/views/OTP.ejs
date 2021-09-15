@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Tvastra.com</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+        <link rel="stylesheet" href="../css/reset.css">
+        <link rel="stylesheet" href="../css/themes.css">
+        <link rel="stylesheet" href="../css/login.css">               
+        <link rel="stylesheet" href="../css/common.css">     
+    </head>
+    <body>
+        <%- include ('partials/header.ejs') %>
+
+        <section class="container">
+            <div class="loginBox">
+                <div class="loginBoxhead">
+                    <h4>OTP</h4>
+                </div>
+                <form action="/otpValidation" method="post">
+                    <div class="inputContainer">
+                        <p>We have sent One Time Password(OTP) to your registered Phone Number</p>
+                        <input id="partitioned" type="text" maxlength="4" >
+                        <div class="resend">
+                            <a href="">Resend in </a>
+                        </div>
+                        <div class="loginButton">
+                            <button class="primary" type="submit">SUMBIT</button>
+                            <i class="fas fa-arrow-right"></i>      
+                        </div>
+                </form>
+                </div>
+            </div>
+            <div class="foot-rights">
+                <p class="copyright">All Rights Reserved &copy; Tvastra 2020</p>
+            </div>
+        </section>
+    </body>
+</html>
