@@ -11,7 +11,7 @@ function OTP(req, res){
     res.render("OTP",{session: req.session});
 }
 function index(req, res){
-    res.render("index", {name : req.session.name});
+    res.render("index", {name : req.session});
 }
 
 

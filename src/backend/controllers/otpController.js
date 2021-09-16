@@ -34,28 +34,26 @@ const otpRequest=async(req,res,next)=>{
     }
 }
 
-function otpValidation(req,res,next){
+function otpValidation(req,res){
     var code=req.body.code;
-    vonage.verify.check({
-        request_id: req.session.request_id,
-        code: code
-    },(err,result)=>{
+    vonage.verify.check({request_id: req.session.request_id, code: code},(err,result)=>{
         if(err){
+            console.log("Error type 4 ");
             console.log(err);
             res.redirect("/login");
         }
         else{
             if(result.status == 0){
-                console.log("otp verified")
-                next();
+                console.log("otp verified");
+                res.redirect("/");     
             }
             else{
+                console.log("Error type 5 ");
                 req.session.destroy();
                 res.redirect("/login")
             }
         }
     })
-
 }
 
 module.exports={
