@@ -12,7 +12,7 @@
         <%- include ('partials/header.ejs') %>
 
         <section class="container">
-            <% if (session.error) { %>
+            <% if (user) { %>
                 <div class="failure" id="failure" >
                     <i class="fas fa-times-circle"></i> 
                     <div class="failure-message">

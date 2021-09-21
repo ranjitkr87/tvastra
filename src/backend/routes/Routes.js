@@ -1,79 +1,47 @@
 const express = require('express');
 const router = express.Router();
 const middle= require("../controllers/middle");
-const mainController = require("../controllers/MainController");
-const signupController= require("../controllers/SignupController");
+const getController = require("../controllers/getControllers");
+const postController= require("../controllers/postControllers");
 const otpController= require("../controllers/otpController");
 
-router.get('/', (req, res) => {
-  res.render('index', {session: req.session});
-});
+router.route("/").get(middle.redirect, getController.index);
 
-router.route("/signup").get(middle.redirect, mainController.signup);
-router.route("/signup").post(signupController.signup);
+router.route("/signup").get(middle.redirect, getController.signup);
+router.route("/signup").post(postController.signup);
 
-router.route("/login").get(middle.redirect, mainController.login);
-router.route("/login").post(signupController.login);
+router.route("/login").get(middle.redirect, getController.login);
+router.route("/login").post(postController.login);
 
-router.route('/logout').get(signupController.logout);
+router.route('/logout').get(postController.logout);
 
-router.get('/aboutApollo', (req, res) => {
-  res.render('aboutApollo', {session: req.session});
-});
+router.route("/aboutApollo").get(middle.redirect, getController.aboutApollo);
 
-router.get('/aboutUs', (req, res) => {
-  res.render('aboutUs', {session: req.session});
-});
+router.route("/appoinment").get(middle.redirect, getController.appoinment);
 
-router.get('/appoinment', (req, res) => {
-  res.render('appoinment', {session: req.session});
-});
+router.route("/contact").get(middle.redirect, getController.contactUs);
 
-router.get('/contact', (req, res) => {
-  res.render('contact', {session: req.session});
-});
+router.route("/doctor").get(middle.redirect, getController.doctor);
 
-router.get('/doctor', (req, res) => {
-  res.render('doctor', {session: req.session});
-});
+router.route("/doctor-profile").get(middle.redirect, getController.doctor_profile);
 
-router.get('/doctor-profile', (req, res) => {
-  res.render('doctor-profile', {session: req.session});
-});
+router.route("/FAQ").get(middle.redirect, getController.FAQ);
 
-router.get('/FAQ', (req, res) => {
-  res.render('FAQ', {session: req.session});
-});
+router.route("/hospital").get(middle.redirect, getController.hospital);
 
-router.get('/hospital', (req, res) => {
-  res.render('hospital', {session: req.session});
-});
+router.route("/newPassword").get(middle.redirect, getController.newPassword);
 
-router.get('/newPassword', (req, res) => {
-  res.render('newPassword', {session: req.session});
-});
+router.route("/OTP").get(middle.redirect, getController.OTP);
 
-router.get('/OTP', (req, res) => {
-  res.render('OTP', {session: req.session});
-});
+router.route("/phoneLogin").get(middle.redirect, getController.phoneLogin);
 
-router.get('/phoneLogin', (req, res) => {
-  res.render('phoneLogin', {session: req.session});
-});
+router.route("/otpRequest").post(otpController.otpRequest,getController.OTP);
+router.route("/otpValidation").post(otpController.otpValidation);
 
-router.route("/otpRequest").post(otpController.otpRequest,mainController.OTP);
-router.route("/otpValidation").post(otpController.otpValidation,mainController.index);
+router.route("/query").get(middle.redirect, getController.query);
 
-router.get('/query', (req, res) => {
-  res.render('query', {session: req.session});
-});
+router.route("/treatments").get(middle.redirect, getController.treatments);
 
-router.get('/treatments', (req, res) => {
-  res.render('treatments', {session: req.session});
-});
-
-router.get('/tvastraPlus', (req, res) => {
-  res.render('tvastraPlus', {session: req.session});
-});
+router.route("/tvastraPlus").get(middle.redirect, getController.tvastraPlus);
 
 module.exports = router;

@@ -25,11 +25,11 @@
                     </ul>
             </div>
             <div class="navButtons desktop">
-                <% if (session.userId) { %>
+                <% if (user) { %>
                     <button class="third navButton1 navButton" onclick="location.href='/logout'">
                             Logout
                         </button>
-                        <button class="primary navButton2 navButton">                        
+                        <button class="primary navButton2 navButton" onclick="location.href='/tvastraPlus'">                        
                             Tvastra Plus
                         </button>
                     <% } else { %>

@@ -4,10 +4,9 @@ const User = dbConn.Users;
 const Vonage = require('@vonage/server-sdk')
 
 const vonage = new Vonage({
-  apiKey: "b7d1fa31",
-  apiSecret: "6iedGDpMOaCqE2ZE"
+  apiKey: "dcddb408",
+  apiSecret: "U5tsDT5tF9cTSKd8"
 })
-
 const otpRequest=async(req,res,next)=>{
     const user=await User.findOne({where:{number:req.body.number}});
     if (user){
@@ -35,6 +34,8 @@ const otpRequest=async(req,res,next)=>{
 }
 
 function otpValidation(req,res){
+
+    const user=User.findOne({where:{number:req.body.number}});
     var code=req.body.code;
     vonage.verify.check({request_id: req.session.request_id, code: code},(err,result)=>{
         if(err){
@@ -45,7 +46,10 @@ function otpValidation(req,res){
         else{
             if(result.status == 0){
                 console.log("otp verified");
-                res.redirect("/");     
+                console.log("login success")
+                req.session.user=user;
+                req.session.error="";
+                res.redirect("/"); 
             }
             else{
                 console.log("Error type 5 ");

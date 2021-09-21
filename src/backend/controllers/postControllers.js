@@ -40,8 +40,8 @@ const login=async(req,res)=>{
         if (user){
             const checkPassword=await User.findOne({where:{password:req.body.password}});
             if(checkPassword){
-                req.session.userId=user.id;
-                req.user=user;
+                console.log("login success")
+                req.session.user=user;
                 req.session.error="";
                 res.redirect("/");                
             }
