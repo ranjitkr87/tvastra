@@ -9,6 +9,12 @@ function login(req, res){
 function phoneLogin(req, res){
     res.render("phoneLogin", {user:req.session.user});
 }
+function forgotPassword(req, res){
+    res.render("forgotPassword", {user:req.session.user});
+}
+function otpForPasswordReset(req, res){
+    res.render("otpForPasswordReset", {user:req.session.user});
+}
 function signup(req, res){
     res.render("signup", {user:req.session.user});
 }
@@ -50,6 +56,8 @@ module.exports = {
     signup: signup,
     OTP:OTP,
     phoneLogin:phoneLogin,
+    forgotPassword:forgotPassword,
+    otpForPasswordReset:otpForPasswordReset,
     contactUs:contactUs,
     aboutApollo:aboutApollo,
     aboutUs:aboutUs,

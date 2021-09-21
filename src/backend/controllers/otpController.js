@@ -33,8 +33,7 @@ const otpRequest=async(req,res,next)=>{
     }
 }
 
-function otpValidation(req,res){
-
+function otpValidation(req,res,next){
     const user=User.findOne({where:{number:req.body.number}});
     var code=req.body.code;
     vonage.verify.check({request_id: req.session.request_id, code: code},(err,result)=>{
@@ -49,7 +48,7 @@ function otpValidation(req,res){
                 console.log("login success")
                 req.session.user=user;
                 req.session.error="";
-                res.redirect("/"); 
+                next();
             }
             else{
                 console.log("Error type 5 ");

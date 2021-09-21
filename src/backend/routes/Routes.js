@@ -29,14 +29,17 @@ router.route("/FAQ").get(middle.redirect, getController.FAQ);
 
 router.route("/hospital").get(middle.redirect, getController.hospital);
 
-router.route("/newPassword").get(middle.redirect, getController.newPassword);
-
 router.route("/OTP").get(middle.redirect, getController.OTP);
 
 router.route("/phoneLogin").get(middle.redirect, getController.phoneLogin);
 
+router.route("/forgotPassword").get(middle.redirect, getController.forgotPassword);
+router.route("/otpForPasswordReset").post(otpController.otpRequest,getController.otpForPasswordReset);
+router.route("/resetPassword").post(otpController.otpValidation, getController.newPassword);
+
+
 router.route("/otpRequest").post(otpController.otpRequest,getController.OTP);
-router.route("/otpValidation").post(otpController.otpValidation);
+router.route("/otpValidation").post(otpController.otpValidation, getController.index);
 
 router.route("/query").get(middle.redirect, getController.query);
 
