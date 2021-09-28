@@ -536,6 +536,10 @@ border-radius: 10px;
         margin: 0rem;
         border: 2px solid var(--light-gray);
       }
+      .steps li:hover{
+        background-color: var(--light-gray);
+        border: 1px solid var(--button-blue);
+      }
       .stp1{
       grid-row: 1/2;
       }

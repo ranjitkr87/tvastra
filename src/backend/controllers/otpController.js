@@ -4,8 +4,8 @@ const User = dbConn.Users;
 const Vonage = require('@vonage/server-sdk')
 
 const vonage = new Vonage({
-  apiKey: "dcddb408",
-  apiSecret: "U5tsDT5tF9cTSKd8"
+  apiKey: "7be14c9a",
+  apiSecret: "f6snyDOdix6o486x"
 })
 const otpRequest=async(req,res,next)=>{
     const user=await User.findOne({where:{number:req.body.number}});
@@ -44,8 +44,6 @@ function otpValidation(req,res,next){
         }
         else{
             if(result.status == 0){
-                console.log("otp verified");
-                console.log("login success")
                 req.session.user=user;
                 req.session.error="";
                 next();

@@ -46,15 +46,41 @@ const login=async(req,res)=>{
                 res.redirect("/");                
             }
             else{
+                console.log("Incorrect email or password")
                 req.session.error="Incorrect email or password";
                 res.redirect("/login");
             }
         }
         else{
+            console.log("Email Not Registered")
             req.session.error = "Email Not Registered"
 			res.redirect('/login');
         }
     }
+}
+
+function newPassword(req,res){
+    User.findOne({where:({name:req.session.name})})
+    .then(users=>{
+        var user=users.dataValues;
+        var password= req.body.password;
+        if(users){
+            users.update({
+            password: password
+            }).then(users=>{
+                console.log("Password Successfuly updated")
+                res.redirect("/login")
+            })
+            .catch(err=>{
+                console.log(err, "password not updated");
+                res.redirect("/login");
+            })
+        }
+    })
+    .catch(err=>{
+        console.log(err, "user not found after otp verification");
+        res.redirect("/login");
+    })
 }
 
 function logout(req,res){
@@ -66,5 +92,6 @@ function logout(req,res){
 module.exports={
     signup: signup,
     login:login,
-    logout:logout
+    logout:logout,
+    newPassword:newPassword
 };

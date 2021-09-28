@@ -37,9 +37,11 @@ router.route("/forgotPassword").get(middle.redirect, getController.forgotPasswor
 router.route("/otpForPasswordReset").post(otpController.otpRequest,getController.otpForPasswordReset);
 router.route("/resetPassword").post(otpController.otpValidation, getController.newPassword);
 
+router.route("/newPassword").post(postController.newPassword);
+
 
 router.route("/otpRequest").post(otpController.otpRequest,getController.OTP);
-router.route("/otpValidation").post(otpController.otpValidation, getController.index);
+router.route("/otpValidation").post(otpController.otpValidation);
 
 router.route("/query").get(middle.redirect, getController.query);
 
