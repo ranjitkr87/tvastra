@@ -108,7 +108,6 @@ color: white;
 .secondary{
 background-color: var(--button-blue);
 color: white;
-padding:.5rem;
 font-weight: 600;
 }
 .doctor-button{
@@ -122,6 +121,8 @@ font-weight: 600;
   color: var(--dark-blue);
   border: 1px solid;
   border-color: var(--dark-blue);
+  
+  margin-right: .5rem;
 }
 .show-more{
 color: var(--sky-blue);
@@ -219,7 +220,7 @@ letter-spacing: 0.05rem;
         background-color: #353558;
       }
       .secondary{
-      background-color: var(--sky-blue);
+      background-color: var(--button-blue);
       }
       .secondary:hover{
       background-color: #0298f5;
@@ -233,9 +234,12 @@ letter-spacing: 0.05rem;
         background-color: #f8f7f7;
       }
       .navButton2:hover{
-        background-color: #353558;
+        background-color: var(--sky-blue);
       }
       .navButton{
-        width: 106.34px;
+        width: 115px;
+        border-radius: 5px;
+        padding: .8rem .5rem;
+        font-size: .8rem;
       }
 }

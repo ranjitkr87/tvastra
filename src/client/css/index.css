@@ -539,6 +539,7 @@ border-radius: 10px;
       .steps li:hover{
         background-color: var(--light-gray);
         border: 1px solid var(--button-blue);
+        cursor: pointer;
       }
       .stp1{
       grid-row: 1/2;

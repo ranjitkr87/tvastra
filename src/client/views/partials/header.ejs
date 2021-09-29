@@ -24,22 +24,35 @@
                         <li><a href="aboutUs">About</a></li>
                     </ul>
             </div>
-            <div class="navButtons desktop">
-                <% if (user) { %>
-                    <button class="third navButton1 navButton" onclick="location.href='/logout'">
-                            Logout
-                        </button>
-                        <button class="primary navButton2 navButton" onclick="location.href='/tvastraPlus'">                        
+            <div class=" desktop">
+                <div class="navButtons">
+                    <% if (user) { %>
+                        <button class="secondary navButton2 navButton" onclick="location.href='/tvastraPlus'">                        
                             Tvastra Plus
                         </button>
-                    <% } else { %>
-                        <button class="third navButton1" onclick="location.href='/login'">
-                            Login/Signup
-                        </button>
-                        <button class="primary navButton2">                        
-                            Get a Quote
-                        </button>
-                    <% } %>
+                        <button class="primary navButton" >
+                                Get A Quote
+                            </button>
+                            <div class="drop" >
+                                <a >
+                                    <div class="userName">
+                                        <%= user.name  %>
+                                       <i class="fas fa-angle-down "></i>
+                                    </div>
+                                </a>
+                                <div class="dropContent">
+                                    <a href="/logout">Logout</a>
+                                </div>
+                            </div>  
+                        <% } else { %>
+                            <button class="third navButton1" onclick="location.href='/login'">
+                                Login/Signup
+                            </button>
+                            <button class="primary navButton2">                        
+                                Get a Quote
+                            </button>
+                        <% } %>
+                </div>
             </div>
             <i class="fas fa-bars mob-tab"></i>
         </nav>

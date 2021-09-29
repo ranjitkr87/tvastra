@@ -17,6 +17,8 @@ router.route('/logout').get(postController.logout);
 
 router.route("/aboutApollo").get(middle.redirect, getController.aboutApollo);
 
+router.route("/aboutUs").get(middle.redirect, getController.aboutUs);
+
 router.route("/appoinment").get(middle.redirect, getController.appoinment);
 
 router.route("/contact").get(middle.redirect, getController.contactUs);
