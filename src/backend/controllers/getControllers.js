@@ -4,7 +4,12 @@ function index(req, res){
     res.render("index", {user:req.session.user});
 }
 function login(req, res){
-    res.render("login", {user:req.session.user});
+    var errorMsg = req.session.errorMsg;
+    var passwordChanged = req.session.passwordChanged;
+    req.session.errorMsg = null;
+    req.session.passwordChanged = null;
+
+    res.render("login", {user:req.session.user,errorMsg:errorMsg,passwordChanged:passwordChanged});
 }
 function phoneLogin(req, res){
     res.render("phoneLogin", {user:req.session.user});

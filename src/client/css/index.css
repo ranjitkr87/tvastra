@@ -426,32 +426,6 @@ border-radius: 10px;
       display: table-cell;
       vertical-align: middle;
   }
-  .success{
-    position: absolute;
-    right: 1%;
-    top: 17%;
-    background-color: white;
-    color: rgba(3, 133, 3, 0.827);
-    display: grid;
-    grid-template-columns: 15% 70% 15%;
-    align-items: center;
-    width: 220px;
-    border-left: 5px solid rgba(3, 133, 3, 0.827);
-    padding: 0.5rem;
-    visibility: hidden;
-  }
-  .success .fa-check-circle{
-    font-size: 1.5rem;
-  }
-  .success .fa-times{
-    color: var(--grey);
-  }
-  .success .fa-times:hover{
-    color: black;
-  }
-  .success-message h5, .success-message h6{
-    padding: .2rem;
-  }
 
   .container1 p{
     font-size: 1rem;

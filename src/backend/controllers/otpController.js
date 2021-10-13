@@ -4,11 +4,13 @@ const User = dbConn.Users;
 const Vonage = require('@vonage/server-sdk')
 
 const vonage = new Vonage({
-  apiKey: "7be14c9a",
-  apiSecret: "f6snyDOdix6o486x"
+  apiKey: "b754f00a",
+  apiSecret: "goZeo2oyiJV1dq43"
 })
+var user;
+
 const otpRequest=async(req,res,next)=>{
-    const user=await User.findOne({where:{number:req.body.number}});
+    user=await User.findOne({where:{number:req.body.number}});
     if (user){
         req.session.name=user.name;
         req.session.email=user.email;
@@ -22,7 +24,7 @@ const otpRequest=async(req,res,next)=>{
             else{
                 console.log(result);
                 req.session.request_id=result.request_id;
-                req.session.number=mobNumber;
+                req.session.number=mobNumber;      
                 next();
             }
         })
@@ -34,7 +36,6 @@ const otpRequest=async(req,res,next)=>{
 }
 
 function otpValidation(req,res,next){
-    const user=User.findOne({where:{number:req.body.number}});
     var code=req.body.code;
     vonage.verify.check({request_id: req.session.request_id, code: code},(err,result)=>{
         if(err){
@@ -44,8 +45,10 @@ function otpValidation(req,res,next){
         }
         else{
             if(result.status == 0){
+                console.log("done");
                 req.session.user=user;
                 req.session.error="";
+                console.log(user.name);
                 next();
             }
             else{

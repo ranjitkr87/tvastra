@@ -12,16 +12,28 @@
         <%- include ('partials/header.ejs') %>
 
         <section class="container">
-            <% if (user) { %>
+            <% if (errorMsg) { %>
                 <div class="failure" id="failure" >
                     <i class="fas fa-times-circle"></i> 
                     <div class="failure-message">
                        <h5>Failure</h5> 
-                       <h6>Incorrect Email or password</h6>                                                                                                                                                                
+                       <h6><%= errorMsg %></h6>                                                                                                                                                               
                     </div>  
                     <i class="fas fa-times"></i>                                                                                                                                                                                                                                                                                                                                   
                 </div>
-                <% }  %>
+                <% } 
+                if (passwordChanged) { %>
+                    <div class="success" id="success" >
+                        <i class="fas fa-times-circle"></i> 
+                        <div class="success-message">
+                           <h5>Success</h5> 
+                           <h6><%= passwordChanged %></h6>                                                                                                                                                               
+                        </div>  
+                        <i class="fas fa-times"></i>                                                                                                                                                                                                                                                                                                                                   
+                    </div>
+                    <% } 
+                 %>
+
             <div class="loginBox">
                 <div class="loginBoxhead">
                     <h4>Email Login</h4>

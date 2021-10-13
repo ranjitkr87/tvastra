@@ -47,13 +47,13 @@ const login=async(req,res)=>{
             }
             else{
                 console.log("Incorrect email or password")
-                req.session.error="Incorrect email or password";
+                req.session.errorMsg = "Invalid Password!"
                 res.redirect("/login");
             }
         }
         else{
             console.log("Email Not Registered")
-            req.session.error = "Email Not Registered"
+            req.session.errorMsg = "Email Not Registered"
 			res.redirect('/login');
         }
     }
@@ -69,6 +69,8 @@ function newPassword(req,res){
             password: password
             }).then(users=>{
                 console.log("Password Successfuly updated")
+                req.session.passwordChanged = "Password Successfuly updated";
+                req.session.destroy();
                 res.redirect("/login")
             })
             .catch(err=>{

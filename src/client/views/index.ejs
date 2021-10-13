@@ -12,7 +12,7 @@
         <%- include ('partials/header.ejs') %>
         <section class="container container1">
             <% if (user) { %>
-                <div class="success" id="success">
+                <div class="success desktop" id="success">
                     <i class="far fa-check-circle"></i> 
                     <div class="success-message">
                        <h5>Success</h5> 
@@ -313,15 +313,16 @@
         <%- include ('partials/submitQuery.ejs') %>
         <%- include ('partials/footer.ejs') %>
         <script src="../scripts/suggestion.js"></script>
-        <script src="../scripts/navigation.js"></script>
+        <script src="../scripts/navigation.js"></script>     
         <script>
-            function activatePlacesSearch(){
-                var input=document.getElementById("autocomplete");
-                var autoinput=new google.maps.places.Autocomplete(input);
-            }
+            let autocomplete;
+            function initAutocomplete(){
+                const autocomplete = new google.maps.places.Autocomplete
+                (document.getElementById('autocomplete'));
+            }            
         </script>
         <script async
-        src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places&callback=initMap">
-    </script>
+            src="https://maps.googleapis.com/maps/api/js?key=API_KEY&libraries=places&callback=initAutocomplete">
+        </script>
     </body>
 </html>
