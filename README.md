@@ -1,6 +1,6 @@
 # Tvastra
 
-## This is the wiki file to read about the tasks
+## Tvastra is a responsive website to search and book  hospitals and doctors
 
-<a href="https://workspace.konfinity.com/swapnil/tvastra-wiki/-/wikis/01-Task01" target="_blank">Open wiki page</a>
-
+This website have 11 static webpages with common header and footer using html, css, javascript and ejs only.
+Signin, signout, password change options using express js, sqlite database and other backend technologies.
