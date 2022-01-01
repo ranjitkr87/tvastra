@@ -36,6 +36,13 @@
       align-self: center;
       justify-self: flex-end;
     }
+    .nav-mob-btn{
+      border: none;
+      padding: 0.5rem;
+      justify-self: end;
+      background-color: var(--light-gray);
+      border-radius: 3px;
+    }
     .name{
     display: flex;
     color:var(--sky-blue);
