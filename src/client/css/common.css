@@ -25,6 +25,7 @@
       padding: 1rem;
       display: grid;
       grid-template-columns: 1fr 1fr;
+      align-items: center;
     }
     .top-nav .logo-tvastra
     {  
@@ -37,11 +38,13 @@
       justify-self: flex-end;
     }
     .nav-mob-btn{
-      border: none;
+      border: 1px solid var(--button-blue);
       padding: 0.5rem;
       justify-self: end;
+      color: var(--button-blue);
       background-color: var(--light-gray);
       border-radius: 3px;
+      font-weight: bold;
     }
     .name{
     display: flex;
