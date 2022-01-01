@@ -556,6 +556,10 @@ border-radius: 10px;
         margin:0rem;
         margin-right: .5rem;
       }
+      .doc-details:hover{
+        transform: scale(1.05);
+        cursor: pointer;
+      }
     .dots{
       padding-left:6rem;
       text-align: left;
