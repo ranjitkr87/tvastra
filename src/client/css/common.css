@@ -37,6 +37,10 @@
       align-self: center;
       justify-self: flex-end;
     }
+    
+    .navButtons{
+      justify-self: flex-end;
+    }
     .nav-mob-btn{
       border: 1px solid var(--button-blue);
       padding: 0.5rem;
@@ -45,12 +49,16 @@
       background-color: var(--light-gray);
       border-radius: 3px;
       font-weight: bold;
+      margin: 0rem;
     }
     .name{
     display: flex;
     color:var(--sky-blue);
     font-family: 'nexa-bold';
     padding: 1rem 0rem;
+    }
+    .drop{
+      justify-self: flex-end;
     }
     .name::before{
     display: block;
@@ -321,6 +329,7 @@
         display: grid;
         grid-template-columns: 40% 40% 20%;
         align-items: center;
+        justify-self: initial;
       }
       .drop{  
         overflow: hidden;
@@ -328,7 +337,7 @@
       .userName{
         padding: .5rem 0rem;
       }
-      .dropContent{
+      .dropContent-mob{
         display: none;
         position: absolute;
         padding: 1rem;

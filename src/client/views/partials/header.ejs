@@ -24,16 +24,19 @@
                         <li><a href="aboutUs">About</a></li>
                     </ul>
             </div>
-            <div class=" desktop">
                 <div class="navButtons">
                     <% if (user) { %>
-                        <button class="secondary navButton2 navButton" onclick="location.href='/tvastraPlus'">                        
+                        
+                        <button class="third navButton1 nav-mob-btn mob-tab" onclick="location.href='/logout'">
+                            Logout
+                        </button>
+                        <button class="secondary navButton2 navButton desktop" onclick="location.href='/tvastraPlus'">                        
                             Tvastra Plus
                         </button>
-                        <button class="primary navButton" >
+                        <button class="primary navButton desktop" >
                                 Get A Quote
-                            </button>
-                            <div class="drop" >
+                        </button>
+                            <div class="drop desktop" >
                                 <a >
                                     <div class="userName">
                                         <%= user.name  %>
@@ -45,18 +48,17 @@
                                 </div>
                             </div>  
                         <% } else { %>
-                            <button class="third navButton1" onclick="location.href='/login'">
+                            <button class="third navButton1 desktop" onclick="location.href='/login'">
                                 Login/Signup
                             </button>
-                            <button class="primary navButton2">                        
+                            <button class="primary navButton2 desktop">                        
                                 Get a Quote
+                            </button>
+                            <button class="third navButton1 nav-mob-btn mob-tab" onclick="location.href='/login'">
+                                Login/Signup
                             </button>
                         <% } %>
                 </div>
-            </div>
-            <button class="third navButton1 nav-mob-btn mob-tab" onclick="location.href='/login'">
-                Login/Signup
-            </button>
         </nav>
         <script src="../scripts/navigation.js"></script>
     </body>
